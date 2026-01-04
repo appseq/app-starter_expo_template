@@ -1,0 +1,99 @@
+{
+  "_comment": "TEMPLATE: Update this file with your app's configuration when creating a new app",
+  "_note": "This is shared by both app.config.js and constants/appConfig.ts",
+
+  "app": {
+    "name": "App Template",
+    "slug": "jewelryidentifier",
+    "version": "1.0.0",
+    "scheme": "jewelryid",
+    "orientation": "portrait"
+  },
+
+  "bundleId": {
+    "ios": "net.centriqo.jewelryidentifier",
+    "android": "net.centriqo.jewelryidentifier"
+  },
+
+  "appStore": {
+    "appleAppId": "6756683498",
+    "appleTeamId": "BT3UCUY3PU",
+    "developerPageUrl": "https://apps.apple.com/developer/centriqo/id1659571443",
+    "googlePackageName": "net.centriqo.jewelryidentifier"
+  },
+
+  "support": {
+    "email": "support@centriqo.net",
+    "privacyPolicyUrl": "https://www.centriqo.net/legal/apps/jewelryid/privacy.html",
+    "termsOfServiceUrl": "https://www.centriqo.net/legal/apps/jewelryid/terms.html",
+    "websiteUrl": "https://centriqo.net/"
+  },
+
+  "subscription": {
+    "freeDailyLimit": 3,
+    "freeDailyLimitTestMode": 10
+  },
+
+  "appearance": {
+    "_note": "Expose the appearance option in the Settings screen.",
+    "makeThemeSelectorAvailable": true,
+    "defaultTheme": "dark"
+  },
+
+  "services": {
+    "eas": {
+      "projectId": "f4f233ea-f0c1-461e-9b82-5a6e4995b328"
+    },
+    "router": {
+      "origin": "https://centriqo.com/"
+    },
+    "revenueCat": {
+      "ios": "appl_yAJfJiwQDFFKMWMulmJLmQRxlBT",
+      "android": "",
+      "entitlementId": "pro",
+      "ENABLE_VERBOSE_LOGS": false
+    },
+    "superwall": {
+      "ios": "pk_EyB3jBtS6G7IBUKnVNSK7",
+      "android": "",
+      "placements": {
+        "main": "campaign_trigger",
+        "onboarding": "paywall_onboarding",
+        "settings": "paywall_settings",
+        "feature": "paywall_feature"
+      }
+    }
+  },
+
+  "ios": {
+    "supportsTablet": false,
+    "permissions": {
+      "camera": "This app needs camera access to take photos for AI-powered identification.",
+      "microphone": "This app needs microphone access to record videos with audio.",
+      "photoLibrary": "This app needs photo library access to save and select images for identification."
+    }
+  },
+
+  "android": {
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.VIBRATE",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+
+  "assets": {
+    "icon": "./assets/images/icon.png",
+    "adaptiveIcon": "./assets/images/adaptive-icon.png",
+    "splashIcon": "./assets/images/launchscreen.png",
+    "favicon": "./assets/images/favicon.png"
+  },
+
+  "build": {
+    "xcodeProject": "./ios/AppTemplate.xcodeproj",
+    "xcodeTarget": "AppTemplate",
+    "npmPackageName": "app-template"
+  }
+}

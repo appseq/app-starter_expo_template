@@ -1,0 +1,455 @@
+{
+  "app": {
+    "name": "Schmuck Identifier"
+  },
+  "onboarding": {
+    "slides": {
+      "slide1": {
+        "title": "Onboarding",
+        "subtitle": "Willkommen",
+        "description": "Passen Sie diesen Begrüßungsbildschirm für Ihre App an."
+      }
+    },
+    "finalButtonText": "Loslegen",
+    "continueButtonText": "Weiter",
+    "skipButtonText": "Überspringen"
+  },
+  "ui": {
+    "tabs": {
+      "discover": "Entdecken",
+      "identify": "Identifizieren",
+      "collection": "Sammlung",
+      "learn": "Lernen"
+    },
+    "home": {
+      "title": "Schmuck ID",
+      "snapAndIdentify": "Foto & Identifizieren",
+      "learnAboutJewelry": "Über Schmuck lernen",
+      "allArticles": "Alle Artikel",
+      "loadingArticles": "Artikel werden geladen...",
+      "noArticles": "Keine Artikel verfügbar"
+    },
+    "camera": {
+      "title": "Schmuck Erfassen",
+      "permissionTitle": "Kamera-Berechtigung",
+      "instruction": "Kamera auf ein Schmuckstück richten",
+      "instructionSubtext": "KI analysiert Edelsteine, Metalle und Wert",
+      "captureButton": "Identifizieren",
+      "galleryButton": "Aus Galerie wählen",
+      "retakeButton": "Wiederholen",
+      "analyzeButton": "Schmuck analysieren",
+      "tapToCapture": "Tippen zum Erfassen und Identifizieren",
+      "aiReady": "KI bereit"
+    },
+    "imageReview": {
+      "title": "Foto prüfen",
+      "readyTitle": "Bereit zur Identifizierung",
+      "readyDescription": "Erhalten Sie eine detaillierte Analyse dieses Schmuckstücks, einschließlich Art, Edelsteine, Materialien, Epoche und geschätztem Wert.",
+      "analyzeButton": "Schmuck identifizieren",
+      "retakeButton": "Foto wiederholen",
+      "analyzingTitle": "Schmuck wird identifiziert...",
+      "analyzingSubtext": "Analyse von Edelsteinen, Materialien und Handwerkskunst",
+      "pleaseWait": "BITTE WARTEN",
+      "analysisSteps": {
+        "analyzing": "Schmuck mit KI analysieren",
+        "identifying": "Materialien & Edelsteine identifizieren",
+        "estimating": "Wert & Epoche schätzen"
+      },
+      "errorTitle": "Analyse fehlgeschlagen",
+      "errorMessage": "Der Schmuck konnte nicht identifiziert werden. Bitte versuchen Sie es erneut."
+    },
+    "results": {
+      "title": "Identifikationsergebnisse",
+      "confidenceLabel": "Zuverlässigkeit",
+      "compositionLabel": "Zusammensetzung",
+      "formationLabel": "Herstellung",
+      "locationsLabel": "Gefunden in",
+      "usesLabel": "Verwendungen",
+      "funFactLabel": "Wissenswertes",
+      "saveButton": "Zur Sammlung hinzufügen",
+      "shareButton": "Teilen"
+    },
+    "collection": {
+      "title": "Meine Sammlung",
+      "itemsCollected": "{{count}} Stück gesammelt",
+      "itemsCollected_plural": "{{count}} Stücke gesammelt",
+      "emptyState": "Noch kein Schmuck",
+      "emptyStateAction": "Erstes Stück scannen",
+      "emptyStateDescription": "Beginnen Sie mit dem Scannen von Schmuck, um Ihre persönliche Sammlung aufzubauen",
+      "itemsLabel": "Stücke",
+      "loadingCollection": "Sammlung wird geladen...",
+      "matchPercent": "{{percent}}% Übereinstimmung"
+    },
+    "itemDetails": {
+      "deleteTitle": "Stück löschen",
+      "deleteMessage": "Sind Sie sicher, dass Sie diesen Schmuck aus Ihrer Sammlung entfernen möchten?",
+      "cancel": "Abbrechen",
+      "delete": "Löschen",
+      "dataNotAvailable": "Schmuckdaten nicht verfügbar",
+      "goBack": "Zurück",
+      "unableToIdentify": "Nicht identifizierbar",
+      "unableToIdentifyMessage": "Wir konnten dieses Schmuckstück nicht identifizieren. Bitte versuchen Sie es mit einem klareren Foto erneut.",
+      "tryAgain": "Erneut versuchen",
+      "similarItems": "Ähnliche Stücke",
+      "seeAll": "Alle anzeigen",
+      "findingSimilar": "Ähnliche Stücke werden gesucht...",
+      "noSimilarItems": "Keine ähnlichen Stücke gefunden",
+      "estimatedValue": "Geschätzter Wert",
+      "researchingValue": "Marktwert wird recherchiert...",
+      "valueVaries": "Wert variiert stark",
+      "requiresAppraisal": "Erfordert professionelle Bewertung",
+      "contactAppraiser": "Kontaktieren Sie einen Gutachter für eine Schätzung",
+      "basedOnMarket": "Basierend auf {{count}} Marktvergleich",
+      "basedOnMarket_plural": "Basierend auf {{count}} Marktvergleichen",
+      "basedOnAI": "Basierend auf KI-Analyse",
+      "professionalRecommended": "Professionelle Bewertung empfohlen",
+      "rangeTooBroad": "Preisspanne zu groß für zuverlässige Schätzung",
+      "highValueVerification": "Hochwertige Stücke benötigen Expertenprüfung",
+      "description": "Beschreibung",
+      "history": "Geschichte",
+      "noHistoryAvailable": "Keine Geschichte verfügbar",
+      "materials": "Materialien",
+      "unknownMaterial": "Unbekanntes Material",
+      "origin": "Herkunft",
+      "unknownOrigin": "Unbekannte Herkunft",
+      "eraPeriod": "Epoche / Zeitraum",
+      "contemporary": "Zeitgenössisch",
+      "specifications": "Spezifikationen",
+      "rarity": "Seltenheit",
+      "gemstone": "Edelstein",
+      "caratWeight": "Karatgewicht",
+      "totalWeight": "Gesamtgewicht",
+      "authenticityNote": "Für eine genaue Bewertung und Authentifizierung wenden Sie sich bitte an einen zertifizierten Gemmologen.",
+      "saveToCollection": "Zur Sammlung hinzufügen",
+      "savedToCollection": "In Sammlung gespeichert",
+      "shareMessage": "Schauen Sie sich dieses {{name}} an! Identifiziert mit {{appName}}. {{funFact}}",
+      "jewelry": "Schmuck",
+      "rarityLabels": {
+        "common": "Häufig",
+        "uncommon": "Ungewöhnlich",
+        "rare": "Selten",
+        "veryRare": "Sehr selten",
+        "legendary": "Legendär"
+      },
+      "confidence": {
+        "high": "Hoch",
+        "medium": "Mittel",
+        "low": "Niedrig"
+      }
+    },
+    "articles": {
+      "title": "Artikel",
+      "loadingArticles": "Artikel werden geladen...",
+      "noArticlesFound": "Keine Artikel gefunden",
+      "showAllArticles": "Alle Artikel anzeigen",
+      "tryAgain": "Erneut versuchen",
+      "categories": {
+        "all": "Alle",
+        "gemstones": "Edelsteine",
+        "jewelryHistory": "Schmuckgeschichte",
+        "materials": "Materialien",
+        "techniques": "Techniken",
+        "styles": "Stile",
+        "care": "Pflege"
+      }
+    },
+    "snapTips": {
+      "title": "Foto-Tipps",
+      "subtitle": "Bessere Identifikationsergebnisse erzielen",
+      "gotIt": "Verstanden!",
+      "tips": {
+        "goodLighting": {
+          "title": "Gute Beleuchtung",
+          "description": "Natürliches Tageslicht funktioniert am besten. Vermeiden Sie harte Schatten und direktes Sonnenlicht."
+        },
+        "focusClearly": {
+          "title": "Klar fokussieren",
+          "description": "Tippen Sie auf das Objekt zum Fokussieren. Warten Sie, bis das Bild scharf ist, bevor Sie aufnehmen."
+        },
+        "steadyHands": {
+          "title": "Ruhige Hände",
+          "description": "Halten Sie Ihr Telefon ruhig oder legen Sie es auf eine Oberfläche für schärfere Bilder."
+        },
+        "fillFrame": {
+          "title": "Bildausschnitt füllen",
+          "description": "Positionieren Sie den Schmuck so, dass er den größten Teil des Aufnahmebereichs ausfüllt."
+        },
+        "showDetails": {
+          "title": "Details zeigen",
+          "description": "Zeigen Sie Herstellermarken, Signaturen oder charakteristische Merkmale."
+        }
+      }
+    },
+    "learn": {
+      "title": "Über Schmuck lernen",
+      "introTitle": "Schmuck-Identifikationsführer",
+      "introText": "Lernen Sie verschiedene Schmuckarten, Edelsteine kennen und wie man sie identifiziert.",
+      "sectionTitle": "Schmuckarten",
+      "categories": {
+        "rings": {
+          "name": "Ringe",
+          "description": "Von Verlobungsringen bis zu Statement-Stücken – lernen Sie Ringstile, Fassungen und Edelsteine kennen."
+        },
+        "necklaces": {
+          "name": "Halsketten",
+          "description": "Entdecken Sie die Welt der Halsketten, von zarten Ketten bis zu aufwendigen Statement-Stücken."
+        },
+        "earrings": {
+          "name": "Ohrringe",
+          "description": "Erkunden Sie Ohrringstile von Steckern bis zu Kronleuchtern und die Edelsteine, die sie schmücken."
+        }
+      },
+      "tipsTitle": "Identifikationstipps",
+      "tips": {
+        "tip1": "Betrachten Sie das Metall: Ist es Gold, Silber oder Platin?",
+        "tip2": "Prüfen Sie auf Punzierungen: Sie verraten Metallreinheit und Herkunft",
+        "tip3": "Untersuchen Sie die Edelsteine: Achten Sie auf Farbe, Schliff und Reinheit",
+        "tip4": "Beobachten Sie die Handwerkskunst: Qualität deutet auf Alter und Wert hin",
+        "tip5": "Beachten Sie den Stil: Verschiedene Epochen haben charakteristische Designs"
+      },
+      "footerText": "Verwenden Sie die Kamera-Registerkarte, um Schmuckstücke zu identifizieren!"
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "sections": {
+        "support": "Support",
+        "preferences": "Einstellungen",
+        "about": "Über"
+      },
+      "rateApp": "App bewerten",
+      "rateAppSubtitle": "Teilen Sie Ihre Erfahrung",
+      "contactSupport": "Support kontaktieren",
+      "contactSupportSubtitle": "Hilfe bei Problemen erhalten",
+      "language": "Sprache",
+      "languageSubtitle": "Wählen Sie Ihre bevorzugte Sprache",
+      "languageAuto": "Gerätesprache",
+      "languageAutoSubtitle": "Automatisch an Gerätesprache anpassen",
+      "languageEnglish": "English",
+      "languageEnglishSubtitle": "Englisch",
+      "languageFrench": "Français",
+      "languageFrenchSubtitle": "Französisch",
+      "languageDutch": "Nederlands",
+      "languageDutchSubtitle": "Niederländisch",
+      "languageGerman": "Deutsch",
+      "languageGermanSubtitle": "Deutsch",
+      "appearance": "Erscheinungsbild",
+      "appearanceSubtitle": "Systemstandard",
+      "theme": "Design",
+      "themeSubtitle": "Wählen Sie Ihr bevorzugtes Farbschema",
+      "light": "Hell",
+      "lightSubtitle": "Helle und klare Oberfläche",
+      "dark": "Dunkel",
+      "darkSubtitle": "Angenehm für die Augen",
+      "auto": "Automatisch",
+      "autoSubtitle": "Automatisch an Gerätedesign anpassen",
+      "cameraSettings": "Kamera-Einstellungen",
+      "cameraSettingsSubtitle": "Berechtigungen verwalten",
+      "restartOnboarding": "Onboarding neu starten",
+      "restartOnboardingSubtitle": "Einführungsbildschirme erneut anzeigen",
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "termsOfService": "Nutzungsbedingungen",
+      "restorePurchases": "Käufe wiederherstellen",
+      "moreApps": "Mehr Apps",
+      "notifications": "Benachrichtigungen",
+      "subscription": "Abonnement",
+      "manageSubscription": "Abonnement verwalten",
+      "subscriptionStatus": "Abonnementstatus",
+      "about": "Über",
+      "version": "Version",
+      "premiumUpgrade": {
+        "title": "Premium freischalten",
+        "subtitle": "Unbegrenzte Scans & alle Funktionen",
+        "features": "• Keine täglichen Limits • Prioritäts-KI-Verarbeitung • Premium-Support",
+        "restorePurchases": "Käufe wiederherstellen",
+        "restoringTitle": "Käufe werden wiederhergestellt",
+        "restoringMessage": "Überprüfung früherer Käufe...",
+        "restoreSuccessTitle": "Erfolg!",
+        "restoreSuccessMessage": "Ihr Premium-Abonnement wurde wiederhergestellt.",
+        "restoreSuccessButton": "Großartig!",
+        "restoreNotFoundTitle": "Keine Käufe gefunden",
+        "restoreNotFoundMessage": "Keine früheren Käufe zum Wiederherstellen gefunden.",
+        "restoreFailedTitle": "Wiederherstellung fehlgeschlagen",
+        "restoreFailedMessage": "Käufe können nicht wiederhergestellt werden. Bitte versuchen Sie es später erneut.",
+        "emailNotAvailableTitle": "E-Mail nicht verfügbar",
+        "emailNotAvailableMessage": "Bitte senden Sie Ihre Support-Anfrage an: {{email}}",
+        "errorTitle": "Fehler",
+        "appStoreError": "Der App Store konnte nicht geöffnet werden.",
+        "ctaTitle": "3 Tage Gratis Testen",
+        "ctaSubtitle": "Jetzt Angebot sichern",
+        "ctaButton": "Loslegen"
+      },
+      "demoMode": {
+        "title": "Screenshot-Modus",
+        "label": "Demo-Modus",
+        "description": "App mit Beispielschmuck für Screenshots füllen",
+        "enableTitle": "Demo-Modus aktivieren",
+        "enableMessage": "Dies ersetzt vorübergehend Ihre Sammlung mit Beispielschmuck für Screenshots. Ihre Originaldaten werden wiederhergestellt, wenn Sie den Demo-Modus deaktivieren.",
+        "enableButton": "Aktivieren",
+        "disableButton": "Deaktivieren",
+        "enabledTitle": "Demo-Modus aktiviert",
+        "enabledMessage": "Ihre App ist jetzt bereit für Screenshots!",
+        "disabledTitle": "Demo-Modus deaktiviert",
+        "disabledMessage": "Ihre ursprüngliche Schmucksammlung wurde wiederhergestellt.",
+        "activeMessage": "Demo-Modus aktiv – Bereit für Screenshots!",
+        "errorMessage": "Demo-Modus konnte nicht umgeschaltet werden. Bitte erneut versuchen."
+      },
+      "testMode": {
+        "title": "Testmodus",
+        "label": "Testfunktionen",
+        "description": "Niedrigere Schwellenwerte für Bewertung (1 Scan), 10 kostenlose Scans",
+        "enabledTitle": "Testmodus aktiviert",
+        "enabledMessage": "Testfunktionen aktiviert:\n\n• Bewertungsaufforderung nach 1 Identifizierung\n• 10 kostenlose Scans statt 3",
+        "activeMessage": "Testmodus aktiv – Testkonfigurationen werden verwendet"
+      },
+      "alerts": {
+        "restoringPurchases": "Käufe werden wiederhergestellt",
+        "restoringMessage": "Bitte warten Sie, während wir Ihre Käufe wiederherstellen...",
+        "purchasesRestored": "Käufe wiederhergestellt",
+        "purchasesRestoredMessage": "Ihr Premium-Zugang wurde wiederhergestellt!",
+        "noPurchasesFound": "Keine Käufe gefunden",
+        "noPurchasesFoundMessage": "Wir konnten keine früheren Käufe zum Wiederherstellen finden.",
+        "restoreFailed": "Wiederherstellung fehlgeschlagen",
+        "restoreFailedMessage": "Käufe können nicht wiederhergestellt werden. Bitte versuchen Sie es später erneut.",
+        "ok": "OK",
+        "great": "Großartig!",
+        "cancel": "Abbrechen",
+        "error": "Fehler"
+      }
+    },
+    "subscription": {
+      "benefits": {
+        "unlimitedScans": {
+          "title": "Unbegrenzte Scans",
+          "description": "Identifizieren Sie so viele Schmuckstücke wie Sie möchten",
+          "free": "3 pro Tag",
+          "premium": "Unbegrenzt"
+        },
+        "fasterProcessing": {
+          "title": "Schnellere Verarbeitung",
+          "description": "Prioritäts-API-Zugang für sofortige Ergebnisse",
+          "free": "Standard",
+          "premium": "Priorität"
+        },
+        "detailedAnalysis": {
+          "title": "Detaillierte Analyse",
+          "description": "Umfassende Edelstein- und Materialdaten erhalten",
+          "free": "Basis",
+          "premium": "Erweitert"
+        },
+        "cloudBackup": {
+          "title": "Cloud-Backup",
+          "description": "Verlieren Sie nie Ihre Schmucksammlung",
+          "free": "Nur Gerät",
+          "premium": "Demnächst verfügbar"
+        },
+        "accuracyBoost": {
+          "title": "Genauigkeitsverbesserung",
+          "description": "Verbessertes KI-Modell für bessere Identifikation",
+          "free": "Standard",
+          "premium": "Verbessert"
+        },
+        "prioritySupport": {
+          "title": "Prioritäts-Support",
+          "description": "Erhalten Sie Hilfe, wenn Sie sie brauchen",
+          "free": "Community",
+          "premium": "Priorität"
+        }
+      },
+      "upgradePrompt": "Auf Premium upgraden",
+      "active": "Aktiv",
+      "inactive": "Nicht aktiv",
+      "notAvailable": "Nicht verfügbar",
+      "webNotSupported": "Abonnements sind im Web nicht verfügbar. Bitte verwenden Sie die mobile App.",
+      "errorMessage": "Upgrade-Optionen können nicht angezeigt werden. Bitte versuchen Sie es später erneut."
+    },
+    "permissions": {
+      "camera": {
+        "title": "Kamera-Zugriff erforderlich",
+        "description": "Schmuck Identifier benötigt Kamera-Zugriff, um Ihre Schmuckstücke, Edelsteine und Edelmetalle zu analysieren und zu identifizieren. Ihre Fotos werden sicher verarbeitet und niemals weitergegeben.",
+        "button": "Weiter",
+        "skipText": "Sie können die Berechtigung auch in den Einstellungen erteilen",
+        "openSettings": "Einstellungen öffnen"
+      },
+      "photos": {
+        "title": "Fotobibliothek-Zugriff erforderlich",
+        "description": "Schmuck Identifier benötigt Zugriff auf Ihre Fotobibliothek, um vorhandene Schmuckfotos zur Identifizierung auszuwählen.",
+        "button": "Weiter"
+      }
+    },
+    "errors": {
+      "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+      "identificationFailed": "Identifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "imageQualityPoor": "Bildqualität unzureichend. Bitte stellen Sie ein klares, gut beleuchtetes Bild bereit.",
+      "cameraPermission": "Kamera-Berechtigung ist erforderlich, um diese Funktion zu nutzen.",
+      "galleryPermission": "Fotobibliothek-Berechtigung ist erforderlich, um diese Funktion zu nutzen."
+    },
+    "alerts": {
+      "confirm": "Bestätigen",
+      "cancel": "Abbrechen",
+      "ok": "OK",
+      "delete": "Löschen",
+      "save": "Speichern",
+      "restartOnboardingTitle": "Onboarding neu starten?",
+      "restartOnboardingMessage": "Dies zeigt Ihnen die Willkommensbildschirme erneut.",
+      "demoModeTitle": "Demo-Modus",
+      "demoModeEnableMessage": "Demo-Modus mit Beispielschmuckdaten aktivieren?",
+      "demoModeDisableMessage": "Demo-Modus deaktivieren und zum normalen Betrieb zurückkehren?",
+      "deleteItemTitle": "Stück löschen?",
+      "deleteItemMessage": "Sind Sie sicher, dass Sie dieses Stück aus Ihrer Sammlung entfernen möchten?"
+    },
+    "main": {
+      "subtitle": "Entdecken und identifizieren Sie Schmuck mit KI-gestützter Analyse",
+      "identifyButton": {
+        "title": "Schmuck identifizieren",
+        "subtitle": "Foto aufnehmen zum Analysieren und Identifizieren"
+      },
+      "collectionButton": {
+        "title": "Meine Sammlung",
+        "subtitle": "Ihre gespeicherten Schmuckentdeckungen ansehen"
+      },
+      "learnButton": {
+        "title": "Lernen",
+        "subtitle": "Schmuckarten und Identifikationsführer"
+      },
+      "remainingScans": "kostenlose Identifizierungen verbleibend"
+    }
+  },
+  "ios": {
+    "permissions": {
+      "camera": "Schmuck Identifier benötigt Kamera-Zugriff, um Fotos von Schmuck für sofortige KI-gestützte Identifizierung aufzunehmen. Wenn Sie beispielsweise einen Ring fotografieren, analysiert die App seine Edelsteine, Metalle und Handwerkskunst, um das Stück zu identifizieren und detaillierte Informationen bereitzustellen.",
+      "photos": "Schmuck Identifier benötigt Fotobibliothek-Zugriff, um identifizierte Schmuckbilder in Ihrer Sammlung zu speichern und um vorhandene Schmuckfotos aus Ihrer Bibliothek zur Identifizierung auszuwählen. Sie können beispielsweise Schmuck von Fotos geerbter Stücke identifizieren.",
+      "microphone": "Schmuck Identifier benötigt Mikrofon-Zugriff, um Videos mit Audio aufzunehmen, wenn Sie Schmuckstücke dokumentieren. Damit können Sie Sprachnotizen zu Ihren Schmuckentdeckungen hinzufügen."
+    }
+  },
+  "ai": {
+    "prompt": {
+      "language": "German",
+      "analyzeInstruction": "Analysieren Sie dieses Schmuckbild und identifizieren Sie es. Konzentrieren Sie sich auf Edelsteine (Diamanten, Rubine, Smaragde, Saphire, Perlen), Metallarten (Gold, Silber, Platin), Schmuckstil/Epoche (Viktorianisch, Art Deco, Zeitgenössisch), Handwerksqualität und sichtbare Punzierungen oder Herstellermarken.",
+      "jsonOnlyWarning": "WICHTIG: Sie MÜSSEN ausschließlich im gültigen JSON-Format antworten, kein anderer Text.",
+      "unableToIdentify": {
+        "instruction": "Wenn das Bild unklar, zu dunkel oder nicht analysierbar ist, antworten Sie mit diesem JSON:",
+        "name": "Nicht identifizierbar",
+        "formationMessage": "Bildqualität unzureichend für die Analyse",
+        "funFactMessage": "Bitte stellen Sie ein klares, gut beleuchtetes Bild des Schmucks für eine genaue Identifizierung bereit"
+      },
+      "analyzableInstruction": "Für analysierbare Schmuckbilder antworten Sie mit:",
+      "fields": {
+        "name": "Schmuckart und Stil (z.B. Art Deco Diamantring, Viktorianische Perlenbrosche)",
+        "confidence": "0-100",
+        "composition": "material1, material2 (Metalle und Sekundärmaterialien - max 6)",
+        "formation": "Handwerksdetails, Fassungsart, Herstellungstechnik",
+        "locations": "wahrscheinliche Herkunft oder Stileinflüsse",
+        "uses": "Epoche, Stil, Anlässe (z.B. Art Deco, Verlobungsring - max 4)",
+        "funFact": "Interessante Tatsache über diesen Schmuckstil oder Edelstein",
+        "description": "Kurze Beschreibung des Schmuckstücks (2-3 Sätze zu Stil, Handwerkskunst und besonderen Merkmalen)",
+        "rarity": "common | uncommon | rare | very_rare | legendary (basierend auf Materialien, Alter, Einzigartigkeit)",
+        "gemstone": "Name des Hauptedelsteins (z.B. Diamant, Rubin, Smaragd) oder None wenn keine Edelsteine",
+        "caratWeight": "Geschätztes Karatgewicht des Hauptedelsteins (z.B. 1,5 Karat, 2 Karat gesamt)",
+        "jewelryWeight": "Geschätztes Gesamtgewicht in Gramm (z.B. 8,2 Gramm, 15 Gramm)",
+        "estimatedValue": "Geschätzter Marktwert in USD (z.B. '$500 - $1.500', '$2.000 - $5.000')"
+      },
+      "responseLanguageInstruction": "ALLER Text in Ihrer Antwort muss auf Deutsch sein."
+    }
+  }
+}

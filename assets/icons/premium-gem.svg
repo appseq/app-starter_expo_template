@@ -1,0 +1,32 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="gemHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gemShadow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4C1D95" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4C1D95" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main gem body -->
+  <path d="M24 4L38 16L24 44L10 16L24 4Z" fill="url(#gemGradient)"/>
+
+  <!-- Top facet -->
+  <path d="M24 4L38 16L24 20L10 16L24 4Z" fill="url(#gemHighlight)"/>
+
+  <!-- Left facet shadow -->
+  <path d="M10 16L24 20L24 44L10 16Z" fill="url(#gemShadow)"/>
+
+  <!-- Shine highlight -->
+  <path d="M18 10L24 8L30 10L28 14L20 14L18 10Z" fill="white" fill-opacity="0.4"/>
+
+  <!-- Small sparkle -->
+  <circle cx="16" cy="12" r="1.5" fill="white" fill-opacity="0.8"/>
+</svg>

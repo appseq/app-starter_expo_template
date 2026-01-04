@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000167">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to upload_metadata lane" time="0.00011">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: app_store_connect_api_key" time="0.00123">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: get_version_number" time="0.026878">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: deliver" time="16.823961">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: Switch to upload_screenshots lane" time="0.000233">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: Switch to resize_screenshots lane" time="0.00016">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: app_store_connect_api_key" time="0.00124">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: get_version_number" time="0.011146">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: deliver" time="8.454098">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

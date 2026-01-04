@@ -1,0 +1,1506 @@
+{
+  "metadata": {
+    "appName": "Rock Identifier",
+    "generated": "2024-11-08",
+    "totalStrings": 158,
+    "categories": ["onboarding", "ui", "settings", "errors", "buttons", "placeholders", "permissions", "alerts"],
+    "notes": "This is a comprehensive list of all user-facing text strings that require translation. Strings are organized by location and category. Priority levels: high (critical), medium (important), low (optional/decorative)."
+  },
+  "strings": [
+    {
+      "id": "onboarding_slide_1_title",
+      "location": "constants/appConfig.ts:163",
+      "text": "Rock Identifier",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 1 title",
+      "notes": "Main app name - appears on first onboarding slide"
+    },
+    {
+      "id": "onboarding_slide_1_subtitle",
+      "location": "constants/appConfig.ts:164",
+      "text": "AI-Powered Geological Discovery",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 1 subtitle"
+    },
+    {
+      "id": "onboarding_slide_1_description",
+      "location": "constants/appConfig.ts:165",
+      "text": "Unlock the secrets of Earth's geology with cutting-edge artificial intelligence that identifies rocks and minerals instantly.",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 1 description"
+    },
+    {
+      "id": "onboarding_slide_2_title",
+      "location": "constants/appConfig.ts:173",
+      "text": "Instant Analysis",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 2 title"
+    },
+    {
+      "id": "onboarding_slide_2_subtitle",
+      "location": "constants/appConfig.ts:174",
+      "text": "Point, Capture, Discover",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 2 subtitle"
+    },
+    {
+      "id": "onboarding_slide_2_description",
+      "location": "constants/appConfig.ts:175",
+      "text": "Advanced computer vision analyzes mineral composition, crystal structure, and geological formation in seconds.",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 2 description"
+    },
+    {
+      "id": "onboarding_slide_3_title",
+      "location": "constants/appConfig.ts:182",
+      "text": "Digital Collection",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 3 title"
+    },
+    {
+      "id": "onboarding_slide_3_subtitle",
+      "location": "constants/appConfig.ts:183",
+      "text": "Curate Your Geological Journey",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 3 subtitle"
+    },
+    {
+      "id": "onboarding_slide_3_description",
+      "location": "constants/appConfig.ts:185",
+      "text": "Build a comprehensive digital museum of your discoveries with detailed scientific data and formation history.",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 3 description"
+    },
+    {
+      "id": "onboarding_slide_4_title",
+      "location": "constants/appConfig.ts:193",
+      "text": "Scientific Knowledge",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 4 title"
+    },
+    {
+      "id": "onboarding_slide_4_subtitle",
+      "location": "constants/appConfig.ts:194",
+      "text": "Expand Your Understanding",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 4 subtitle"
+    },
+    {
+      "id": "onboarding_slide_4_description",
+      "location": "constants/appConfig.ts:195",
+      "text": "Access comprehensive geological databases, formation processes, and fascinating insights about Earth's mineral kingdom.",
+      "category": "onboarding",
+      "priority": "high",
+      "context": "Onboarding slide 4 description"
+    },
+    {
+      "id": "onboarding_button_final",
+      "location": "constants/appConfig.ts:202",
+      "text": "Begin Journey",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Final onboarding button text (shown on last slide)"
+    },
+    {
+      "id": "onboarding_button_continue",
+      "location": "constants/appConfig.ts:203",
+      "text": "Continue",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Continue button for onboarding slides"
+    },
+    {
+      "id": "onboarding_button_skip",
+      "location": "constants/appConfig.ts:204",
+      "text": "Skip",
+      "category": "buttons",
+      "priority": "medium",
+      "context": "Skip button for onboarding"
+    },
+    {
+      "id": "ui_tab_home",
+      "location": "constants/appConfig.ts:212",
+      "text": "Home",
+      "category": "ui",
+      "priority": "high",
+      "context": "Tab navigation - Home tab"
+    },
+    {
+      "id": "ui_tab_collection",
+      "location": "constants/appConfig.ts:213",
+      "text": "Collection",
+      "category": "ui",
+      "priority": "high",
+      "context": "Tab navigation - Collection tab"
+    },
+    {
+      "id": "ui_tab_learn",
+      "location": "constants/appConfig.ts:214",
+      "text": "Learn",
+      "category": "ui",
+      "priority": "high",
+      "context": "Tab navigation - Learn tab"
+    },
+    {
+      "id": "ui_camera_title",
+      "location": "constants/appConfig.ts:217",
+      "text": "Capture Rock",
+      "category": "ui",
+      "priority": "high",
+      "context": "Camera screen title"
+    },
+    {
+      "id": "ui_camera_instruction",
+      "location": "constants/appConfig.ts:218",
+      "text": "Point camera at a rock or mineral",
+      "category": "ui",
+      "priority": "high",
+      "context": "Camera instruction text shown below camera preview"
+    },
+    {
+      "id": "ui_camera_capture_button",
+      "location": "constants/appConfig.ts:219",
+      "text": "Identify",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Capture button text in camera screen"
+    },
+    {
+      "id": "ui_camera_gallery_button",
+      "location": "constants/appConfig.ts:220",
+      "text": "Choose from Gallery",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Gallery picker button text"
+    },
+    {
+      "id": "ui_camera_retake_button",
+      "location": "constants/appConfig.ts:221",
+      "text": "Retake",
+      "category": "buttons",
+      "priority": "medium",
+      "context": "Retake photo button"
+    },
+    {
+      "id": "ui_camera_analyze_button",
+      "location": "constants/appConfig.ts:222",
+      "text": "Analyze Rock",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Analyze button on image review screen"
+    },
+    {
+      "id": "ui_results_title",
+      "location": "constants/appConfig.ts:225",
+      "text": "Identification Results",
+      "category": "ui",
+      "priority": "high",
+      "context": "Results screen title"
+    },
+    {
+      "id": "ui_results_confidence_label",
+      "location": "constants/appConfig.ts:226",
+      "text": "Confidence",
+      "category": "ui",
+      "priority": "high",
+      "context": "Confidence score label in results"
+    },
+    {
+      "id": "ui_results_composition_label",
+      "location": "constants/appConfig.ts:227",
+      "text": "Composition",
+      "category": "ui",
+      "priority": "high",
+      "context": "Composition section label"
+    },
+    {
+      "id": "ui_results_formation_label",
+      "location": "constants/appConfig.ts:228",
+      "text": "Formation",
+      "category": "ui",
+      "priority": "high",
+      "context": "Formation section label"
+    },
+    {
+      "id": "ui_results_locations_label",
+      "location": "constants/appConfig.ts:229",
+      "text": "Found In",
+      "category": "ui",
+      "priority": "high",
+      "context": "Locations section label"
+    },
+    {
+      "id": "ui_results_uses_label",
+      "location": "constants/appConfig.ts:230",
+      "text": "Uses",
+      "category": "ui",
+      "priority": "high",
+      "context": "Uses section label"
+    },
+    {
+      "id": "ui_results_fun_fact_label",
+      "location": "constants/appConfig.ts:231",
+      "text": "Fun Fact",
+      "category": "ui",
+      "priority": "high",
+      "context": "Fun fact section label"
+    },
+    {
+      "id": "ui_results_save_button",
+      "location": "constants/appConfig.ts:232",
+      "text": "Save to Collection",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Save button in results screen"
+    },
+    {
+      "id": "ui_results_share_button",
+      "location": "constants/appConfig.ts:233",
+      "text": "Share",
+      "category": "buttons",
+      "priority": "medium",
+      "context": "Share button in results screen"
+    },
+    {
+      "id": "ui_collection_title",
+      "location": "constants/appConfig.ts:236",
+      "text": "My Rock Collection",
+      "category": "ui",
+      "priority": "high",
+      "context": "Collection screen title"
+    },
+    {
+      "id": "ui_collection_empty_state",
+      "location": "constants/appConfig.ts:237",
+      "text": "No items in your collection yet",
+      "category": "ui",
+      "priority": "high",
+      "context": "Empty collection message"
+    },
+    {
+      "id": "ui_collection_empty_action",
+      "location": "constants/appConfig.ts:238",
+      "text": "Start identifying rocks",
+      "category": "ui",
+      "priority": "high",
+      "context": "Action text when collection is empty"
+    },
+    {
+      "id": "ui_collection_items_label",
+      "location": "constants/appConfig.ts:239",
+      "text": "specimens",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Unit label for collection items count"
+    },
+    {
+      "id": "ui_learn_title",
+      "location": "constants/appConfig.ts:242",
+      "text": "Learn About Rocks",
+      "category": "ui",
+      "priority": "high",
+      "context": "Learn screen title"
+    },
+    {
+      "id": "ui_learn_intro_title",
+      "location": "constants/appConfig.ts:243",
+      "text": "Rock Identification Guide",
+      "category": "ui",
+      "priority": "high",
+      "context": "Learn screen intro section title"
+    },
+    {
+      "id": "ui_learn_intro_text",
+      "location": "constants/appConfig.ts:244",
+      "text": "Learn about the different types of rocks, their formation, and how to identify them in the wild.",
+      "category": "ui",
+      "priority": "high",
+      "context": "Learn screen intro description"
+    },
+    {
+      "id": "ui_learn_section_title",
+      "location": "constants/appConfig.ts:245",
+      "text": "Rock Types",
+      "category": "ui",
+      "priority": "high",
+      "context": "Rock Types section header"
+    },
+    {
+      "id": "ui_learn_category_1_name",
+      "location": "constants/appConfig.ts:248",
+      "text": "Igneous Rocks",
+      "category": "ui",
+      "priority": "high",
+      "context": "Rock category name"
+    },
+    {
+      "id": "ui_learn_category_1_description",
+      "location": "constants/appConfig.ts:249",
+      "text": "Formed through the cooling and solidification of magma or lava. Examples include granite, basalt, and obsidian.",
+      "category": "ui",
+      "priority": "high",
+      "context": "Igneous rocks description"
+    },
+    {
+      "id": "ui_learn_category_2_name",
+      "location": "constants/appConfig.ts:252",
+      "text": "Sedimentary Rocks",
+      "category": "ui",
+      "priority": "high",
+      "context": "Rock category name"
+    },
+    {
+      "id": "ui_learn_category_2_description",
+      "location": "constants/appConfig.ts:253",
+      "text": "Formed by the deposition and cementation of mineral or organic particles. Examples include sandstone, limestone, and shale.",
+      "category": "ui",
+      "priority": "high",
+      "context": "Sedimentary rocks description"
+    },
+    {
+      "id": "ui_learn_category_3_name",
+      "location": "constants/appConfig.ts:256",
+      "text": "Metamorphic Rocks",
+      "category": "ui",
+      "priority": "high",
+      "context": "Rock category name"
+    },
+    {
+      "id": "ui_learn_category_3_description",
+      "location": "constants/appConfig.ts:257",
+      "text": "Formed when existing rocks are subjected to heat and pressure causing physical or chemical changes. Examples include marble, slate, and quartzite.",
+      "category": "ui",
+      "priority": "high",
+      "context": "Metamorphic rocks description"
+    },
+    {
+      "id": "ui_learn_tips_title",
+      "location": "constants/appConfig.ts:260",
+      "text": "Identification Tips",
+      "category": "ui",
+      "priority": "high",
+      "context": "Tips section title"
+    },
+    {
+      "id": "ui_learn_tip_1",
+      "location": "constants/appConfig.ts:262",
+      "text": "Look at the texture: Is it coarse or fine-grained?",
+      "category": "ui",
+      "priority": "high",
+      "context": "Identification tip 1"
+    },
+    {
+      "id": "ui_learn_tip_2",
+      "location": "constants/appConfig.ts:263",
+      "text": "Check the color: Different minerals create different colors",
+      "category": "ui",
+      "priority": "high",
+      "context": "Identification tip 2"
+    },
+    {
+      "id": "ui_learn_tip_3",
+      "location": "constants/appConfig.ts:264",
+      "text": "Test hardness: Can it scratch glass or be scratched by a knife?",
+      "category": "ui",
+      "priority": "high",
+      "context": "Identification tip 3"
+    },
+    {
+      "id": "ui_learn_tip_4",
+      "location": "constants/appConfig.ts:265",
+      "text": "Observe patterns: Look for layers, bands, or crystals",
+      "category": "ui",
+      "priority": "high",
+      "context": "Identification tip 4"
+    },
+    {
+      "id": "ui_learn_tip_5",
+      "location": "constants/appConfig.ts:266",
+      "text": "Consider weight: Some rocks are denser than others",
+      "category": "ui",
+      "priority": "high",
+      "context": "Identification tip 5"
+    },
+    {
+      "id": "ui_learn_footer_text",
+      "location": "constants/appConfig.ts:268",
+      "text": "Use the camera tab to identify rocks in the wild!",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Learn screen footer text"
+    },
+    {
+      "id": "ui_main_subtitle",
+      "location": "constants/appConfig.ts:271",
+      "text": "Discover and identify rocks with AI-powered analysis",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen subtitle"
+    },
+    {
+      "id": "ui_main_identify_button_title",
+      "location": "constants/appConfig.ts:273",
+      "text": "Identify Rock",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen identify button title"
+    },
+    {
+      "id": "ui_main_identify_button_subtitle",
+      "location": "constants/appConfig.ts:274",
+      "text": "Take a photo to analyze and identify",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen identify button subtitle"
+    },
+    {
+      "id": "ui_main_collection_button_title",
+      "location": "constants/appConfig.ts:277",
+      "text": "My Collection",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen collection button title"
+    },
+    {
+      "id": "ui_main_collection_button_subtitle",
+      "location": "constants/appConfig.ts:278",
+      "text": "View your saved rock discoveries",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen collection button subtitle"
+    },
+    {
+      "id": "ui_main_learn_button_title",
+      "location": "constants/appConfig.ts:281",
+      "text": "Learn",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen learn button title"
+    },
+    {
+      "id": "ui_main_learn_button_subtitle",
+      "location": "constants/appConfig.ts:282",
+      "text": "Rock types and identification guide",
+      "category": "ui",
+      "priority": "high",
+      "context": "Home screen learn button subtitle"
+    },
+    {
+      "id": "ui_main_remaining_scans",
+      "location": "constants/appConfig.ts:284",
+      "text": "free identifications remaining",
+      "category": "ui",
+      "priority": "high",
+      "context": "Free scans remaining text on identify button"
+    },
+    {
+      "id": "ui_settings_title",
+      "location": "constants/appConfig.ts:287",
+      "text": "Settings",
+      "category": "settings",
+      "priority": "high",
+      "context": "Settings screen title"
+    },
+    {
+      "id": "ui_settings_theme",
+      "location": "constants/appConfig.ts:288",
+      "text": "Theme",
+      "category": "settings",
+      "priority": "high",
+      "context": "Theme setting label"
+    },
+    {
+      "id": "ui_settings_notifications",
+      "location": "constants/appConfig.ts:289",
+      "text": "Notifications",
+      "category": "settings",
+      "priority": "medium",
+      "context": "Notifications setting label"
+    },
+    {
+      "id": "ui_settings_subscription",
+      "location": "constants/appConfig.ts:290",
+      "text": "Subscription",
+      "category": "settings",
+      "priority": "high",
+      "context": "Subscription setting label"
+    },
+    {
+      "id": "ui_settings_about",
+      "location": "constants/appConfig.ts:291",
+      "text": "About",
+      "category": "settings",
+      "priority": "high",
+      "context": "About section label"
+    },
+    {
+      "id": "ui_settings_version",
+      "location": "constants/appConfig.ts:292",
+      "text": "Version",
+      "category": "settings",
+      "priority": "medium",
+      "context": "App version label"
+    },
+    {
+      "id": "ui_settings_privacy_policy",
+      "location": "constants/appConfig.ts:293",
+      "text": "Privacy Policy",
+      "category": "settings",
+      "priority": "high",
+      "context": "Privacy policy link label"
+    },
+    {
+      "id": "ui_settings_terms_of_service",
+      "location": "constants/appConfig.ts:294",
+      "text": "Terms of Service",
+      "category": "settings",
+      "priority": "high",
+      "context": "Terms of service link label"
+    },
+    {
+      "id": "ui_settings_contact_support",
+      "location": "constants/appConfig.ts:295",
+      "text": "Contact Support",
+      "category": "settings",
+      "priority": "high",
+      "context": "Contact support link label"
+    },
+    {
+      "id": "ui_settings_rate_app",
+      "location": "constants/appConfig.ts:296",
+      "text": "Rate the app",
+      "category": "settings",
+      "priority": "medium",
+      "context": "Rate app link label"
+    },
+    {
+      "id": "ui_settings_restart_onboarding",
+      "location": "constants/appConfig.ts:297",
+      "text": "Restart Onboarding",
+      "category": "settings",
+      "priority": "medium",
+      "context": "Restart onboarding button label"
+    },
+    {
+      "id": "ui_subscription_benefit_1_title",
+      "location": "constants/appConfig.ts:309",
+      "text": "Unlimited Scans",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit title"
+    },
+    {
+      "id": "ui_subscription_benefit_1_description",
+      "location": "constants/appConfig.ts:310",
+      "text": "Identify as many rocks as you want",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit description"
+    },
+    {
+      "id": "ui_subscription_benefit_1_free",
+      "location": "constants/appConfig.ts:311",
+      "text": "3 per day",
+      "category": "ui",
+      "priority": "high",
+      "context": "Free plan limit for unlimited scans benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_1_premium",
+      "location": "constants/appConfig.ts:312",
+      "text": "Unlimited",
+      "category": "ui",
+      "priority": "high",
+      "context": "Premium plan benefit for unlimited scans"
+    },
+    {
+      "id": "ui_subscription_benefit_2_title",
+      "location": "constants/appConfig.ts:316",
+      "text": "Faster Processing",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit title"
+    },
+    {
+      "id": "ui_subscription_benefit_2_description",
+      "location": "constants/appConfig.ts:317",
+      "text": "Priority API access for instant results",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit description"
+    },
+    {
+      "id": "ui_subscription_benefit_2_free",
+      "location": "constants/appConfig.ts:318",
+      "text": "Standard",
+      "category": "ui",
+      "priority": "high",
+      "context": "Free plan value for faster processing benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_2_premium",
+      "location": "constants/appConfig.ts:319",
+      "text": "Priority",
+      "category": "ui",
+      "priority": "high",
+      "context": "Premium plan value for faster processing benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_3_title",
+      "location": "constants/appConfig.ts:323",
+      "text": "Detailed Analysis",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit title"
+    },
+    {
+      "id": "ui_subscription_benefit_3_description",
+      "location": "constants/appConfig.ts:324",
+      "text": "Get comprehensive mineral composition data",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit description"
+    },
+    {
+      "id": "ui_subscription_benefit_3_free",
+      "location": "constants/appConfig.ts:325",
+      "text": "Basic",
+      "category": "ui",
+      "priority": "high",
+      "context": "Free plan value for detailed analysis benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_3_premium",
+      "location": "constants/appConfig.ts:326",
+      "text": "Advanced",
+      "category": "ui",
+      "priority": "high",
+      "context": "Premium plan value for detailed analysis benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_4_title",
+      "location": "constants/appConfig.ts:330",
+      "text": "Cloud Backup",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Subscription benefit title"
+    },
+    {
+      "id": "ui_subscription_benefit_4_description",
+      "location": "constants/appConfig.ts:331",
+      "text": "Never lose your rock collection",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Subscription benefit description"
+    },
+    {
+      "id": "ui_subscription_benefit_4_free",
+      "location": "constants/appConfig.ts:332",
+      "text": "Device only",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Free plan value for cloud backup benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_4_premium",
+      "location": "constants/appConfig.ts:333",
+      "text": "Coming soon",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Premium plan value for cloud backup benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_5_title",
+      "location": "constants/appConfig.ts:337",
+      "text": "Accuracy Boost",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit title"
+    },
+    {
+      "id": "ui_subscription_benefit_5_description",
+      "location": "constants/appConfig.ts:338",
+      "text": "Enhanced AI model for better identification",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit description"
+    },
+    {
+      "id": "ui_subscription_benefit_5_free",
+      "location": "constants/appConfig.ts:339",
+      "text": "Standard",
+      "category": "ui",
+      "priority": "high",
+      "context": "Free plan value for accuracy boost benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_5_premium",
+      "location": "constants/appConfig.ts:340",
+      "text": "Enhanced",
+      "category": "ui",
+      "priority": "high",
+      "context": "Premium plan value for accuracy boost benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_6_title",
+      "location": "constants/appConfig.ts:344",
+      "text": "Priority Support",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit title"
+    },
+    {
+      "id": "ui_subscription_benefit_6_description",
+      "location": "constants/appConfig.ts:345",
+      "text": "Get help when you need it",
+      "category": "ui",
+      "priority": "high",
+      "context": "Subscription benefit description"
+    },
+    {
+      "id": "ui_subscription_benefit_6_free",
+      "location": "constants/appConfig.ts:346",
+      "text": "Community",
+      "category": "ui",
+      "priority": "high",
+      "context": "Free plan value for priority support benefit"
+    },
+    {
+      "id": "ui_subscription_benefit_6_premium",
+      "location": "constants/appConfig.ts:347",
+      "text": "Priority",
+      "category": "ui",
+      "priority": "high",
+      "context": "Premium plan value for priority support benefit"
+    },
+    {
+      "id": "error_generic",
+      "location": "constants/appConfig.ts:352",
+      "text": "Something went wrong. Please try again.",
+      "category": "errors",
+      "priority": "high",
+      "context": "Generic error message"
+    },
+    {
+      "id": "error_network",
+      "location": "constants/appConfig.ts:353",
+      "text": "Network error. Please check your connection.",
+      "category": "errors",
+      "priority": "high",
+      "context": "Network error message"
+    },
+    {
+      "id": "error_identification_failed",
+      "location": "constants/appConfig.ts:354",
+      "text": "Failed to identify. Please try again.",
+      "category": "errors",
+      "priority": "high",
+      "context": "Identification failure message"
+    },
+    {
+      "id": "error_image_quality_poor",
+      "location": "constants/appConfig.ts:355",
+      "text": "Image quality insufficient. Please provide a clear, well-lit image.",
+      "category": "errors",
+      "priority": "high",
+      "context": "Image quality error message"
+    },
+    {
+      "id": "error_camera_permission",
+      "location": "constants/appConfig.ts:356",
+      "text": "Camera permission is required to use this feature.",
+      "category": "errors",
+      "priority": "high",
+      "context": "Camera permission required error"
+    },
+    {
+      "id": "error_gallery_permission",
+      "location": "constants/appConfig.ts:357",
+      "text": "Photo library permission is required to use this feature.",
+      "category": "errors",
+      "priority": "high",
+      "context": "Photo library permission required error"
+    },
+    {
+      "id": "demo_sample_1_name",
+      "location": "constants/appConfig.ts:394",
+      "text": "Amethyst",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - rock name"
+    },
+    {
+      "id": "demo_sample_1_formation",
+      "location": "constants/appConfig.ts:397",
+      "text": "Forms in volcanic rocks when gas cavities become lined with crystals",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - formation description"
+    },
+    {
+      "id": "demo_sample_1_fun_fact",
+      "location": "constants/appConfig.ts:400",
+      "text": "Ancient Greeks believed amethyst prevented intoxication and wore it as protection",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - fun fact"
+    },
+    {
+      "id": "demo_sample_2_name",
+      "location": "constants/appConfig.ts:403",
+      "text": "Rose Quartz",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - rock name"
+    },
+    {
+      "id": "demo_sample_2_formation",
+      "location": "constants/appConfig.ts:406",
+      "text": "Forms in pegmatite deposits through slow cooling of magma",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - formation description"
+    },
+    {
+      "id": "demo_sample_2_fun_fact",
+      "location": "constants/appConfig.ts:409",
+      "text": "Known as the \"love stone\" and has been used in love rituals for over 6,000 years",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - fun fact"
+    },
+    {
+      "id": "demo_sample_3_name",
+      "location": "constants/appConfig.ts:412",
+      "text": "Pyrite",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - rock name"
+    },
+    {
+      "id": "demo_sample_3_formation",
+      "location": "constants/appConfig.ts:415",
+      "text": "Forms in sedimentary deposits under low oxygen conditions",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - formation description"
+    },
+    {
+      "id": "demo_sample_3_fun_fact",
+      "location": "constants/appConfig.ts:418",
+      "text": "Known as \"Fool's Gold\" because of its metallic luster and gold color",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo data - fun fact"
+    },
+    {
+      "id": "permission_camera_title",
+      "location": "components/PermissionRequest.tsx:97",
+      "text": "Camera Access Needed",
+      "category": "permissions",
+      "priority": "high",
+      "context": "Camera permission request title"
+    },
+    {
+      "id": "permission_camera_description",
+      "location": "components/PermissionRequest.tsx:101",
+      "text": "[APP_NAME] needs camera access to analyze and identify [rocks/minerals]. Your photos are processed securely and never shared without your permission.",
+      "category": "permissions",
+      "priority": "high",
+      "context": "Camera permission request description - note: uses dynamic substitution",
+      "notes": "This string uses dynamic substitution with APP_NAME and objectTypePlural"
+    },
+    {
+      "id": "permission_button_allow",
+      "location": "components/PermissionRequest.tsx:107",
+      "text": "Allow Camera Access",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Camera permission allow button"
+    },
+    {
+      "id": "permission_skip_text",
+      "location": "components/PermissionRequest.tsx:113",
+      "text": "You can also grant permission later in settings",
+      "category": "permissions",
+      "priority": "medium",
+      "context": "Permission skip message"
+    },
+    {
+      "id": "image_review_preview_title",
+      "location": "app/image-review.tsx:140",
+      "text": "Preview",
+      "category": "ui",
+      "priority": "high",
+      "context": "Image review screen title"
+    },
+    {
+      "id": "image_review_analyzing_title",
+      "location": "app/image-review.tsx:161",
+      "text": "Analyzing [rock/mineral]...",
+      "category": "ui",
+      "priority": "high",
+      "context": "Analyzing status text - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectType for substitution"
+    },
+    {
+      "id": "image_review_analyzing_subtitle",
+      "location": "app/image-review.tsx:163",
+      "text": "Examining mineral composition and geological structure",
+      "category": "ui",
+      "priority": "high",
+      "context": "Analyzing subtitle text"
+    },
+    {
+      "id": "image_review_ready_title",
+      "location": "app/image-review.tsx:168",
+      "text": "Ready to identify?",
+      "category": "ui",
+      "priority": "high",
+      "context": "Image review ready dialog title"
+    },
+    {
+      "id": "image_review_ready_description",
+      "location": "app/image-review.tsx:170",
+      "text": "Get detailed analysis of this [rock/mineral] including its type, mineral composition, formation process, and geological properties.",
+      "category": "ui",
+      "priority": "high",
+      "context": "Image review ready description - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectType for substitution"
+    },
+    {
+      "id": "image_review_identify_button",
+      "location": "app/image-review.tsx:189",
+      "text": "Identify [Rock/Mineral]",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Identify button on image review - uses dynamic substitution",
+      "notes": "Capitalizes objectType dynamically"
+    },
+    {
+      "id": "image_review_retake_button",
+      "location": "app/image-review.tsx:201",
+      "text": "Retake Photo",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Retake photo button on image review"
+    },
+    {
+      "id": "item_details_analysis_failed_title",
+      "location": "app/item-details.tsx:188",
+      "text": "Analysis Incomplete",
+      "category": "ui",
+      "priority": "high",
+      "context": "Analysis failed screen title"
+    },
+    {
+      "id": "item_details_try_again_button",
+      "location": "app/item-details.tsx:193",
+      "text": "Try Again",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Try again button when analysis fails"
+    },
+    {
+      "id": "item_details_save_to_collection",
+      "location": "app/item-details.tsx:331",
+      "text": "Save to Collection",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Save to collection button on item details"
+    },
+    {
+      "id": "item_details_saved_indicator",
+      "location": "app/item-details.tsx:342",
+      "text": "Saved to your collection",
+      "category": "ui",
+      "priority": "high",
+      "context": "Indicator text when item is saved"
+    },
+    {
+      "id": "item_details_composition_title",
+      "location": "app/item-details.tsx:281",
+      "text": "Composition",
+      "category": "ui",
+      "priority": "high",
+      "context": "Composition section title in item details"
+    },
+    {
+      "id": "item_details_formation_title",
+      "location": "app/item-details.tsx:294",
+      "text": "Formation",
+      "category": "ui",
+      "priority": "high",
+      "context": "Formation section title in item details"
+    },
+    {
+      "id": "item_details_locations_title",
+      "location": "app/item-details.tsx:301",
+      "text": "Common Locations",
+      "category": "ui",
+      "priority": "high",
+      "context": "Common locations section title"
+    },
+    {
+      "id": "item_details_uses_title",
+      "location": "app/item-details.tsx:310",
+      "text": "Common Uses",
+      "category": "ui",
+      "priority": "high",
+      "context": "Common uses section title"
+    },
+    {
+      "id": "item_details_fun_fact_title",
+      "location": "app/item-details.tsx:324",
+      "text": "FUN FACT",
+      "category": "ui",
+      "priority": "high",
+      "context": "Fun fact section label"
+    },
+    {
+      "id": "collection_loading_text",
+      "location": "app/collection.tsx:134",
+      "text": "Loading collection...",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Loading indicator text in collection screen"
+    },
+    {
+      "id": "collection_confidence_match",
+      "location": "app/collection.tsx:105",
+      "text": "[percentage]% match",
+      "category": "ui",
+      "priority": "high",
+      "context": "Confidence percentage display in collection items",
+      "notes": "[percentage] is replaced dynamically with confidence value"
+    },
+    {
+      "id": "settings_rate_app_subtitle",
+      "location": "app/settings.tsx:486",
+      "text": "Let us know what you think",
+      "category": "settings",
+      "priority": "medium",
+      "context": "Rate app button subtitle"
+    },
+    {
+      "id": "settings_contact_support_subtitle",
+      "location": "app/settings.tsx:494",
+      "text": "Get support or give feedback",
+      "category": "settings",
+      "priority": "medium",
+      "context": "Contact support button subtitle"
+    },
+    {
+      "id": "settings_camera_settings_title",
+      "location": "app/settings.tsx:571",
+      "text": "Camera Settings",
+      "category": "settings",
+      "priority": "high",
+      "context": "Camera settings button title"
+    },
+    {
+      "id": "settings_camera_settings_subtitle",
+      "location": "app/settings.tsx:572",
+      "text": "Open device camera settings",
+      "category": "settings",
+      "priority": "high",
+      "context": "Camera settings button subtitle"
+    },
+    {
+      "id": "settings_restart_onboarding_subtitle",
+      "location": "app/settings.tsx:580",
+      "text": "View the tutorial again",
+      "category": "settings",
+      "priority": "medium",
+      "context": "Restart onboarding button subtitle"
+    },
+    {
+      "id": "settings_demo_mode_title",
+      "location": "app/settings.tsx:404",
+      "text": "Screenshot Mode",
+      "category": "settings",
+      "priority": "low",
+      "context": "Demo mode section title (development only)"
+    },
+    {
+      "id": "settings_demo_mode_label",
+      "location": "app/settings.tsx:409",
+      "text": "Demo Mode",
+      "category": "settings",
+      "priority": "low",
+      "context": "Demo mode toggle label"
+    },
+    {
+      "id": "settings_demo_mode_description",
+      "location": "app/settings.tsx:410",
+      "text": "Populate app with sample data for screenshots",
+      "category": "settings",
+      "priority": "low",
+      "context": "Demo mode description"
+    },
+    {
+      "id": "settings_demo_mode_active_alert",
+      "location": "app/settings.tsx:429",
+      "text": "📸 Demo mode active - Ready for screenshots!",
+      "category": "ui",
+      "priority": "low",
+      "context": "Demo mode active indicator text"
+    },
+    {
+      "id": "settings_upgrade_title",
+      "location": "app/settings.tsx:467",
+      "text": "Unlock Premium",
+      "category": "ui",
+      "priority": "high",
+      "context": "Upgrade card title"
+    },
+    {
+      "id": "settings_upgrade_subtitle",
+      "location": "app/settings.tsx:468",
+      "text": "Unlimited [rock/mineral] identifications",
+      "category": "ui",
+      "priority": "high",
+      "context": "Upgrade card subtitle - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectType for substitution"
+    },
+    {
+      "id": "settings_upgrade_features",
+      "location": "app/settings.tsx:475",
+      "text": "• No daily limits • Priority AI processing • Premium support",
+      "category": "ui",
+      "priority": "high",
+      "context": "Upgrade features list"
+    },
+    {
+      "id": "settings_theme_light_option",
+      "location": "app/settings.tsx:546",
+      "text": "Light",
+      "category": "settings",
+      "priority": "high",
+      "context": "Light theme option"
+    },
+    {
+      "id": "settings_theme_dark_option",
+      "location": "app/settings.tsx:552",
+      "text": "Dark",
+      "category": "settings",
+      "priority": "high",
+      "context": "Dark theme option"
+    },
+    {
+      "id": "settings_theme_auto_option",
+      "location": "app/settings.tsx:558",
+      "text": "Auto",
+      "category": "settings",
+      "priority": "high",
+      "context": "Automatic/system theme option"
+    },
+    {
+      "id": "alert_email_not_available_title",
+      "location": "app/settings.tsx:206",
+      "text": "Email Not Available",
+      "category": "alerts",
+      "priority": "medium",
+      "context": "Email unavailable alert title"
+    },
+    {
+      "id": "alert_email_not_available_message",
+      "location": "app/settings.tsx:207",
+      "text": "Please send your support request to: [email]",
+      "category": "alerts",
+      "priority": "medium",
+      "context": "Email unavailable alert message",
+      "notes": "[email] is replaced dynamically with support email"
+    },
+    {
+      "id": "alert_error_app_store",
+      "location": "app/settings.tsx:228",
+      "text": "Could not open the app store.",
+      "category": "alerts",
+      "priority": "medium",
+      "context": "App store open error message"
+    },
+    {
+      "id": "alert_restoring_purchases_title",
+      "location": "app/settings.tsx:253",
+      "text": "Restoring Purchases",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Purchase restoration alert title"
+    },
+    {
+      "id": "alert_restoring_purchases_message",
+      "location": "app/settings.tsx:254",
+      "text": "Checking for previous purchases...",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Purchase restoration alert message"
+    },
+    {
+      "id": "alert_restore_success_title",
+      "location": "app/settings.tsx:263",
+      "text": "Success!",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Purchase restoration success title"
+    },
+    {
+      "id": "alert_restore_success_message",
+      "location": "app/settings.tsx:264",
+      "text": "Your premium subscription has been restored.",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Purchase restoration success message"
+    },
+    {
+      "id": "alert_restore_success_button",
+      "location": "app/settings.tsx:265",
+      "text": "Great!",
+      "category": "buttons",
+      "priority": "medium",
+      "context": "Success alert button"
+    },
+    {
+      "id": "alert_no_purchases_title",
+      "location": "app/settings.tsx:269",
+      "text": "No Purchases Found",
+      "category": "alerts",
+      "priority": "high",
+      "context": "No previous purchases alert title"
+    },
+    {
+      "id": "alert_no_purchases_message",
+      "location": "app/settings.tsx:270",
+      "text": "No previous purchases found to restore.",
+      "category": "alerts",
+      "priority": "high",
+      "context": "No previous purchases alert message"
+    },
+    {
+      "id": "alert_restore_failed_title",
+      "location": "app/settings.tsx:276",
+      "text": "Restore Failed",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Purchase restoration failed title"
+    },
+    {
+      "id": "alert_restore_failed_message",
+      "location": "app/settings.tsx:277",
+      "text": "Unable to restore purchases. Please try again later.",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Purchase restoration failed message"
+    },
+    {
+      "id": "alert_demo_mode_enable_title",
+      "location": "app/settings.tsx:289",
+      "text": "📸 Enable Demo Mode",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode enable confirmation title"
+    },
+    {
+      "id": "alert_demo_mode_enable_message",
+      "location": "app/settings.tsx:290",
+      "text": "This will temporarily replace your collection with demo data for App Store screenshots. Your original data will be backed up and restored when you disable demo mode.",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode enable confirmation message"
+    },
+    {
+      "id": "alert_demo_mode_enable_cancel",
+      "location": "app/settings.tsx:293",
+      "text": "Cancel",
+      "category": "buttons",
+      "priority": "low",
+      "context": "Demo mode enable cancel button"
+    },
+    {
+      "id": "alert_demo_mode_enable_button",
+      "location": "app/settings.tsx:298",
+      "text": "Enable",
+      "category": "buttons",
+      "priority": "low",
+      "context": "Demo mode enable confirm button"
+    },
+    {
+      "id": "alert_demo_mode_enabled_title",
+      "location": "app/settings.tsx:305",
+      "text": "✅ Demo Mode Enabled",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode enabled confirmation title"
+    },
+    {
+      "id": "alert_demo_mode_enabled_message",
+      "location": "app/settings.tsx:306",
+      "text": "Your app is now ready for screenshots! The collection has been populated with demo [rocks/minerals].",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode enabled confirmation message - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectTypePlural for substitution"
+    },
+    {
+      "id": "alert_demo_mode_disabled_title",
+      "location": "app/settings.tsx:319",
+      "text": "✅ Demo Mode Disabled",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode disabled confirmation title"
+    },
+    {
+      "id": "alert_demo_mode_disabled_message",
+      "location": "app/settings.tsx:320",
+      "text": "Your original [rock/mineral] collection has been restored.",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode disabled confirmation message - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectType for substitution"
+    },
+    {
+      "id": "alert_demo_mode_error",
+      "location": "app/settings.tsx:327",
+      "text": "Failed to toggle demo mode. Please try again.",
+      "category": "alerts",
+      "priority": "low",
+      "context": "Demo mode toggle error message"
+    },
+    {
+      "id": "alert_delete_item_title",
+      "location": "app/item-details.tsx:141",
+      "text": "Delete [rock/mineral]",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Delete confirmation alert title - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectType for substitution"
+    },
+    {
+      "id": "alert_delete_item_message",
+      "location": "app/item-details.tsx:142",
+      "text": "Are you sure you want to remove this [rock/mineral] from your collection?",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Delete confirmation alert message - uses dynamic substitution",
+      "notes": "Uses APP_CONFIG.ai.objectType for substitution"
+    },
+    {
+      "id": "alert_delete_cancel",
+      "location": "app/item-details.tsx:145",
+      "text": "Cancel",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Delete confirmation cancel button"
+    },
+    {
+      "id": "alert_delete_confirm",
+      "location": "app/item-details.tsx:149",
+      "text": "Delete",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Delete confirmation button"
+    },
+    {
+      "id": "alert_analysis_failed_title",
+      "location": "app/image-review.tsx:111",
+      "text": "Analysis Failed",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Analysis failed alert title"
+    },
+    {
+      "id": "premium_feature_unlocked_title",
+      "location": "components/PremiumFeatureButton.tsx:45",
+      "text": "Feature Unlocked!",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Feature unlocked alert title"
+    },
+    {
+      "id": "premium_feature_unlocked_message",
+      "location": "components/PremiumFeatureButton.tsx:46",
+      "text": "You can now use [feature]",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Feature unlocked alert message",
+      "notes": "[feature] is replaced with the feature title"
+    },
+    {
+      "id": "premium_feature_unlocked_button",
+      "location": "components/PremiumFeatureButton.tsx:48",
+      "text": "Great!",
+      "category": "buttons",
+      "priority": "high",
+      "context": "Feature unlocked alert button"
+    },
+    {
+      "id": "premium_feature_badge",
+      "location": "components/PremiumFeatureButton.tsx:68",
+      "text": "PRO",
+      "category": "ui",
+      "priority": "medium",
+      "context": "Premium feature badge text"
+    },
+    {
+      "id": "upgrade_prompt_not_available_title",
+      "location": "components/UpgradePrompt.tsx:27",
+      "text": "Not Available",
+      "category": "alerts",
+      "priority": "medium",
+      "context": "Upgrade not available alert title (web platform)"
+    },
+    {
+      "id": "upgrade_prompt_not_available_message",
+      "location": "components/UpgradePrompt.tsx:28",
+      "text": "Subscriptions are not available on web. Please use the mobile app.",
+      "category": "alerts",
+      "priority": "medium",
+      "context": "Upgrade not available alert message (web platform)"
+    },
+    {
+      "id": "upgrade_prompt_error_title",
+      "location": "components/UpgradePrompt.tsx:52",
+      "text": "Error",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Paywall error alert title"
+    },
+    {
+      "id": "upgrade_prompt_error_message",
+      "location": "components/UpgradePrompt.tsx:53",
+      "text": "Unable to show upgrade options. Please try again later.",
+      "category": "alerts",
+      "priority": "high",
+      "context": "Paywall error message"
+    }
+  ],
+  "summary": {
+    "totalByCategory": {
+      "onboarding": 12,
+      "ui": 82,
+      "settings": 21,
+      "errors": 6,
+      "buttons": 18,
+      "placeholders": 1,
+      "permissions": 3,
+      "alerts": 15
+    },
+    "totalByPriority": {
+      "high": 110,
+      "medium": 33,
+      "low": 15
+    },
+    "notes": "This list includes all hardcoded strings found in the Rock Identifier app. Several strings use dynamic substitution (marked with [brackets]) for the app type and object names. The demo data strings (demo samples) have lower priority as they are development/screenshot features. All strings in appConfig.ts are structured for easy translation and maintenance."
+  }
+}

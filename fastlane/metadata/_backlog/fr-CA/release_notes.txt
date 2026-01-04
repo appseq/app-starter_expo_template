@@ -1,0 +1,1 @@
+Cette version contient des corrections de bugs et des améliorations de stabilité.

@@ -1,0 +1,55 @@
+APP STORE SCREENSHOTS
+The screenshots are from an ios app called 'classic car identifier'. Give me for each screenshot a suitable title that I can use in app store connect to display the app on the app store to a target audience for maximum marketing conversation. Make sure the title is not too long and fits within the example length as shown on the screenshots. Make sure each title is aso max efficient.
+------------------
+I need to prepare a deployment to the app store.
+Lets prepare all the metadata needed to build the app store page.
+Find the metadata folder in ios/fastlane, go through all the metadata textfiles and adapt for maximum marketing conversation for app's target audience. 
+Complete or improve the metadata for description, keywords, promotional_text and set the release notes. Make sure that keywords total length do not exceed 100 chars. Do this for all language folders under folder metadata. Ignore all the subfolders in _backlog folder. Don't use icons in the description since the app store connect dont support icons.
+----------------------------------------
+I want this paywall to be re-written for the current app. be a copywriter and make sure the paywall's content does have the marketing
+conversation for the targeted public.
+----------------------------------------
+APP ICON
+Create me an app icon for an ios app which is called 'rock identifier', the app uses the camera to snap photos of rocks or minerals which then can be analysed by AI. Make the icon app store suitable, make simpel, flat style, clean lines, no text, no titles. use attached image as inspiration.
+----------------------------------------
+Find the app's screenshot in the folder fastlane/screenshots for supported languages EN, NL, FR and DE.
+The screenshots are from an ios app called 'Salarybook':
+website: https://www.salarybookapp.com/
+app store page: https://apps.apple.com/us/app/salarybook-time-tracking/id395508282
+Give me for each screenshot a suitable title that I can use in app store connect to display the app on the app store
+to a target audience for maximum marketing conversation.
+Make sure the title is not too long and fits within the example length as shown on the screenshots.
+Make sure each title is ASO (App Store Optimization) efficient - meaning they should include relevant keywords.
+----------------------------------------
+I need to prepare the new version for App Store release.
+I need to have the content for the release notes and in general wording what has changed in the new version for the user to read.
+Generate me the release notes for this release.
+Dont use icons, normal ascii tokens
+Find the release_notes.txt in the metadata folder for each supported language. Adapt the release_notes.txt according the language. Conclude with thaking the
+user for using the Salarybook app.
+----------------------------------------
+I need to prepare a deployment to the app store.
+Lets prepare all the metadata needed to build the app store page.
+Find the metadata folder in fastlane, go through the following textfiles and adapt for the target user.
+- description and promotional_text: adapt for SEO for target user. dont go overboard, keep it professional.
+- release_notes: adapt with general wording for the update.
+Focus on the requirement dont change anything else.
+----------------------------------------
+I need to prepare a deployment to the app store.
+Lets prepare all the metadata needed to build the app store page.
+Find the metadata folder in fastlane, go through the following textfiles and adapt for the target user.
+- release_notes: adapt with general wording with the new update, make the note a tong-in-cheek style.
+Focus on the requirement dont change anything else.
+----------------------------------------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets focus on the 'Screenshots Modus'. 
+The Screenshot modus still useds older example images for 'My Collection'.
+Update images for My collection screenshot mode with suitable images which fit the current context of the app.
+For images, icons or other assets, use Jina, Exa or inbuild webscraping to search online sources (Unsplash, Pexels, Pixabay, etc.).
+Download every asset you use and store it locally with clear filenames.
+Solution should adhere to:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+----------------------------------------

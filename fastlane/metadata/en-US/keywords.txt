@@ -1,0 +1,1 @@
+jewelry,jewel,ring,necklace,bracelet,earring,gold,silver,gemstone,diamond,value,appraisal,identifier

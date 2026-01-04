@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9370DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="2" fill="#9370DB" opacity="0.3"/>
+      <circle cx="75" cy="75" r="2" fill="#8A2BE2" opacity="0.3"/>
+      <circle cx="25" cy="75" r="2" fill="#9370DB" opacity="0.3"/>
+      <circle cx="75" cy="25" r="2" fill="#8A2BE2" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#gradient)"/>
+  
+  <!-- Pattern overlay -->
+  <rect width="800" height="800" fill="url(#pattern)"/>
+  
+  <!-- Crystal shape -->
+  <g transform="translate(400, 400)">
+    <!-- Main crystal -->
+    <path d="M 0,-200 L 100,-100 L 100,100 L 0,200 L -100,100 L -100,-100 Z" 
+          fill="#9370DB" 
+          opacity="0.8" 
+          stroke="#8A2BE2" 
+          stroke-width="3"/>
+    
+    <!-- Inner facets -->
+    <path d="M 0,-200 L 50,-50 L 0,0 Z" fill="#8A2BE2" opacity="0.6"/>
+    <path d="M 0,-200 L -50,-50 L 0,0 Z" fill="#9370DB" opacity="0.5"/>
+    <path d="M 0,200 L 50,50 L 0,0 Z" fill="#8A2BE2" opacity="0.5"/>
+    <path d="M 0,200 L -50,50 L 0,0 Z" fill="#9370DB" opacity="0.6"/>
+  </g>
+  
+  <!-- Rock name -->
+  <text x="400" y="750" 
+        font-family="Arial, sans-serif" 
+        font-size="32" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="white" 
+        opacity="0.9">
+    FLUORITE
+  </text>
+</svg>

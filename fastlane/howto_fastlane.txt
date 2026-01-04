@@ -1,0 +1,59 @@
+
+----------------------------------------------------------------------------------------------------------------
+* Automatic upload of metadata to app store connect
+----------------------------------------------------------------------------------------------------------------
+
+en-US: United States (English)
+zh-Hans: China (Simplified Chinese)
+nl-NL: Netherlands (Dutch)
+en-AU: Australia (English)
+en-GB: United Kingdom (English)
+fr-FR: France (French)
+fr-CA: Canada (French)
+de-DE: Germany (German)
+ko: South Korea (Korean)
+es-MX: Mexico (Spanish)
+es-ES: Spain (Spanish)
+
+
+This updated Fastfile includes two new lanes:
+
+upload_metadata: This lane uploads the metadata to App Store Connect without submitting for review.
+submit_for_review: This lane uploads the metadata and then submits the app for review.
+
+
+----------------------------
+* Set up your App Store Connect API Key by adding the following environment variables:
+* Create a file named .env in your fastlane directory:
+* Make sure to add .env to your .gitignore file to prevent committing sensitive information.
+----------------------------
+ASC_KEY_ID
+ASC_ISSUER_ID
+ASC_KEY_FILEPATH
+
+You can set these in your CI/CD environment or use a .env file with fastlane.
+
+----------------------------
+* To upload the metadata
+----------------------------
+Create a metadata folder in your fastlane directory if it doesn't exist already.
+
+Inside the metadata folder, create the following structure:
+metadata/
+  ├── en-US/
+  │   ├── description.txt
+  │   ├── keywords.txt
+  │   ├── release_notes.txt
+  │   └── ...
+  └── ...
+
+
+# ----------------------------
+# * To use these new lanes, open a terminal window at the fastlane folder path:
+# ----------------------------
+1/ cmd: fastlane upload_metadata
+# -> This lane uploads the metadata to App Store Connect without submitting for review.
+
+2/ cmd: fastlane submit_for_review
+# -> This lane uploads the metadata and then submits the app for review.
+

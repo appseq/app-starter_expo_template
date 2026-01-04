@@ -1,0 +1,1 @@
+Esta versión contiene correcciones de errores y mejoras de estabilidad.

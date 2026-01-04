@@ -1,0 +1,456 @@
+{
+  "app": {
+    "name": "Jewelry Identifier"
+  },
+  "onboarding": {
+    "slides": {
+      "slide1": {
+        "title": "Onboarding",
+        "subtitle": "Welkom",
+        "description": "Pas dit welkomstscherm aan voor uw app."
+      }
+    },
+    "finalButtonText": "Aan de Slag",
+    "continueButtonText": "Doorgaan",
+    "skipButtonText": "Overslaan"
+  },
+  "ui": {
+    "tabs": {
+      "discover": "Ontdekken",
+      "identify": "Identificeren",
+      "collection": "Collectie",
+      "learn": "Leren"
+    },
+    "home": {
+      "title": "Jewelry ID",
+      "snapAndIdentify": "Fotografeer & Identificeer",
+      "learnAboutJewelry": "Leer Over Sieraden",
+      "allArticles": "Alle artikelen",
+      "loadingArticles": "Artikelen laden...",
+      "noArticles": "Geen artikelen beschikbaar"
+    },
+    "camera": {
+      "title": "Sieraad Vastleggen",
+      "permissionTitle": "Cameratoestemming",
+      "instruction": "Richt camera op een sieraad",
+      "instructionSubtext": "AI analyseert edelstenen, metalen en waarde",
+      "captureButton": "Identificeren",
+      "galleryButton": "Kies uit Galerij",
+      "retakeButton": "Opnieuw",
+      "analyzeButton": "Sieraad Analyseren",
+      "tapToCapture": "Tik om vast te leggen en te identificeren",
+      "aiReady": "AI Gereed"
+    },
+    "imageReview": {
+      "title": "Foto Bekijken",
+      "readyTitle": "Klaar om te identificeren",
+      "readyDescription": "Krijg een gedetailleerde analyse van dit sieraad inclusief type, edelstenen, materialen, tijdperk en geschatte waarde.",
+      "analyzeButton": "Sieraad Identificeren",
+      "retakeButton": "Foto Opnieuw Nemen",
+      "analyzingTitle": "Sieraad identificeren...",
+      "analyzingSubtext": "Analyse van edelstenen, materialen en vakmanschap",
+      "pleaseWait": "EVEN GEDULD",
+      "analysisSteps": {
+        "analyzing": "Sieraad analyseren met AI",
+        "identifying": "Materialen & edelstenen identificeren",
+        "estimating": "Waarde & tijdperk schatten"
+      },
+      "errorTitle": "Analyse Mislukt",
+      "errorMessage": "Kan het sieraad niet identificeren. Probeer het opnieuw."
+    },
+    "results": {
+      "title": "Identificatie Resultaten",
+      "confidenceLabel": "Zekerheid",
+      "compositionLabel": "Samenstelling",
+      "formationLabel": "Vakmanschap",
+      "locationsLabel": "Herkomst",
+      "usesLabel": "Toepassingen",
+      "funFactLabel": "Leuk Feitje",
+      "saveButton": "Opslaan in Collectie",
+      "shareButton": "Delen"
+    },
+    "collection": {
+      "title": "Mijn Collectie",
+      "itemsCollected": "{{count}} sieraad verzameld",
+      "itemsCollected_plural": "{{count}} sieraden verzameld",
+      "emptyState": "Nog geen sieraden",
+      "emptyStateAction": "Eerste Sieraad Scannen",
+      "emptyStateDescription": "Begin met het scannen van sieraden om uw persoonlijke collectie op te bouwen",
+      "itemsLabel": "sieraden",
+      "loadingCollection": "Collectie laden...",
+      "matchPercent": "{{percent}}% overeenkomst"
+    },
+    "itemDetails": {
+      "deleteTitle": "Sieraad Verwijderen",
+      "deleteMessage": "Weet u zeker dat u dit sieraad uit uw collectie wilt verwijderen?",
+      "cancel": "Annuleren",
+      "delete": "Verwijderen",
+      "dataNotAvailable": "Sieraadgegevens niet beschikbaar",
+      "goBack": "Terug",
+      "unableToIdentify": "Kan Niet Identificeren",
+      "unableToIdentifyMessage": "We konden dit sieraad niet identificeren. Probeer het opnieuw met een duidelijkere foto.",
+      "tryAgain": "Opnieuw Proberen",
+      "similarItems": "Vergelijkbare Sieraden",
+      "seeAll": "Alles bekijken",
+      "findingSimilar": "Vergelijkbare items zoeken...",
+      "noSimilarItems": "Geen vergelijkbare items gevonden",
+      "estimatedValue": "Geschatte Waarde",
+      "researchingValue": "Marktwaarde onderzoeken...",
+      "valueVaries": "Waarde varieert sterk",
+      "requiresAppraisal": "Vereist professionele taxatie",
+      "contactAppraiser": "Neem contact op met taxateur voor schatting",
+      "basedOnMarket": "Gebaseerd op {{count}} marktreferentie",
+      "basedOnMarket_plural": "Gebaseerd op {{count}} marktreferenties",
+      "basedOnAI": "Gebaseerd op AI-analyse",
+      "professionalRecommended": "Professionele taxatie aanbevolen",
+      "rangeTooBroad": "Prijsrange te breed voor betrouwbare schatting",
+      "highValueVerification": "Waardevolle items vereisen expertverificatie",
+      "description": "Beschrijving",
+      "history": "Geschiedenis",
+      "noHistoryAvailable": "Geen geschiedenis beschikbaar",
+      "materials": "Materialen",
+      "unknownMaterial": "Onbekend materiaal",
+      "origin": "Herkomst",
+      "unknownOrigin": "Onbekende herkomst",
+      "eraPeriod": "Tijdperk / Periode",
+      "contemporary": "Hedendaags",
+      "specifications": "Specificaties",
+      "rarity": "Zeldzaamheid",
+      "gemstone": "Edelsteen",
+      "caratWeight": "Karaat Gewicht",
+      "totalWeight": "Totaal Gewicht",
+      "authenticityNote": "Voor nauwkeurige taxatie en authenticatie raadpleeg een gecertificeerde gemmoloog.",
+      "saveToCollection": "Opslaan in Collectie",
+      "savedToCollection": "Opgeslagen in Collectie",
+      "shareMessage": "Bekijk deze {{name}}! Geïdentificeerd met {{appName}}. {{funFact}}",
+      "jewelry": "Sieraad",
+      "rarityLabels": {
+        "common": "Gewoon",
+        "uncommon": "Ongewoon",
+        "rare": "Zeldzaam",
+        "veryRare": "Zeer Zeldzaam",
+        "legendary": "Legendarisch"
+      },
+      "confidence": {
+        "high": "Hoog",
+        "medium": "Gemiddeld",
+        "low": "Laag"
+      }
+    },
+    "articles": {
+      "title": "Artikelen",
+      "loadingArticles": "Artikelen laden...",
+      "noArticlesFound": "Geen artikelen gevonden",
+      "showAllArticles": "Alle artikelen tonen",
+      "tryAgain": "Opnieuw Proberen",
+      "categories": {
+        "all": "Alles",
+        "gemstones": "Edelstenen",
+        "jewelryHistory": "Sieradengeschiedenis",
+        "materials": "Materialen",
+        "techniques": "Technieken",
+        "styles": "Stijlen",
+        "care": "Verzorging"
+      }
+    },
+    "snapTips": {
+      "title": "Fototips",
+      "subtitle": "Krijg betere identificatieresultaten",
+      "gotIt": "Begrepen!",
+      "tips": {
+        "goodLighting": {
+          "title": "Goede Belichting",
+          "description": "Natuurlijk daglicht werkt het beste. Vermijd harde schaduwen en direct zonlicht."
+        },
+        "focusClearly": {
+          "title": "Scherp Stellen",
+          "description": "Tik op het item om scherp te stellen. Wacht tot het beeld scherp is voordat u vastlegt."
+        },
+        "steadyHands": {
+          "title": "Stilhouden",
+          "description": "Houd uw telefoon stil of leg hem op een oppervlak voor scherpere beelden."
+        },
+        "fillFrame": {
+          "title": "Kader Vullen",
+          "description": "Positioneer het sieraad zodat het het grootste deel van het scankader vult."
+        },
+        "showDetails": {
+          "title": "Details Tonen",
+          "description": "Neem makers merken, handtekeningen of onderscheidende kenmerken mee."
+        }
+      }
+    },
+    "learn": {
+      "title": "Leer Over Sieraden",
+      "introTitle": "Sieraden Identificatiegids",
+      "introText": "Leer over verschillende soorten sieraden, edelstenen en hoe ze te identificeren.",
+      "sectionTitle": "Sieradentypen",
+      "categories": {
+        "rings": {
+          "name": "Ringen",
+          "description": "Van verlovingsringen tot statement stukken, leer over ringstijlen, zettingen en edelstenen."
+        },
+        "necklaces": {
+          "name": "Kettingen",
+          "description": "Ontdek de wereld van kettingen, van delicate kettinkjes tot uitgebreide statement stukken."
+        },
+        "earrings": {
+          "name": "Oorbellen",
+          "description": "Verken oorbelstijlen van studs tot chandeliers, en de edelstenen die ze sieren."
+        }
+      },
+      "tipsTitle": "Identificatietips",
+      "tips": {
+        "tip1": "Kijk naar het metaal: Is het goud, zilver of platina?",
+        "tip2": "Controleer de keurmerken: Ze onthullen metaalzuiverheid en herkomst",
+        "tip3": "Bekijk de edelstenen: Let op kleur, slijpsel en helderheid",
+        "tip4": "Observeer het vakmanschap: Kwaliteit duidt op leeftijd en waarde",
+        "tip5": "Overweeg de stijl: Verschillende tijdperken hebben kenmerkende ontwerpen"
+      },
+      "footerText": "Gebruik het camera-tabblad om sieraden te identificeren!"
+    },
+    "settings": {
+      "title": "Instellingen",
+      "sections": {
+        "support": "Ondersteuning",
+        "preferences": "Voorkeuren",
+        "about": "Over"
+      },
+      "rateApp": "App Beoordelen",
+      "rateAppSubtitle": "Deel uw ervaring",
+      "contactSupport": "Contact Ondersteuning",
+      "contactSupportSubtitle": "Krijg hulp bij problemen",
+      "language": "Taal",
+      "languageSubtitle": "Kies uw voorkeurstaal",
+      "languageAuto": "Apparaattaal",
+      "languageAutoSubtitle": "Automatisch aanpassen aan apparaattaal",
+      "languageEnglish": "English",
+      "languageEnglishSubtitle": "Engels",
+      "languageFrench": "Français",
+      "languageFrenchSubtitle": "Frans",
+      "languageDutch": "Nederlands",
+      "languageDutchSubtitle": "Nederlands",
+      "languageGerman": "Deutsch",
+      "languageGermanSubtitle": "Duits",
+      "appearance": "Uiterlijk",
+      "appearanceSubtitle": "Systeemstandaard",
+      "theme": "Thema",
+      "themeSubtitle": "Kies uw voorkeurskleurenschema",
+      "light": "Licht",
+      "lightSubtitle": "Helder en duidelijk interface",
+      "dark": "Donker",
+      "darkSubtitle": "Rustiger voor de ogen",
+      "auto": "Automatisch",
+      "autoSubtitle": "Automatisch aanpassen aan apparaatthema",
+      "cameraSettings": "Camera-instellingen",
+      "cameraSettingsSubtitle": "Machtigingen beheren",
+      "restartOnboarding": "Introductie Opnieuw",
+      "restartOnboardingSubtitle": "Introductie-schermen opnieuw bekijken",
+      "privacyPolicy": "Privacybeleid",
+      "termsOfService": "Servicevoorwaarden",
+      "restorePurchases": "Aankopen Herstellen",
+      "moreApps": "Meer Apps",
+      "notifications": "Meldingen",
+      "subscription": "Abonnement",
+      "manageSubscription": "Abonnement Beheren",
+      "subscriptionStatus": "Abonnementstatus",
+      "about": "Over",
+      "version": "Versie",
+      "premiumUpgrade": {
+        "title": "Premium Ontgrendelen",
+        "subtitle": "Onbeperkte scans & alle functies",
+        "features": "• Geen dagelijkse limieten • Prioriteit AI-verwerking • Premium ondersteuning",
+        "restorePurchases": "Aankopen Herstellen",
+        "restoringTitle": "Aankopen Herstellen",
+        "restoringMessage": "Controleren op eerdere aankopen...",
+        "restoreSuccessTitle": "Gelukt!",
+        "restoreSuccessMessage": "Uw premium abonnement is hersteld.",
+        "restoreSuccessButton": "Geweldig!",
+        "restoreNotFoundTitle": "Geen Aankopen Gevonden",
+        "restoreNotFoundMessage": "Geen eerdere aankopen gevonden om te herstellen.",
+        "restoreFailedTitle": "Herstellen Mislukt",
+        "restoreFailedMessage": "Kan aankopen niet herstellen. Probeer het later opnieuw.",
+        "emailNotAvailableTitle": "Email Niet Beschikbaar",
+        "emailNotAvailableMessage": "Stuur uw ondersteuningsverzoek naar: {{email}}",
+        "errorTitle": "Fout",
+        "appStoreError": "Kon de app store niet openen.",
+        "ctaTitle": "3 Dagen Gratis Proberen",
+        "ctaSubtitle": "Claim je aanbieding nu",
+        "ctaButton": "Aan de Slag"
+      },
+      "demoMode": {
+        "title": "Screenshot Modus",
+        "label": "Demo Modus",
+        "description": "App vullen met voorbeeldsieraden voor screenshots",
+        "enableTitle": "Demo Modus Inschakelen",
+        "enableMessage": "Dit vervangt tijdelijk uw collectie met voorbeeldsieraden voor screenshots. Uw originele gegevens worden hersteld wanneer u demo modus uitschakelt.",
+        "enableButton": "Inschakelen",
+        "disableButton": "Uitschakelen",
+        "enabledTitle": "Demo Modus Ingeschakeld",
+        "enabledMessage": "Uw app is nu klaar voor screenshots!",
+        "disabledTitle": "Demo Modus Uitgeschakeld",
+        "disabledMessage": "Uw originele sieradencollectie is hersteld.",
+        "activeMessage": "Demo modus actief - Klaar voor screenshots!",
+        "errorMessage": "Demo modus wisselen mislukt. Probeer het opnieuw."
+      },
+      "testMode": {
+        "title": "Test Modus",
+        "label": "Testfuncties",
+        "description": "Lagere drempels voor beoordeling (1 scan), 10 gratis scans",
+        "enabledTitle": "Test Modus Ingeschakeld",
+        "enabledMessage": "Testfuncties geactiveerd:\n\n• Beoordelingsprompt na 1 identificatie\n• 10 gratis scans in plaats van 3",
+        "activeMessage": "Test modus actief - Testconfiguraties gebruiken"
+      },
+      "alerts": {
+        "restoringPurchases": "Aankopen Herstellen",
+        "restoringMessage": "Even geduld terwijl we uw aankopen herstellen...",
+        "purchasesRestored": "Aankopen Hersteld",
+        "purchasesRestoredMessage": "Uw premium toegang is hersteld!",
+        "noPurchasesFound": "Geen Aankopen Gevonden",
+        "noPurchasesFoundMessage": "We konden geen eerdere aankopen vinden om te herstellen.",
+        "restoreFailed": "Herstellen Mislukt",
+        "restoreFailedMessage": "Kan aankopen niet herstellen. Probeer het later opnieuw.",
+        "ok": "OK",
+        "great": "Geweldig!",
+        "cancel": "Annuleren",
+        "error": "Fout"
+      }
+    },
+    "subscription": {
+      "benefits": {
+        "unlimitedScans": {
+          "title": "Onbeperkt Scannen",
+          "description": "Identificeer zoveel sieraden als u wilt",
+          "free": "3 per dag",
+          "premium": "Onbeperkt"
+        },
+        "fasterProcessing": {
+          "title": "Snellere Verwerking",
+          "description": "Prioriteit API-toegang voor directe resultaten",
+          "free": "Standaard",
+          "premium": "Prioriteit"
+        },
+        "detailedAnalysis": {
+          "title": "Gedetailleerde Analyse",
+          "description": "Krijg uitgebreide edelsteen- en materiaalgegevens",
+          "free": "Basis",
+          "premium": "Geavanceerd"
+        },
+        "cloudBackup": {
+          "title": "Cloud Back-up",
+          "description": "Verlies nooit uw sieradencollectie",
+          "free": "Alleen apparaat",
+          "premium": "Binnenkort beschikbaar"
+        },
+        "accuracyBoost": {
+          "title": "Nauwkeurigheidsboost",
+          "description": "Verbeterd AI-model voor betere identificatie",
+          "free": "Standaard",
+          "premium": "Verbeterd"
+        },
+        "prioritySupport": {
+          "title": "Prioriteit Ondersteuning",
+          "description": "Krijg hulp wanneer u het nodig heeft",
+          "free": "Community",
+          "premium": "Prioriteit"
+        }
+      },
+      "upgradePrompt": "Upgrade naar Premium",
+      "active": "Actief",
+      "inactive": "Niet Actief",
+      "notAvailable": "Niet Beschikbaar",
+      "webNotSupported": "Abonnementen zijn niet beschikbaar op het web. Gebruik de mobiele app.",
+      "errorMessage": "Kan upgrade-opties niet tonen. Probeer het later opnieuw."
+    },
+    "permissions": {
+      "camera": {
+        "title": "Cameratoegang Nodig",
+        "description": "Jewelry Identifier heeft cameratoegang nodig om uw sieraden, edelstenen en edelmetalen te analyseren en identificeren. Uw foto's worden veilig verwerkt en nooit gedeeld.",
+        "button": "Doorgaan",
+        "skipText": "U kunt ook toestemming geven in de instellingen",
+        "openSettings": "Instellingen Openen"
+      },
+      "photos": {
+        "title": "Fotobibliotheek Toegang Nodig",
+        "description": "Jewelry Identifier heeft toegang tot uw fotobibliotheek nodig om bestaande sieradenfoto's te selecteren voor identificatie.",
+        "button": "Doorgaan"
+      }
+    },
+    "errors": {
+      "generic": "Er is iets misgegaan. Probeer het opnieuw.",
+      "networkError": "Netwerkfout. Controleer uw verbinding.",
+      "identificationFailed": "Identificatie mislukt. Probeer het opnieuw.",
+      "imageQualityPoor": "Beeldkwaliteit onvoldoende. Geef een duidelijke, goed verlichte afbeelding.",
+      "cameraPermission": "Cameratoegang is vereist om deze functie te gebruiken.",
+      "galleryPermission": "Fotobibliotheektoegang is vereist om deze functie te gebruiken."
+    },
+    "alerts": {
+      "confirm": "Bevestigen",
+      "cancel": "Annuleren",
+      "ok": "OK",
+      "delete": "Verwijderen",
+      "save": "Opslaan",
+      "restartOnboardingTitle": "Introductie Opnieuw Starten?",
+      "restartOnboardingMessage": "Dit toont u de welkomstschermen opnieuw.",
+      "demoModeTitle": "Demo Modus",
+      "demoModeEnableMessage": "Demo modus inschakelen met voorbeeldgegevens?",
+      "demoModeDisableMessage": "Demo modus uitschakelen en terugkeren naar normale werking?",
+      "deleteItemTitle": "Item Verwijderen?",
+      "deleteItemMessage": "Weet u zeker dat u dit item uit uw collectie wilt verwijderen?"
+    },
+    "main": {
+      "subtitle": "Ontdek en identificeer sieraden met AI-aangedreven analyse",
+      "identifyButton": {
+        "title": "Sieraad Identificeren",
+        "subtitle": "Maak een foto om te analyseren en identificeren"
+      },
+      "collectionButton": {
+        "title": "Mijn Collectie",
+        "subtitle": "Bekijk uw opgeslagen sieraadvondsten"
+      },
+      "learnButton": {
+        "title": "Leren",
+        "subtitle": "Sieraadtypen en identificatiegids"
+      },
+      "remainingScans": "gratis identificaties resterend",
+      "ok": "OK"
+    }
+  },
+  "ios": {
+    "permissions": {
+      "camera": "Jewelry Identifier heeft cameratoegang nodig om foto's te maken van sieraden voor directe AI-aangedreven identificatie. Wanneer u bijvoorbeeld een ring fotografeert, analyseert de app de edelstenen, metalen en vakmanschap om het stuk te identificeren en gedetailleerde informatie te verstrekken.",
+      "photos": "Jewelry Identifier heeft toegang tot de fotobibliotheek nodig om geïdentificeerde sieraadafbeeldingen in uw collectie op te slaan en om bestaande foto's van sieraden uit uw bibliotheek te selecteren voor identificatie. U kunt bijvoorbeeld sieraden identificeren uit foto's van geërfde stukken.",
+      "microphone": "Jewelry Identifier vereist microfoontoegang om video's met audio op te nemen bij het documenteren van sieraden. Hiermee kunt u stemnotities toevoegen aan uw sieraadvondsten."
+    }
+  },
+  "ai": {
+    "prompt": {
+      "language": "Nederlands",
+      "analyzeInstruction": "Analyseer deze sieraadafbeelding en identificeer het. Focus op het identificeren van edelstenen (diamanten, robijnen, smaragden, saffieren, parels), metaalsoorten (goud, zilver, platina), sieradenstijl/periode (Victoriaans, Art Deco, Hedendaags), vakmanschap en eventuele zichtbare keurmerken.",
+      "jsonOnlyWarning": "BELANGRIJK: U MOET uitsluitend reageren met geldig JSON-formaat, geen andere tekst.",
+      "unableToIdentify": {
+        "instruction": "Als de afbeelding onduidelijk, te donker of niet kan worden geanalyseerd, reageer dan met deze JSON:",
+        "name": "Niet te Identificeren",
+        "formationMessage": "Beeldkwaliteit onvoldoende voor analyse",
+        "funFactMessage": "Geef een duidelijke, goed verlichte afbeelding van het sieraad voor nauwkeurige identificatie"
+      },
+      "analyzableInstruction": "Voor analyseerbare sieraadafbeeldingen, reageer met:",
+      "fields": {
+        "name": "Sieraadtype en stijl (bijv. Art Deco Diamanten Ring, Victoriaanse Parel Broche)",
+        "confidence": "0-100",
+        "composition": "materiaal1, materiaal2 (metalen en secundaire materialen - max 6)",
+        "formation": "Vakmanschapsdetails, zettingtype, productietechniek",
+        "locations": "waarschijnlijke herkomst of stijlinvloeden",
+        "uses": "periode, stijl, gelegenheden (bijv. Art Deco Periode, Verlovingsring - max 4)",
+        "funFact": "Interessant feit over deze sieradenstijl, edelsteen of periode",
+        "description": "Korte beschrijving van het sieraad (2-3 zinnen over stijl, vakmanschap en opvallende kenmerken)",
+        "rarity": "common | uncommon | rare | very_rare | legendary (gebaseerd op materialen, leeftijd, uniciteit)",
+        "gemstone": "Naam van de hoofdedelsteen (bijv. Diamant, Robijn, Smaragd) of None als geen edelstenen",
+        "caratWeight": "Geschat karaatgewicht van de hoofdedelsteen (bijv. 1,5 karaat, 2 karaat totaal)",
+        "jewelryWeight": "Geschat totaalgewicht in gram (bijv. 8,2 gram, 15 gram)",
+        "estimatedValue": "Geschatte marktwaarde in USD (bijv. '$500 - $1.500', '$2.000 - $5.000')"
+      },
+      "responseLanguageInstruction": "ALLE tekst in uw antwoord moet in het Nederlands zijn."
+    }
+  }
+}

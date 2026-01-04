@@ -1,0 +1,517 @@
+# Fastfile for iOS app
+# This file contains lanes for uploading metadata and screenshots to App Store Connect
+# From your project root (app-classiccar_identifier/) % fastlane upload_start)
+
+# COMMANDS:
+# fastlane upload_start              # Upload metadata (with release notes) and screenshots
+# fastlane upload_metadata           # Upload only metadata (description, keywords, release notes)
+# fastlane upload_release_notes      # Upload ONLY release notes (useful for quick updates)
+# fastlane upload_screenshots        # Upload only screenshots
+# fastlane resize_screenshots        # Resize screenshots to correct dimensions
+
+# IMPORTANT: Before uploading metadata or release notes:
+# 1. Make sure the version exists in App Store Connect
+# 2. Go to https://appstoreconnect.apple.com
+# 3. Create a new version if it doesn't exist yet
+# 4. Then run the fastlane commands
+
+# If you need to regenerate the native iOS project from Expo, run:
+# npx expo prebuild --platform ios --clean
+
+# ===== APP CONFIGURATION =====
+# These values should match your constants/appConfig.ts configuration
+# Update these when adapting the template for a new app
+APP_IDENTIFIER = "net.centriqo.jewelryidentifier"  # Should match APP_CONFIG.critical.bundleId.ios
+
+# Autodetect native iOS project names to avoid mismatches with app.json/expo
+IOS_DIR       = ENV['IOS_DIR'] || '../ios'
+
+# Autodetect native iOS project names to avoid mismatches with app.json/expo
+XCODE_PROJECT = Dir[File.join(IOS_DIR, '*.xcodeproj')].first
+WORKSPACE     = Dir[File.join(IOS_DIR, '*.xcworkspace')].first
+# Ensure a scheme/target constant is always defined (best effort)
+XCODE_TARGET  = File.basename((WORKSPACE || XCODE_PROJECT || ''), File.extname((WORKSPACE || XCODE_PROJECT || '')))
+# =============================
+
+# ===== UPLOAD CONTROLS =====
+# Set these to true/false to control what gets uploaded
+UPLOAD_METADATA = true
+UPLOAD_SCREENSHOTS = true
+RESIZE_SCREENSHOTS = true  # Auto-resize screenshots before upload
+
+# set to true to delete all existing screenshots from App Store Connect, then set to false to upload new ones
+DELETE_EXISTING_SCREENSHOTS = false
+# ==========================
+
+# ===== SCREENSHOT DIMENSIONS =====
+# App Store Connect required dimensions for each device type
+SCREENSHOT_SPECS = {
+  "iOS Phones 6.9" => { width: 1242, height: 2688 },    # iPhone 15 Pro Max, 14 Pro Max
+  # "iOS Phones 6.9" => { width: 1290, height: 2796 },    # iPhone 15 Pro Max, 14 Pro Max
+  "iOS Phones 6.7" => { width: 1290, height: 2796 },    # iPhone 15 Plus, 14 Plus
+  "iOS Phones 6.5" => { width: 1284, height: 2778 },    # iPhone 11 Pro Max, XS Max
+  "iOS Phones 6.1" => { width: 1179, height: 2556 },    # iPhone 15 Pro, 14 Pro
+  "iOS Phones 5.8" => { width: 1125, height: 2436 },    # iPhone X, XS, 11 Pro
+  "iOS Phones 5.5" => { width: 1242, height: 2208 },    # iPhone 8 Plus, 7 Plus
+  "iOS iPads 13" => { width: 2048, height: 2732 },      # iPad Pro 13"
+  "iOS iPads 12.9" => { width: 2048, height: 2732 }     # iPad Pro 12.9"
+}
+# =================================
+
+# ===== METADATA CHARACTER LIMITS =====
+# App Store Connect character limits (single source of truth)
+METADATA_LIMITS = {
+  "name.txt" => 30,
+  "subtitle.txt" => 30,
+  "keywords.txt" => 100,
+  "promotional_text.txt" => 170,
+  "description.txt" => 4000,
+  "release_notes.txt" => 4000
+}.freeze
+# =====================================
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Upload metadata and screenshots to App Store Connect"
+  lane :upload do
+    upload_start
+  end
+end
+
+desc "Upload metadata to App Store Connect"
+lane :upload_metadata do
+  app_store_connect_api_key( # make sure to set these ENV variables in your .env file or CI environment
+    key_id: ENV["ASC_KEY_ID"],
+    issuer_id: ENV["ASC_ISSUER_ID"],
+    key_filepath: ENV["ASC_KEY_FILEPATH"],
+   # duration: 1200,
+    in_house: false
+  )
+
+  begin
+    version = resolve_app_version
+    UI.message "📝 Uploading metadata for version #{version}..."
+    UI.message "   Including: description, keywords, promotional text, and release notes"
+
+    # Get absolute path to metadata directory
+    metadata_path = File.expand_path("./metadata")
+    UI.message "   Metadata path: #{metadata_path}"
+
+    # Verify release notes exist
+    release_notes_found = Dir.glob("#{metadata_path}/*/release_notes.txt")
+    if release_notes_found.empty?
+      UI.important "⚠️  Warning: No release_notes.txt files found in metadata folder"
+    else
+      UI.message "   Found release notes for: #{release_notes_found.map { |f| File.basename(File.dirname(f)) }.join(', ')}"
+    end
+
+    # Validate metadata lengths before upload
+    UI.message "   Validating metadata character limits..."
+    validation_errors = validate_metadata_lengths(metadata_path)
+    unless validation_errors.empty?
+      display_validation_errors(validation_errors)
+      UI.user_error!("Metadata validation failed. Please fix the issues above before uploading.")
+    end
+    UI.success "   ✅ Metadata validation passed"
+
+    deliver(
+      app_identifier: APP_IDENTIFIER,
+      app_version: version,
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      skip_metadata: false,
+      metadata_path: metadata_path,
+      force: true,
+      submit_for_review: false,
+      run_precheck_before_submit: false,
+      precheck_include_in_app_purchases: false,
+      ignore_language_directory_validation: true,
+      automatic_release: true,
+      platform: "ios",
+      # Enable updating live version metadata if needed
+      edit_live: false,  # Set to true if you want to update metadata for a live version
+      # Explicitly include release notes
+      overwrite_screenshots: false
+    )
+
+    UI.success "✅ Metadata uploaded successfully!"
+    UI.success "   This includes release notes for version #{version}"
+
+  rescue => e
+    UI.error "Metadata upload failed: #{e.message}"
+    UI.message ""
+    UI.message "Common causes:"
+    UI.message "  1. Version #{resolve_app_version rescue 'unknown'} doesn't exist in App Store Connect yet"
+    UI.message "     → Create the version in App Store Connect first: https://appstoreconnect.apple.com"
+    UI.message "  2. App is in a state that prevents metadata updates (e.g., In Review)"
+    UI.message "     → Wait for review to complete or reject the build"
+    UI.message "  3. API key doesn't have sufficient permissions"
+    UI.message "     → Check that your API key has 'App Manager' or 'Admin' role"
+    UI.message ""
+    raise e
+  end
+end
+
+desc "Upload only release notes to App Store Connect"
+lane :upload_release_notes do
+  app_store_connect_api_key(
+    key_id: ENV["ASC_KEY_ID"],
+    issuer_id: ENV["ASC_ISSUER_ID"],
+    key_filepath: ENV["ASC_KEY_FILEPATH"],
+    # duration: 1200,
+    in_house: false
+  )
+
+  begin
+    version = resolve_app_version
+    UI.message "📝 Uploading ONLY release notes for version #{version}..."
+
+    # Get absolute path to metadata directory
+    metadata_path = File.expand_path("./metadata")
+
+    # Verify release notes exist
+    release_notes_found = Dir.glob("#{metadata_path}/*/release_notes.txt")
+    if release_notes_found.empty?
+      UI.error "❌ No release_notes.txt files found in metadata folder!"
+      UI.message "Expected location: #{metadata_path}/[language]/release_notes.txt"
+      next
+    else
+      UI.message "   Found release notes for: #{release_notes_found.map { |f| File.basename(File.dirname(f)) }.join(', ')}"
+    end
+
+    # Create a temporary metadata folder with only release notes
+    temp_metadata_path = File.expand_path("./metadata_release_notes_only")
+    FileUtils.rm_rf(temp_metadata_path) if Dir.exist?(temp_metadata_path)
+    FileUtils.mkdir_p(temp_metadata_path)
+
+    # Copy only release_notes.txt files
+    release_notes_found.each do |release_notes_file|
+      lang = File.basename(File.dirname(release_notes_file))
+      lang_dir = File.join(temp_metadata_path, lang)
+      FileUtils.mkdir_p(lang_dir)
+      FileUtils.cp(release_notes_file, File.join(lang_dir, "release_notes.txt"))
+      UI.message "   Copied: #{lang}/release_notes.txt"
+    end
+
+    # Validate release notes lengths before upload
+    UI.message "   Validating release notes character limits..."
+    validation_errors = validate_metadata_lengths(temp_metadata_path)
+    unless validation_errors.empty?
+      display_validation_errors(validation_errors)
+      FileUtils.rm_rf(temp_metadata_path)
+      UI.user_error!("Release notes validation failed. Please fix the issues above before uploading.")
+    end
+    UI.success "   ✅ Release notes validation passed"
+
+    deliver(
+      app_identifier: APP_IDENTIFIER,
+      app_version: version,
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      skip_metadata: false,  # We want to upload metadata (release notes)
+      metadata_path: temp_metadata_path,
+      force: true,
+      submit_for_review: false,
+      run_precheck_before_submit: false,
+      precheck_include_in_app_purchases: false,
+      ignore_language_directory_validation: true,
+      automatic_release: true,
+      platform: "ios",
+      edit_live: false
+    )
+
+    # Clean up temp folder
+    FileUtils.rm_rf(temp_metadata_path)
+
+    UI.success "✅ Release notes uploaded successfully for version #{version}!"
+
+  rescue => e
+    # Clean up temp folder on error
+    temp_metadata_path = File.expand_path("./metadata_release_notes_only")
+    FileUtils.rm_rf(temp_metadata_path) if Dir.exist?(temp_metadata_path)
+
+    UI.error "Release notes upload failed: #{e.message}"
+    UI.message ""
+    UI.message "Make sure version #{version} exists in App Store Connect first!"
+    UI.message "Visit: https://appstoreconnect.apple.com"
+    raise e
+  end
+end
+
+desc "Resize screenshots to correct dimensions"
+lane :resize_screenshots do
+  begin
+    require 'mini_magick'
+  rescue LoadError
+    UI.error "mini_magick not found. Please run: gem install mini_magick"
+    raise
+  end
+  
+  UI.message "🔧 Resizing screenshots to correct dimensions..."
+
+  screenshots_dir = "./screenshots"
+  
+  unless Dir.exist?(screenshots_dir)
+    UI.error "Screenshots directory not found: #{screenshots_dir}"
+    next
+  end
+  
+  UI.message "Looking in: #{screenshots_dir}"
+  
+  # Count processed files
+  processed_count = 0
+  resized_count = 0
+  
+  # Process each language folder
+  Dir.glob("#{screenshots_dir}/*").each do |lang_dir|
+    next unless File.directory?(lang_dir)
+    
+    lang = File.basename(lang_dir)
+    UI.message "Processing language: #{lang}..."
+    
+    # Process each PNG file
+    Dir.glob("#{lang_dir}/*.png").each do |screenshot_path|
+      processed_count += 1
+      filename = File.basename(screenshot_path)
+      UI.message "  Found: #{filename}"
+      
+      # Detect device type from filename
+      device_type = detect_device_type(filename)
+      
+      if device_type && SCREENSHOT_SPECS[device_type]
+        spec = SCREENSHOT_SPECS[device_type]
+        
+        begin
+          # Open and check image
+          image = MiniMagick::Image.open(screenshot_path)
+          current_width = image.width
+          current_height = image.height
+          
+          # Check if resize is needed
+          if current_width != spec[:width] || current_height != spec[:height]
+            UI.message "    📏 Current: #{current_width}x#{current_height}"
+            UI.message "    🎯 Target:  #{spec[:width]}x#{spec[:height]}"
+            UI.message "    🔄 Resizing..."
+            
+            # Resize with forced dimensions (! means ignore aspect ratio)
+            image.resize "#{spec[:width]}x#{spec[:height]}!"
+            image.write screenshot_path
+            
+            # Verify the resize worked
+            image = MiniMagick::Image.open(screenshot_path)
+            UI.success "    ✅ Resized to: #{image.width}x#{image.height}"
+            resized_count += 1
+          else
+            UI.message "    ✓ Already correct size: #{current_width}x#{current_height}"
+          end
+        rescue => e
+          UI.error "    ❌ Error processing #{filename}: #{e.message}"
+        end
+      else
+        UI.important "  ⚠️  Unknown device type for: #{filename}"
+        UI.important "     Filename doesn't match expected pattern"
+      end
+    end
+  end
+  
+  if processed_count == 0
+    UI.error "No screenshots found to process!"
+    UI.error "Make sure screenshots are in: #{screenshots_dir}/[language]/*.png"
+  else
+    UI.success "✅ Screenshot resizing complete!"
+    UI.success "   Processed: #{processed_count} files"
+    UI.success "   Resized: #{resized_count} files"
+  end
+end
+
+desc "Upload screenshots to App Store Connect"
+lane :upload_screenshots do
+  # Resize screenshots if enabled
+  if RESIZE_SCREENSHOTS
+    resize_screenshots
+  end
+  
+  app_store_connect_api_key(
+    key_id: ENV["ASC_KEY_ID"],
+    issuer_id: ENV["ASC_ISSUER_ID"],
+    key_filepath: ENV["ASC_KEY_FILEPATH"],
+    # duration: 1200,
+    in_house: false
+  )
+
+  begin
+    UI.message "📸 Uploading screenshots..."
+
+    # Note: overwrite_screenshots is removed because it can fail when trying to delete
+    # existing screenshots (e.g., if app is in review or API timeout).
+    # With default settings, fastlane will match screenshots by filename and update them.
+    # To completely replace all screenshots, manually delete them in App Store Connect first.
+    deliver(
+      app_identifier: APP_IDENTIFIER,
+      app_version: resolve_app_version,
+      skip_binary_upload: true,
+      skip_screenshots: false,
+      skip_metadata: true,
+      force: true,
+      submit_for_review: false,
+      run_precheck_before_submit: false,
+      precheck_include_in_app_purchases: false,
+      ignore_language_directory_validation: true,
+      automatic_release: true,
+      platform: "ios",
+            
+      # set to true to delete all existing screenshots, then set to false to upload new ones
+      overwrite_screenshots: DELETE_EXISTING_SCREENSHOTS,
+            
+      # Increase timeout to handle Apple's slow screenshot processing
+      # Apple's API can be slow and return 500 errors during high load
+      screenshot_processing_timeout: 7200  # 2 hours instead of default 1 hour
+    )
+
+    UI.success "✅ Screenshots uploaded!"
+
+  rescue => e
+    UI.error "Screenshot upload failed: #{e.message}"
+  end
+end
+
+desc "Upload based on boolean controls set at top of file"
+lane :upload_start do
+  UI.message "🚀 Starting upload process..."
+  UI.message "   Metadata upload: #{UPLOAD_METADATA ? 'Enabled ✓' : 'Disabled ✗'}"
+  UI.message "   Screenshots upload: #{UPLOAD_SCREENSHOTS ? 'Enabled ✓' : 'Disabled ✗'}"
+
+  if UPLOAD_METADATA
+    upload_metadata
+  else
+    UI.message "⏭️  Skipping metadata upload (disabled)"
+  end
+
+  if UPLOAD_SCREENSHOTS
+    upload_screenshots
+  else
+    UI.message "⏭️  Skipping screenshots upload (disabled)"
+  end
+
+  UI.success "🎉 Upload process complete!"
+end
+
+# Helper method to detect device type from filename
+def detect_device_type(filename)
+  # Normalize spaces in filename for matching
+  normalized = filename.gsub(/\s+/, ' ')
+
+  # Match patterns like "iOS Phones 6.9-01.png", "iOS Phones - 6.9-01.png", or "iOS_Phones_6.9_01.png"
+  # Also handle double spaces, dashes, and other variations
+  if normalized.match(/iOS[\s_]*Phones[\s_-]*6\.9/i)
+    "iOS Phones 6.9"
+  elsif normalized.match(/iOS[\s_]*Phones[\s_-]*6\.7/i)
+    "iOS Phones 6.7"
+  elsif normalized.match(/iOS[\s_]*Phones[\s_-]*6\.5/i)
+    "iOS Phones 6.5"
+  elsif normalized.match(/iOS[\s_]*Phones[\s_-]*6\.1/i)
+    "iOS Phones 6.1"
+  elsif normalized.match(/iOS[\s_]*Phones[\s_-]*5\.8/i)
+    "iOS Phones 5.8"
+  elsif normalized.match(/iOS[\s_]*Phones[\s_-]*5\.5/i)
+    "iOS Phones 5.5"
+  elsif normalized.match(/iOS[\s_]*iPads[\s_-]*13/i)
+    "iOS iPads 13"
+  elsif normalized.match(/iOS[\s_]*iPads[\s_-]*12\.9/i)
+    "iOS iPads 12.9"
+  else
+    # Debug output to help identify unmatched patterns
+    UI.message "    Debug: Filename '#{filename}' normalized to '#{normalized}' - no match found"
+    nil
+  end
+end
+
+
+# Helper: resolve the app version using whatever native container exists
+def resolve_app_version
+  # Reuse the IOS_DIR variable defined at the top, convert to absolute path
+  ios_dir = File.expand_path(IOS_DIR)
+
+  workspace = Dir[File.join(ios_dir, '*.xcworkspace')].first
+  project   = Dir[File.join(ios_dir, '*.xcodeproj')].first
+
+  # get_version_number only accepts xcodeproj, not workspace
+  # If workspace exists, we need to find the xcodeproj within ios dir
+  if project && File.exist?(project)
+    target = File.basename(project, '.xcodeproj')
+    return get_version_number(xcodeproj: project, target: target)
+  elsif workspace && File.exist?(workspace)
+    # Fallback: try to get version from the workspace's related project
+    # Workspaces typically have a corresponding .xcodeproj
+    target = File.basename(workspace, '.xcworkspace')
+    # Look for matching project
+    matching_project = Dir[File.join(ios_dir, "#{target}.xcodeproj")].first
+    if matching_project && File.exist?(matching_project)
+      return get_version_number(xcodeproj: matching_project, target: target)
+    else
+      # If no matching project, just use the first project found
+      if project && File.exist?(project)
+        target = File.basename(project, '.xcodeproj')
+        return get_version_number(xcodeproj: project, target: target)
+      end
+    end
+  else
+    UI.user_error!("Unable to find Xcode workspace or project under #{ios_dir}")
+  end
+end
+
+# Helper: Validate metadata file lengths before upload
+# Returns array of error hashes (empty if all valid)
+def validate_metadata_lengths(metadata_path)
+  errors = []
+
+  unless Dir.exist?(metadata_path)
+    UI.error "Metadata path does not exist: #{metadata_path}"
+    return errors
+  end
+
+  Dir.glob("#{metadata_path}/*").each do |locale_dir|
+    next unless File.directory?(locale_dir)
+    next if File.basename(locale_dir).start_with?('_') # Skip _backlog etc.
+
+    locale = File.basename(locale_dir)
+
+    METADATA_LIMITS.each do |filename, max_length|
+      file_path = File.join(locale_dir, filename)
+      next unless File.exist?(file_path)
+
+      content = File.read(file_path).strip
+      char_count = content.length
+
+      if char_count > max_length
+        errors << {
+          locale: locale,
+          file: filename,
+          current: char_count,
+          max: max_length,
+          over_by: char_count - max_length
+        }
+      end
+    end
+  end
+
+  errors
+end
+
+# Helper: Display validation errors clearly
+def display_validation_errors(errors)
+  UI.error ""
+  UI.error "❌ METADATA VALIDATION FAILED"
+  UI.error "   The following files exceed App Store Connect limits:"
+  UI.message ""
+
+  errors.each do |e|
+    UI.error "   #{e[:locale]}/#{e[:file]}"
+    UI.error "   └── #{e[:current]} chars (max: #{e[:max]}, over by: #{e[:over_by]})"
+    UI.message ""
+  end
+
+  UI.message "   Fix these files before uploading."
+  UI.message ""
+end

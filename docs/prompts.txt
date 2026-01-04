@@ -1,0 +1,410 @@
+Read, understand and analyse the code. Give me full comprehensive report, dont change anything.
+------------------
+Analyse and find cause. Dont overgenineer or complexify, keep it simpel, make sure to not change anythin else to prevent regression.
+------------------
+GENERAL INSTRUCTIONS:
+Ensure all adaptations remain simple and straightforward. Verify that modifications do not break existing functionality. Leverage current features as much as possible to avoid redundancy and unnecessary complexity while at the same time adhering to principles of clean code, re-use and easy maintainability.
+When any ambiguity arises, ask clarifying questions and proceed methodically.  
+Prioritize using established artifacts for guidance.
+In case of something is not clear, ask for more info before deciding on the implementation.
+Provide changes with full adapted files for clarity. 
+Don't adapt anything else than what was required.
+Do after each iteration a self evaluation and validation to prevent regression and bugs.
+------------------
+Read, understand and analyse the code. Give me full comprehensive report, dont change anything.
+------------------
+Analyse and find cause. Dont overgenineer or complexify, keep it simpel, make sure to not change anythin else to prevent regression.
+------------------
+Understand and analyse the current code the proceed to the following requirement:\
+the identifier result screen needs to be adapted according the app's functionalities, identificatin of classic cars, adapt the screen to show details related to identification of classic cars. adapt the styling to fit the apps styling and feeling. Some suggestion details to show, evaluate these details, find other details that might fit better:
+name, power, top speed, year, value, production time-span, country, number production, desciption and fun fact. Focus on the requirement make sure to not introduce any other regression, if in doubt ask for feedback before implementation. 
+-------------------
+Read, understand and analyse the code thoroughly the proceed with following request:
+Convert the existing app to the following:
+Work out the following idea for a hybrid ios/android using react native expo:
+I need the current code template to converted to a ‘classic car identifier’ app. Goal is to revamp and re-design from scratch the complete design of the app including the onboarding, main menu and options pages.
+Do the necessary changes, to achieve the following:
+Take the role of an export senior designer and use your experience of past years and projects to craft a design that'll be remembered as the iconic achievement of your career.
+Create a React Native Expo app for identifying classic cars from 1960 onwards. Design it with a modern UI that incorporates nostalgic automotive elements - use warm orange tones (`#ea580c` primary), elegant typography  headings, and smooth animations.
+
+Include a 3-step onboarding flow using Lottie animations (react-native-lottie or @lottiefiles/dotlottie-react-native) or React Native Reanimated for smooth transitions that introduces users to: taking photos, AI identification, viewing history, and exploring collections.
+
+For resources: use high-quality classic car images from Unsplash, Pexels, or generate placeholder images with queries like 'vintage 1960s muscle car', 'classic convertible dashboard', 'collection of vintage automobiles'. Include subtle automotive-inspired background patterns or textures.
+
+The main app should featuer on it's main screen a trivia, a central camera/upload interface using expo-camera and expo-image-picker, recent identification history.
+The main screen should contain interessting trivia that refreshes after a certain time. Trivia's should be fetched from the internet, look for a stable and free service. 
+Design a clean mobile-first design. Use expo-linear-gradient for subtle background effects and react-native-svg for custom icons. Give the app an unique look and feel; not similar to the original rock identifier.
+
+Add beautiful classic car imagery and make it feel both contemporary and nostalgic.
+
+First plan out and setup a playbook how to proceed with this ambitious and exciting project, after validation proceed step by step.
+---------------------------------------------------------------------
+ I asked to completely revamp and change the design of the app, the design can not be similary as the current design, the main page should be redesigned with tabs as was requested. Go back to original request and follow it closely, be focused and start first with design changes, use all necessary tooling at your desposal. Take the role of an export senior designer and use your experience of past years and projects to craft a design that'll be remembered as the iconic achievement of your career. Plan, design and craft, go. 
+ --------------------------------------------------------------------- 
+ Read, understand and analyse the code thoroughly the proceed with following request:
+ I want the current to be converted into a clean template where all UI and UX is reset to the minimum default expo default. Keep the configuration that will be used to setup a new app, remove all components and ui that are related to the specific rock identifier app. The goal is to make a clean and template that can used to create a new app starting only from the configuration and constants. Keep the fastlane and docs folders in place. 
+-------------
+ ▌Go through the code, suggest how to improve the code to make it more re-usuable to serve as a base for other projects, projects which will be similar strucure. 
+Give me a clear and full report, dont change anything yet.
+-------------
+Read, understand and analyse the code thoroughly the proceed with following request:
+in the settings page, the buttons for changing the theme need to be clicked multiple times before they register.
+Analyse and find out cause and fix.
+-------------
+▌issue still exists where clicking on theme buttons, the change does not register from the first time, find the settings implementation from another app where it
+▌works fine, compare and re-implement.
+-------------
+Understand and analyse the current code the proceed to the following requirement:
+Investigate how to localize the app into the following languages, besides default english EN also NL, FR and DE.
+I need the complete app localized in these languages, including onboarding and all content.
+Fastlane metadata must be localized accoardingly.
+Do not change anything yet, report on the best least impacting approach adhering to clean code and best practises.
+Focus on the requirement make sure to not introduce any other regression, if in doubt ask for feedback before implementation. 
+-------------
+Understand and analyse the current code the proceed to the following requirement:
+Investigate the build errors that keep occuring after the localization implementation.
+Keep aware of concurrency issues and race conditions.
+Make sure to keep the implemenation flow straightforward, keep it schynchrous to prevent race conditions where seems fit.
+Investigat the complete flow from the root startup and find cause and fix for the follwing build errors:
+-------------
+
+
+Understand and analyse the current code the proceed to the following requirement:
+How implement the rating dialog from ios app to let the user rate the app.
+https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews
+--
+Understand and analyse the current code the proceed to the following requirement:
+Implement TriviaCard ticker and TriviaService for trivia for the apps's context.
+
+-------------
+Understand and analyse the current code the proceed to the following requirement:
+Rebuild the onboarding from ground up, do not base it on the current onboarding, forget about the current onboarding completely. Rebuild from zero and make it slick, polished and must fit the overall theme and context of the app,
+introduce the user to the most important features of the app, use illustrations downloaded from the net or unsplash or cutouts to explain and promote the featurs, make it a beautifull but also an interesting experience.
+Look at the majority target users and focus on promoting the value that’s most relevant to them.
+Provide the best possible UI/UX specifically for those users — the ones who will get the most value out of the brand/app.
+You can do anything across all realms: use animations, libraries, or even generate SVG prompts that you think best suit this section.Or find images on https://unsplash.com/ that would fit the app. Go wild.
+Create a unique UX that still delivers the same core value but in a way that stands out and adds more perceived value because of its originality. Flat plain minimalism is preferred no kitchy design or overuse of icons or colors.
+It maintains flat minimalism, breathes professionalism, matches the overall app style, and delivers exceptional value to target user.
+Think beyond your usual limits. Are you pumped up for this?
+-------------
+Understand and analyse the current code the proceed to the following requirement:
+Proceed to the setting view, the theme seletor should also be converted into one row, whre the selection happens in subsequenct view, similar to the language selection.
+-------------
+Understand and analyse the current code the proceed to the following requirement:
+Investigate on howto implement superwall paywalls, the current revenuecat paywalls implementation needs to stay as is, but there need to be toggle in the settings that can switch between using superwall or revenuecat paywall.
+It is important to not alter or break existing functionality.
+Maintain zero regression and use clean maintainable code.
+-------------
+Read and understand the code, all tabs content and functionalities then proceed to the following request.
+Find the ModernPremiumCard, analyse its working and structure. I need the ModernPremiumCard to be modernized.
+Provide the best possible UI/UX for the CTA button.
+Update the subtext to attrackt and optimize for intented target user maximum click.
+It is important to not alter or break existing functionality.
+Maintain zero regression and use clean code.
+--------------
+Read and understand the code, all tabs content and functionalities then proceed to the following request.
+Lets focus on the configuration of the app, looks like the config is spread out over different files.
+There is config in .env, appconfig.ts and app.json and other files. 
+Find out how this best can be centralized to prevent redundancy, confusion. 
+The config needs to be consisten preferrably for easy access and straightforward so it can be easely maintained or adapted, for example to have it centralized in app.json and/or appConfig.json.
+It is important to keep security at the forefront for keys and passwords that can not be exposed.
+Use clean code and re-use, maintain zero regression at all time.
+Don no change anything only report and suggest.
+--------------
+FOLLOW UP prompt to polish it up:
+Make this look more unique and less basic and use sleek fonts and make it more beautiful.
+--------------
+⏺ Revamp the [SECTION] of my [APP_NAME] app ([APP_TYPE - e.g., rock identification, plant ID, bird watching]).
+
+  Target audience: [who uses it]
+  Brand tone: [e.g., educational, playful, professional]
+  Style: [e.g., photorealistic, illustrated, minimalist]
+
+  For each screen, suggest fitting images that match the app context. Search the web for design inspiration from similar apps. Recommend free stock sources
+   or AI image generation prompts. Then update the code with new assets.
+
+  Current files at: [path/to/screens]
+--------------
+Read and understand the code, all tabs content and functionalities then proceed to the following request.
+Lets focus on the cta button in the settings screen.
+Re-design the CTA button, polish and make it more attractive.
+Adhere to clean code and maintainability practices, use defensive programming, keep it simple and do no overcomplexity.
+Maintain zero regression at all time.
+--------------
+Read and understand the code, all tabs content and functionalities then proceed to the following request.
+Investigate why the superwall paywall would not appear in the production version of the app, while in debug builds it appears fine.When the CTA button is tapped in  the production or testflight version of the app, nothing happens, no paywall or message is appearing. 
+Start from the beginning and follow all possible flow, do a deep dive and find the cause.
+Do not change anything, report.
+-------------
+Read and understand the codebasen, structure and functional content then proceed to the following request.
+Lets find the settings screen, on the settings screen at the bottom I need to have a beautifull bottom part implemented with 
+the version of the app; restore purchases and a link to more 'More Apps' which will open the app store page of the developer.
+Adhere to clean code and maintainability practices, use defensive programming, keep it simple and do no overcomplexity.
+Maintain zero regression at all time.
+-------------
+Read and understand the codebasen, structure and functional content then proceed to the following request.
+The current app needs to be completely revamped from the ground up.
+Find attached images on how to the desing needs to be based upon.
+The attached desing and ux needs to be followed and mimiced as closely as possible.
+Use jina to find and pull images that look similar as the attached app images.
+Images can from anywhere from the internet, all images and icons need to be pulled and stored locally.
+Do a deep analysis of the current codebase, inspect on how to revamp and change it on the most efficient manner.
+Focus first on the main screen to adapt as the attached app images, the main screen needs to be build and animated 
+similar to the main screen of the reference app images with a carousel.
+------
+Read and understand the code, all tabs content and functionalities then proceed to the following request.
+Ispect the exception as attached, investigate on how to prevent the exception from happening while adhering to the followign requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+Suggest and report, do not change anything yet.
+-------------
+Read and understand the code, all tabs content and functionalities then proceed to the following request.
+Find the export CSV export functionality on the reports tab, lets refine this as follows:
+Add the following option: the user can change whethe to include the total row on the last row of the csv.
+Set a default which the user can change, stored in the userdefaults so it remains when restarting the app.
+The UI/UX should be consistent with the export PDF functionality.
+CSV should have also it's preview with an settings view where a toggle needs to be added to include totals row.
+Investigate best clean approach, research thoroughly how to change the code in the modern swift code, legacy objective-c is not for used for the most part.
+Adhere to clean code and maintainability practises, use defensive programming, keep it simpel and do no overcomplexify.
+Maintain zero regression at all time.
+-------------
+Read and understand the codebasen, structure and functional content then proceed to the following request.
+
+Adapt:
+The tabbar follow the reference image attached.
+
+Do NOT change antything else.
+
+Requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+-------------
+Lets refine further:
+when tapping the scan button on the tabbar and showing the camera view,  the tabbar should dissapear, the camera view can be closed with an 'x' in the top-left corner which should
+return back to the main view with tabbar. 
+------------- 
+Read and understand the codebasen, structure and functional content then proceed to the following request.
+Investigate on how to implement the articles funtionality within the app.
+The app should go on regular intervals fetch articels from wiki or other sources on the internet, in batches, store them in cache and
+parse the articles into an info view when opened. Each article should have a reference image, title and short description, which should be displayed in the Learn section in the main screen and
+in the discover tab. When the articel tile is tapped the info view, which should parse the raw article into an attractive information screen should be displayed to the user.
+
+Requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+---------------
+• Change review for the double-load fix:
+
+  - components/PaywallProvider.tsx: Adds an isProviderReady gate and shows a full-screen loader until the Superwall provider finishes loading (or fails), then renders children
+    exactly once. This prevents the prior RevenueCat→Superwall provider swap that was remounting the entire tree and causing the main screen to appear twice. Fallback now cleanly
+    uses RevenueCat if Superwall fails to load.
+  - docs/prompts.txt: Only appended the investigation prompt; no behavioral impact.
+-------------
+
+Read and understand the codebase, structure and functional content then proceed to the following request.
+Invstigate whether the pro subsciption  gatekeeping is working correctly, idenifying an object is only allowed when
+the user has a subscription or has freeDailyLimit scans > 0.
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+-------------
+Read and understand the codebase, structure and functional content then proceed to the following request.
+Find the camera view, the batch pill indicating the free trial count left.
+ADAPT:
+In case free trial count is zero, then instead of the count show the 'Pro' CTA button which triggers the paywall.
+In case user has an active subscription hide the batch pill.
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+--------------
+Read and understand the codebase, structure and functional content then proceed to the following request.
+ Lets proceed with the following request:\
+  The option Appearance in the settings screen to set light or dark theme needs to be be able to be hidden by setting a flag in the config.json.\
+  Add a MakeThemeSelectorAvailable in the json.config, when true the option will be avaiable in the Settings screen if not it will be hidden.\
+  Additionally add a flag to set the default theme in the json.config: light / dark. This will set the overall  theme this option when MakeThemeSelectorAvailable is set to
+  false.\
+  -Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+--------------
+Read and understand the codebase, structure and functional content then proceed to the following request.
+Find the ItemDetailsScreen.
+ADAPT:
+- revamp the detail result screen, replace mockups by real implementation
+- visual matches should search and find similar items on the web 
+- Add a history section which briefly max 100 words explain the history of the item
+- add real estimated appraisal value based on research 
+- Replace About icon with something less generic
+
+Requirements
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+--------------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets review the wiki functionality of the app.
+INVESTIGATE and REPORT.
+Are the articles refreshed correctly, what is the iterval for cache invalidation ? how are the articles stored in the cache ?
+How are  the articles and images and assets for the articles fetched and how are they stored in cache ?
+What are the sources of the articles ? Should  there be a curated list from where to fetch the articles.
+Suggest improvements on how to fetch and store, evaluate best approach, jina or other method.
+Suggest improvements to the wiki functioality in general.
+Suggest on how to improve the article view to make reading an article easely and interestingly for the user.
+---
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets review the scanning result on the ItemDetailsScreen, focussing on the appraisal value and visual matches.
+INVESTIGATE and REPORT, Do not change anything yet.
+Which websites are used to fetch visual matches ? Should there be a curated list like ebay.com, amazon, etsy, general websearch, .. suggest others.
+Why is the visual matches not working, it seems it does not return with any results.
+Investigate the cause, is it related to using jina, exa, is there a better suitable way to achieve a better result ?
+Report on how to best to approach this, what is best practise? how are is generally handled by other apps ?
+Requirements
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+------
+> The visual matches need to be acurater, investate on how to make the image match visual matches as accurate as possible by searching by image.\
+  Report what best feasable approach is, using preferably free services. Do a deep dive and research thorougly. 
+------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets review the scanning result on the ItemDetailsScreen. 
+Redesign the detailscreen to have the your item as the big header hero section. 
+And the visual matches need to stay a separate row below the hero section.
+Replace all typography color black and shades of gray to a brighter color in the dark theme.
+Additonal Requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+------
+Lets add some dynamic elements to the ItemDetailsScreen:
+  - add the following effect: Collapible Hero Header
+  As the user scrolls down:
+  The hero shrinks vertically
+  The image may scale, fade, or pin
+  The content below gains more vertical space 
+------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets review the scanning result on the ItemDetailsScreen. 
+Inspect the attached image displayed details, find if there are missing details and investigate on how to add implement them. 
+Take into account design and layout to keep it clean polished.
+Additonal Requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Find the My Collection view.
+Lets adapt:
+- simplify the screen, remove unnessary cards like 'Total items', 'Categories' 'High Match'.
+- remove the categories batch pills
+- keep the view selection buttons
+Additonal Requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Find ImageReviewScreen.
+Adapt:
+- the horizontal scanning line accross the picture needs to animate during indentification process
+- Change 'PLEASE WAIT' color to a bit brighter color in dark theme 
+------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets review parsing Articles functionality. 
+Investigate how to improve the parsing of articles to create summary readable version when opening the article.
+
+Additonal Requirements:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+-------
+Understand the codebase and current Articles parsing implementation.
+Task: Improve article parsing when opened to produce a clear, readable summary of the full content.
+Show at least one or more key images to supplement the article.
+Requirements:
+- Higher parsing accuracy and structure extraction
+- Clean, reusable, maintainable implementation
+- Directly apply improvements in code
+
+Report: Do not change anything yet.
+-------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Lets review the scanning result on the ItemDetailsScreen, focussing on the appraisal value.
+INVESTIGATE and REPORT, Do not change anything yet.
+How to make appraisal value more accurate.
+Report on how to best to approach this, what is best practise? how are is generally handled by other apps ?
+Requirements
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+-------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Investigate cause why the app upon startup it double loads the main view, it stutters and re-renders after first startup.
+Investigate async processes at startup, trace the startup flow from start to final load of the app and find out what process is caussing the main screen to double-load.
+Investigate on how to prevent race conditions, concurrency issues that may occur.
+Solution should adhere to:
+-do not rely on fixed timeouts
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+
+INVESTIGATE and REPORT, Do not change anything yet.
+-------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Investigate the localization throughout the codebase, making sure all texts, labels, prompts are localized in the chosen language in the settings scren.
+Solution should adhere to:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+-------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Adapt the launscreen. Instead of showing the launchscreen.png image, instead a loading skeleton should be used.
+Investigate on how approach this implementation.
+Solution should adhere to:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+----
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+Make the fade-in to the main view on startup softer.
+Solution should adhere to:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+
+------
+Analyse the following commands which are used manually from the command line to build and deploy to device, simulator or release.
+I need the following:
+ - I want to curate the list, I need a minimal effecient list of commands without losing functionalities.
+ - I want a way to use the  commands on an effecicient ways by using shortcuts, scripts or other ways.
+ - With a simple command I need to trigger a list of actions unattented or minimal interaction, see below for some examples, suggest others:
+ - commands:
+clean + build + deploy to simulator / debug or standalone
+clean + build + deploy to physical device / debug or standalone
+clean + check if enought discpace + clean up diskspace if needed +  build + deploy release file to app store connect or google play store
+ 
+Suggest other commands that could benefit the workflow for the project. 
+
+  
+  -----
+

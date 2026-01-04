@@ -1,0 +1,1 @@
+cuadrante,turno,grabadora,de,llamada,calculadora,hora,rastreador,hoja,trabajo

@@ -1,0 +1,1 @@
+schmuck,ring,halskette,armband,gold,silber,diamant,edelstein,wert,bewertung,juwelier,identifier

@@ -1,0 +1,6 @@
+We've been polishing gems and squashing bugs! ✨
+
+This update brings:
+• Performance tweaks that sparkle
+• Stability improvements worth their weight in gold
+• Minor fixes - because even diamonds need the occasional buff

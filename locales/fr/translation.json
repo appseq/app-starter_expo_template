@@ -1,0 +1,456 @@
+{
+  "app": {
+    "name": "Jewelry Identifier"
+  },
+  "onboarding": {
+    "slides": {
+      "slide1": {
+        "title": "Onboarding",
+        "subtitle": "Bienvenue",
+        "description": "Personnalisez cet écran d'accueil pour votre application."
+      }
+    },
+    "finalButtonText": "Commencer",
+    "continueButtonText": "Continuer",
+    "skipButtonText": "Passer"
+  },
+  "ui": {
+    "tabs": {
+      "discover": "Découvrir",
+      "identify": "Identifier",
+      "collection": "Collection",
+      "learn": "Apprendre"
+    },
+    "home": {
+      "title": "Jewelry ID",
+      "snapAndIdentify": "Photographiez & Identifiez",
+      "learnAboutJewelry": "Apprenez sur les Bijoux",
+      "allArticles": "Tous les articles",
+      "loadingArticles": "Chargement des articles...",
+      "noArticles": "Aucun article disponible"
+    },
+    "camera": {
+      "title": "Capturer un Bijou",
+      "permissionTitle": "Autorisation de la Caméra",
+      "instruction": "Pointez la caméra vers un bijou",
+      "instructionSubtext": "L'IA analysera les pierres précieuses, métaux et valeur",
+      "captureButton": "Identifier",
+      "galleryButton": "Choisir dans la Galerie",
+      "retakeButton": "Reprendre",
+      "analyzeButton": "Analyser le Bijou",
+      "tapToCapture": "Appuyez pour capturer et identifier",
+      "aiReady": "IA Prête"
+    },
+    "imageReview": {
+      "title": "Aperçu Photo",
+      "readyTitle": "Prêt à identifier",
+      "readyDescription": "Obtenez une analyse détaillée de ce bijou incluant son type, pierres précieuses, matériaux, époque et valeur estimée.",
+      "analyzeButton": "Identifier le Bijou",
+      "retakeButton": "Reprendre la Photo",
+      "analyzingTitle": "Identification du bijou...",
+      "analyzingSubtext": "Analyse des pierres précieuses, matériaux et fabrication",
+      "pleaseWait": "VEUILLEZ PATIENTER",
+      "analysisSteps": {
+        "analyzing": "Analyse du bijou avec l'IA",
+        "identifying": "Identification des matériaux et pierres précieuses",
+        "estimating": "Estimation de la valeur et de l'époque"
+      },
+      "errorTitle": "Échec de l'Analyse",
+      "errorMessage": "Impossible d'identifier le bijou. Veuillez réessayer."
+    },
+    "results": {
+      "title": "Résultats d'Identification",
+      "confidenceLabel": "Confiance",
+      "compositionLabel": "Composition",
+      "formationLabel": "Fabrication",
+      "locationsLabel": "Origine",
+      "usesLabel": "Utilisations",
+      "funFactLabel": "Fait Intéressant",
+      "saveButton": "Enregistrer dans la Collection",
+      "shareButton": "Partager"
+    },
+    "collection": {
+      "title": "Ma Collection",
+      "itemsCollected": "{{count}} bijou collecté",
+      "itemsCollected_plural": "{{count}} bijoux collectés",
+      "emptyState": "Aucun bijou encore",
+      "emptyStateAction": "Scanner le Premier Bijou",
+      "emptyStateDescription": "Commencez à scanner des bijoux pour construire votre collection personnelle",
+      "itemsLabel": "bijoux",
+      "loadingCollection": "Chargement de la collection...",
+      "matchPercent": "{{percent}}% de correspondance"
+    },
+    "itemDetails": {
+      "deleteTitle": "Supprimer le Bijou",
+      "deleteMessage": "Êtes-vous sûr de vouloir retirer ce bijou de votre collection ?",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "dataNotAvailable": "Données du bijou non disponibles",
+      "goBack": "Retour",
+      "unableToIdentify": "Impossible d'Identifier",
+      "unableToIdentifyMessage": "Nous n'avons pas pu identifier ce bijou. Veuillez réessayer avec une photo plus claire.",
+      "tryAgain": "Réessayer",
+      "similarItems": "Bijoux Similaires",
+      "seeAll": "Voir tout",
+      "findingSimilar": "Recherche de bijoux similaires...",
+      "noSimilarItems": "Aucun bijou similaire trouvé",
+      "estimatedValue": "Valeur Estimée",
+      "researchingValue": "Recherche de la valeur marchande...",
+      "valueVaries": "La valeur varie considérablement",
+      "requiresAppraisal": "Nécessite une expertise professionnelle",
+      "contactAppraiser": "Contactez un expert pour une estimation",
+      "basedOnMarket": "Basé sur {{count}} référence du marché",
+      "basedOnMarket_plural": "Basé sur {{count}} références du marché",
+      "basedOnAI": "Basé sur l'analyse IA",
+      "professionalRecommended": "Expertise professionnelle recommandée",
+      "rangeTooBroad": "Fourchette de prix trop large pour une estimation fiable",
+      "highValueVerification": "Les articles de grande valeur nécessitent une vérification d'expert",
+      "description": "Description",
+      "history": "Histoire",
+      "noHistoryAvailable": "Aucun historique disponible",
+      "materials": "Matériaux",
+      "unknownMaterial": "Matériau inconnu",
+      "origin": "Origine",
+      "unknownOrigin": "Origine inconnue",
+      "eraPeriod": "Époque / Période",
+      "contemporary": "Contemporain",
+      "specifications": "Spécifications",
+      "rarity": "Rareté",
+      "gemstone": "Pierre Précieuse",
+      "caratWeight": "Poids en Carats",
+      "totalWeight": "Poids Total",
+      "authenticityNote": "Pour une expertise et authentification précises, veuillez consulter un gemmologue certifié.",
+      "saveToCollection": "Enregistrer dans la Collection",
+      "savedToCollection": "Enregistré dans la Collection",
+      "shareMessage": "Regardez ce {{name}} ! Identifié avec {{appName}}. {{funFact}}",
+      "jewelry": "Bijou",
+      "rarityLabels": {
+        "common": "Commun",
+        "uncommon": "Peu Commun",
+        "rare": "Rare",
+        "veryRare": "Très Rare",
+        "legendary": "Légendaire"
+      },
+      "confidence": {
+        "high": "Élevée",
+        "medium": "Moyenne",
+        "low": "Faible"
+      }
+    },
+    "articles": {
+      "title": "Articles",
+      "loadingArticles": "Chargement des articles...",
+      "noArticlesFound": "Aucun article trouvé",
+      "showAllArticles": "Afficher tous les articles",
+      "tryAgain": "Réessayer",
+      "categories": {
+        "all": "Tous",
+        "gemstones": "Pierres Précieuses",
+        "jewelryHistory": "Histoire des Bijoux",
+        "materials": "Matériaux",
+        "techniques": "Techniques",
+        "styles": "Styles",
+        "care": "Entretien"
+      }
+    },
+    "snapTips": {
+      "title": "Conseils Photo",
+      "subtitle": "Obtenez de meilleurs résultats d'identification",
+      "gotIt": "Compris !",
+      "tips": {
+        "goodLighting": {
+          "title": "Bon Éclairage",
+          "description": "La lumière naturelle du jour fonctionne le mieux. Évitez les ombres dures et la lumière directe du soleil."
+        },
+        "focusClearly": {
+          "title": "Mise au Point Nette",
+          "description": "Appuyez sur l'objet pour faire la mise au point. Attendez que l'image soit nette avant de capturer."
+        },
+        "steadyHands": {
+          "title": "Mains Stables",
+          "description": "Tenez votre téléphone stable ou posez-le sur une surface pour des images plus nettes."
+        },
+        "fillFrame": {
+          "title": "Remplir le Cadre",
+          "description": "Positionnez le bijou pour qu'il remplisse la majeure partie du cadre de numérisation."
+        },
+        "showDetails": {
+          "title": "Montrer les Détails",
+          "description": "Incluez les poinçons du fabricant, signatures ou caractéristiques distinctives."
+        }
+      }
+    },
+    "learn": {
+      "title": "Apprendre sur les Bijoux",
+      "introTitle": "Guide d'Identification des Bijoux",
+      "introText": "Apprenez les différents types de bijoux, pierres précieuses et comment les identifier.",
+      "sectionTitle": "Types de Bijoux",
+      "categories": {
+        "rings": {
+          "name": "Bagues",
+          "description": "Des bagues de fiançailles aux pièces de déclaration, apprenez les styles de bagues, sertissages et pierres précieuses."
+        },
+        "necklaces": {
+          "name": "Colliers",
+          "description": "Découvrez le monde des colliers, des chaînes délicates aux pièces de déclaration élaborées."
+        },
+        "earrings": {
+          "name": "Boucles d'Oreilles",
+          "description": "Explorez les styles de boucles d'oreilles des clous aux chandeliers, et les pierres précieuses qui les ornent."
+        }
+      },
+      "tipsTitle": "Conseils d'Identification",
+      "tips": {
+        "tip1": "Regardez le métal : Est-ce de l'or, de l'argent ou du platine ?",
+        "tip2": "Vérifiez les poinçons : Ils révèlent la pureté du métal et l'origine",
+        "tip3": "Examinez les pierres précieuses : Notez la couleur, la taille et la clarté",
+        "tip4": "Observez la fabrication : La qualité indique l'âge et la valeur",
+        "tip5": "Considérez le style : Différentes époques ont des designs distinctifs"
+      },
+      "footerText": "Utilisez l'onglet caméra pour identifier des bijoux !"
+    },
+    "settings": {
+      "title": "Paramètres",
+      "sections": {
+        "support": "Support",
+        "preferences": "Préférences",
+        "about": "À Propos"
+      },
+      "rateApp": "Évaluer l'Application",
+      "rateAppSubtitle": "Partagez votre expérience",
+      "contactSupport": "Contacter le Support",
+      "contactSupportSubtitle": "Obtenez de l'aide pour tout problème",
+      "language": "Langue",
+      "languageSubtitle": "Choisissez votre langue préférée",
+      "languageAuto": "Langue de l'Appareil",
+      "languageAutoSubtitle": "Correspond automatiquement à la langue de l'appareil",
+      "languageEnglish": "English",
+      "languageEnglishSubtitle": "Anglais",
+      "languageFrench": "Français",
+      "languageFrenchSubtitle": "Français",
+      "languageDutch": "Nederlands",
+      "languageDutchSubtitle": "Néerlandais",
+      "languageGerman": "Deutsch",
+      "languageGermanSubtitle": "Allemand",
+      "appearance": "Apparence",
+      "appearanceSubtitle": "Par défaut du système",
+      "theme": "Thème",
+      "themeSubtitle": "Choisissez votre palette de couleurs préférée",
+      "light": "Clair",
+      "lightSubtitle": "Interface lumineuse et claire",
+      "dark": "Sombre",
+      "darkSubtitle": "Confortable pour les yeux",
+      "auto": "Automatique",
+      "autoSubtitle": "Suit automatiquement le thème de l'appareil",
+      "cameraSettings": "Paramètres de la Caméra",
+      "cameraSettingsSubtitle": "Gérer les autorisations",
+      "restartOnboarding": "Redémarrer l'Introduction",
+      "restartOnboardingSubtitle": "Revoir les écrans d'introduction",
+      "privacyPolicy": "Politique de Confidentialité",
+      "termsOfService": "Conditions d'Utilisation",
+      "restorePurchases": "Restaurer les Achats",
+      "moreApps": "Plus d'Applications",
+      "notifications": "Notifications",
+      "subscription": "Abonnement",
+      "manageSubscription": "Gérer l'Abonnement",
+      "subscriptionStatus": "Statut de l'Abonnement",
+      "about": "À Propos",
+      "version": "Version",
+      "premiumUpgrade": {
+        "title": "Débloquer Premium",
+        "subtitle": "Scans illimités & toutes les fonctionnalités",
+        "features": "• Aucune limite quotidienne • Traitement IA prioritaire • Support premium",
+        "restorePurchases": "Restaurer les Achats",
+        "restoringTitle": "Restauration des Achats",
+        "restoringMessage": "Vérification des achats précédents...",
+        "restoreSuccessTitle": "Succès !",
+        "restoreSuccessMessage": "Votre abonnement premium a été restauré.",
+        "restoreSuccessButton": "Parfait !",
+        "restoreNotFoundTitle": "Aucun Achat Trouvé",
+        "restoreNotFoundMessage": "Aucun achat précédent trouvé à restaurer.",
+        "restoreFailedTitle": "Échec de la Restauration",
+        "restoreFailedMessage": "Impossible de restaurer les achats. Veuillez réessayer plus tard.",
+        "emailNotAvailableTitle": "Email Non Disponible",
+        "emailNotAvailableMessage": "Veuillez envoyer votre demande de support à : {{email}}",
+        "errorTitle": "Erreur",
+        "appStoreError": "Impossible d'ouvrir l'App Store.",
+        "ctaTitle": "Essai Gratuit de 3 Jours",
+        "ctaSubtitle": "Profitez de votre offre",
+        "ctaButton": "Commencer"
+      },
+      "demoMode": {
+        "title": "Mode Capture d'Écran",
+        "label": "Mode Démo",
+        "description": "Remplir l'app avec des bijoux exemples pour les captures d'écran",
+        "enableTitle": "Activer le Mode Démo",
+        "enableMessage": "Cela remplacera temporairement votre collection avec des bijoux exemples pour les captures d'écran. Vos données originales seront restaurées lorsque vous désactiverez le mode démo.",
+        "enableButton": "Activer",
+        "disableButton": "Désactiver",
+        "enabledTitle": "Mode Démo Activé",
+        "enabledMessage": "Votre application est maintenant prête pour les captures d'écran !",
+        "disabledTitle": "Mode Démo Désactivé",
+        "disabledMessage": "Votre collection de bijoux originale a été restaurée.",
+        "activeMessage": "Mode démo actif - Prêt pour les captures d'écran !",
+        "errorMessage": "Échec du basculement du mode démo. Veuillez réessayer."
+      },
+      "testMode": {
+        "title": "Mode Test",
+        "label": "Fonctionnalités de Test",
+        "description": "Seuils abaissés pour l'évaluation (1 scan), 10 scans gratuits",
+        "enabledTitle": "Mode Test Activé",
+        "enabledMessage": "Fonctionnalités de test activées :\n\n• Invite d'évaluation après 1 identification\n• 10 scans gratuits au lieu de 3",
+        "activeMessage": "Mode test actif - Utilisation des configurations de test"
+      },
+      "alerts": {
+        "restoringPurchases": "Restauration des Achats",
+        "restoringMessage": "Veuillez patienter pendant la restauration de vos achats...",
+        "purchasesRestored": "Achats Restaurés",
+        "purchasesRestoredMessage": "Votre accès premium a été restauré !",
+        "noPurchasesFound": "Aucun Achat Trouvé",
+        "noPurchasesFoundMessage": "Nous n'avons pas trouvé d'achats précédents à restaurer.",
+        "restoreFailed": "Échec de la Restauration",
+        "restoreFailedMessage": "Impossible de restaurer les achats. Veuillez réessayer plus tard.",
+        "ok": "OK",
+        "great": "Parfait !",
+        "cancel": "Annuler",
+        "error": "Erreur"
+      }
+    },
+    "subscription": {
+      "benefits": {
+        "unlimitedScans": {
+          "title": "Scans Illimités",
+          "description": "Identifiez autant de bijoux que vous le souhaitez",
+          "free": "3 par jour",
+          "premium": "Illimité"
+        },
+        "fasterProcessing": {
+          "title": "Traitement Plus Rapide",
+          "description": "Accès API prioritaire pour des résultats instantanés",
+          "free": "Standard",
+          "premium": "Prioritaire"
+        },
+        "detailedAnalysis": {
+          "title": "Analyse Détaillée",
+          "description": "Obtenez des données complètes sur les pierres et matériaux",
+          "free": "Basique",
+          "premium": "Avancé"
+        },
+        "cloudBackup": {
+          "title": "Sauvegarde Cloud",
+          "description": "Ne perdez jamais votre collection de bijoux",
+          "free": "Appareil uniquement",
+          "premium": "Bientôt disponible"
+        },
+        "accuracyBoost": {
+          "title": "Amélioration de la Précision",
+          "description": "Modèle IA amélioré pour une meilleure identification",
+          "free": "Standard",
+          "premium": "Amélioré"
+        },
+        "prioritySupport": {
+          "title": "Support Prioritaire",
+          "description": "Obtenez de l'aide quand vous en avez besoin",
+          "free": "Communauté",
+          "premium": "Prioritaire"
+        }
+      },
+      "upgradePrompt": "Passer à Premium",
+      "active": "Actif",
+      "inactive": "Non Actif",
+      "notAvailable": "Non Disponible",
+      "webNotSupported": "Les abonnements ne sont pas disponibles sur le web. Veuillez utiliser l'application mobile.",
+      "errorMessage": "Impossible d'afficher les options de mise à niveau. Veuillez réessayer plus tard."
+    },
+    "permissions": {
+      "camera": {
+        "title": "Accès à la Caméra Requis",
+        "description": "Jewelry Identifier a besoin de l'accès à la caméra pour analyser et identifier vos bijoux, pierres précieuses et métaux précieux. Vos photos sont traitées en toute sécurité et ne sont jamais partagées.",
+        "button": "Continuer",
+        "skipText": "Vous pouvez également accorder l'autorisation dans les paramètres",
+        "openSettings": "Ouvrir les Paramètres"
+      },
+      "photos": {
+        "title": "Accès à la Photothèque Requis",
+        "description": "Jewelry Identifier a besoin de l'accès à votre photothèque pour sélectionner des photos existantes de bijoux pour identification.",
+        "button": "Continuer"
+      }
+    },
+    "errors": {
+      "generic": "Une erreur s'est produite. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+      "identificationFailed": "Échec de l'identification. Veuillez réessayer.",
+      "imageQualityPoor": "Qualité d'image insuffisante. Veuillez fournir une image claire et bien éclairée.",
+      "cameraPermission": "L'autorisation de la caméra est requise pour utiliser cette fonctionnalité.",
+      "galleryPermission": "L'autorisation de la photothèque est requise pour utiliser cette fonctionnalité."
+    },
+    "alerts": {
+      "confirm": "Confirmer",
+      "cancel": "Annuler",
+      "ok": "OK",
+      "delete": "Supprimer",
+      "save": "Enregistrer",
+      "restartOnboardingTitle": "Redémarrer l'Introduction ?",
+      "restartOnboardingMessage": "Cela vous montrera à nouveau les écrans de bienvenue.",
+      "demoModeTitle": "Mode Démo",
+      "demoModeEnableMessage": "Activer le mode démo avec des données exemples ?",
+      "demoModeDisableMessage": "Désactiver le mode démo et revenir au fonctionnement normal ?",
+      "deleteItemTitle": "Supprimer l'Élément ?",
+      "deleteItemMessage": "Êtes-vous sûr de vouloir supprimer cet élément de votre collection ?"
+    },
+    "main": {
+      "subtitle": "Découvrez et identifiez des bijoux avec l'analyse propulsée par l'IA",
+      "identifyButton": {
+        "title": "Identifier un Bijou",
+        "subtitle": "Prenez une photo pour analyser et identifier"
+      },
+      "collectionButton": {
+        "title": "Ma Collection",
+        "subtitle": "Voir vos découvertes de bijoux sauvegardées"
+      },
+      "learnButton": {
+        "title": "Apprendre",
+        "subtitle": "Types de bijoux et guide d'identification"
+      },
+      "remainingScans": "identifications gratuites restantes",
+      "ok": "OK"
+    }
+  },
+  "ios": {
+    "permissions": {
+      "camera": "Jewelry Identifier a besoin de l'accès à la caméra pour prendre des photos de bijoux pour une identification instantanée propulsée par l'IA. Par exemple, lorsque vous photographiez une bague, l'application analyse ses pierres précieuses, métaux et fabrication pour identifier la pièce et fournir des informations détaillées.",
+      "photos": "Jewelry Identifier a besoin de l'accès à la photothèque pour enregistrer les images de bijoux identifiés dans votre collection et pour sélectionner des photos existantes de bijoux de votre bibliothèque pour identification. Par exemple, vous pouvez identifier des bijoux à partir de photos de pièces héritées.",
+      "microphone": "Jewelry Identifier a besoin de l'accès au microphone pour enregistrer des vidéos avec audio lors de la documentation de bijoux. Cela vous permet d'ajouter des notes vocales à vos découvertes de bijoux."
+    }
+  },
+  "ai": {
+    "prompt": {
+      "language": "Français",
+      "analyzeInstruction": "Analysez cette image de bijou et identifiez-le. Concentrez-vous sur les pierres précieuses (diamants, rubis, émeraudes, saphirs, perles), les types de métaux (or, argent, platine), le style/époque du bijou (Victorien, Art Déco, Contemporain), la qualité de fabrication et les poinçons visibles.",
+      "jsonOnlyWarning": "IMPORTANT : Vous DEVEZ répondre uniquement au format JSON valide, aucun autre texte.",
+      "unableToIdentify": {
+        "instruction": "Si l'image n'est pas claire, trop sombre ou ne peut pas être analysée, répondez avec ce JSON :",
+        "name": "Impossible à Identifier",
+        "formationMessage": "Qualité d'image insuffisante pour l'analyse",
+        "funFactMessage": "Veuillez fournir une image claire et bien éclairée du bijou pour une identification précise"
+      },
+      "analyzableInstruction": "Pour les images de bijoux analysables, répondez avec :",
+      "fields": {
+        "name": "Type et style du bijou (ex: Bague Diamant Art Déco, Broche Perle Victorienne)",
+        "confidence": "0-100",
+        "composition": "matériau1, matériau2 (métaux et matériaux secondaires - max 6)",
+        "formation": "Détails de fabrication, type de sertissage, technique de production",
+        "locations": "origines probables ou influences stylistiques",
+        "uses": "époque, style, occasions (ex: Période Art Déco, Bague de Fiançailles - max 4)",
+        "funFact": "Fait intéressant sur ce style de bijou, pierre précieuse ou époque",
+        "description": "Brève description du bijou (2-3 phrases couvrant le style, la fabrication et les caractéristiques notables)",
+        "rarity": "common | uncommon | rare | very_rare | legendary (selon les matériaux, l'âge, l'unicité)",
+        "gemstone": "Nom de la pierre précieuse principale (ex: Diamant, Rubis, Émeraude) ou None si pas de pierres",
+        "caratWeight": "Poids en carats estimé de la pierre principale (ex: 1,5 carats, 2 carats au total)",
+        "jewelryWeight": "Poids total estimé en grammes (ex: 8,2 grammes, 15 grammes)",
+        "estimatedValue": "Valeur marchande estimée en USD (ex: '$500 - $1,500', '$2,000 - $5,000')"
+      },
+      "responseLanguageInstruction": "TOUT le texte de votre réponse doit être en français."
+    }
+  }
+}

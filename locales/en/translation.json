@@ -1,0 +1,458 @@
+{
+  "app": {
+    "name": "App Template",
+    "tagline": "AI-Powered Identification"
+  },
+  "onboarding": {
+    "slides": {
+      "slide1": {
+        "title": "Onboarding",
+        "subtitle": "Welcome",
+        "description": "Customize this onboarding screen for your app."
+      }
+    },
+    "finalButtonText": "Get Started",
+    "continueButtonText": "Continue",
+    "skipButtonText": "Skip"
+  },
+  "ui": {
+    "tabs": {
+      "home": "Home",
+      "discover": "Discover",
+      "identify": "Identify",
+      "collection": "Collection",
+      "learn": "Learn"
+    },
+    "home": {
+      "title": "App Template",
+      "snapAndIdentify": "Snap & Identify",
+      "learnAbout": "Learn More",
+      "allArticles": "All articles",
+      "loadingArticles": "Loading articles...",
+      "noArticles": "No articles available"
+    },
+    "camera": {
+      "title": "Capture Jewelry",
+      "permissionTitle": "Camera Permission",
+      "instruction": "Point camera at a jewelry piece",
+      "instructionSubtext": "AI will analyze gemstones, metals, and value",
+      "captureButton": "Identify",
+      "galleryButton": "Choose from Gallery",
+      "retakeButton": "Retake",
+      "analyzeButton": "Analyze Jewelry",
+      "tapToCapture": "Tap to capture and identify",
+      "aiReady": "AI Ready"
+    },
+    "imageReview": {
+      "title": "Review Photo",
+      "readyTitle": "Ready to identify",
+      "readyDescription": "Get detailed analysis of this jewelry including its type, gemstones, materials, era, and estimated value.",
+      "analyzeButton": "Identify Jewelry",
+      "retakeButton": "Retake Photo",
+      "analyzingTitle": "Identifying jewelry...",
+      "analyzingSubtext": "Analyzing gemstones, materials, and craftsmanship",
+      "pleaseWait": "PLEASE WAIT",
+      "analysisSteps": {
+        "analyzing": "Analyzing jewelry with AI",
+        "identifying": "Identifying materials & gemstones",
+        "estimating": "Estimating value & era"
+      },
+      "errorTitle": "Analysis Failed",
+      "errorMessage": "Unable to identify the jewelry. Please try again."
+    },
+    "results": {
+      "title": "Identification Results",
+      "confidenceLabel": "Confidence",
+      "compositionLabel": "Composition",
+      "formationLabel": "Formation",
+      "locationsLabel": "Found In",
+      "usesLabel": "Uses",
+      "funFactLabel": "Fun Fact",
+      "saveButton": "Save to Collection",
+      "shareButton": "Share"
+    },
+    "collection": {
+      "title": "My Collection",
+      "itemsCollected": "{{count}} item collected",
+      "itemsCollected_plural": "{{count}} items collected",
+      "emptyState": "No jewelry yet",
+      "emptyStateAction": "Scan First Item",
+      "emptyStateDescription": "Start scanning jewelry to build your personal collection",
+      "itemsLabel": "items",
+      "loadingCollection": "Loading collection...",
+      "matchPercent": "{{percent}}% match"
+    },
+    "itemDetails": {
+      "deleteTitle": "Delete Item",
+      "deleteMessage": "Are you sure you want to remove this jewelry from your collection?",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "dataNotAvailable": "Jewelry data not available",
+      "goBack": "Go Back",
+      "unableToIdentify": "Unable to Identify",
+      "unableToIdentifyMessage": "We couldn't identify this jewelry piece. Please try again with a clearer photo.",
+      "tryAgain": "Try Again",
+      "similarItems": "Similar Items",
+      "seeAll": "See all",
+      "findingSimilar": "Finding similar items...",
+      "noSimilarItems": "No similar items found",
+      "estimatedValue": "Estimated Value",
+      "researchingValue": "Researching market value...",
+      "valueVaries": "Value varies widely",
+      "requiresAppraisal": "Requires professional appraisal",
+      "contactAppraiser": "Contact appraiser for estimate",
+      "basedOnMarket": "Based on {{count}} market reference",
+      "basedOnMarket_plural": "Based on {{count}} market references",
+      "basedOnAI": "Based on AI analysis",
+      "professionalRecommended": "Professional appraisal recommended",
+      "rangeTooBroad": "Price range too broad for reliable estimate",
+      "highValueVerification": "High-value items need expert verification",
+      "description": "Description",
+      "history": "History",
+      "noHistoryAvailable": "No history available",
+      "materials": "Materials",
+      "unknownMaterial": "Unknown material",
+      "origin": "Origin",
+      "unknownOrigin": "Unknown origin",
+      "eraPeriod": "Era / Period",
+      "contemporary": "Contemporary",
+      "specifications": "Specifications",
+      "rarity": "Rarity",
+      "gemstone": "Gemstone",
+      "caratWeight": "Carat Weight",
+      "totalWeight": "Total Weight",
+      "authenticityNote": "For accurate appraisal and authentication, please consult a certified gemologist.",
+      "saveToCollection": "Save to Collection",
+      "savedToCollection": "Saved to Collection",
+      "shareMessage": "Check out this {{name}}! Identified with {{appName}}. {{funFact}}",
+      "jewelry": "Jewelry",
+      "rarityLabels": {
+        "common": "Common",
+        "uncommon": "Uncommon",
+        "rare": "Rare",
+        "veryRare": "Very Rare",
+        "legendary": "Legendary"
+      },
+      "confidence": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      }
+    },
+    "articles": {
+      "title": "Articles",
+      "loadingArticles": "Loading articles...",
+      "noArticlesFound": "No articles found",
+      "showAllArticles": "Show all articles",
+      "tryAgain": "Try Again",
+      "categories": {
+        "all": "All",
+        "gemstones": "Gemstones",
+        "jewelryHistory": "Jewelry History",
+        "materials": "Materials",
+        "techniques": "Techniques",
+        "styles": "Styles",
+        "care": "Care"
+      }
+    },
+    "snapTips": {
+      "title": "Snap Tips",
+      "subtitle": "Get better identification results",
+      "gotIt": "Got it!",
+      "tips": {
+        "goodLighting": {
+          "title": "Good Lighting",
+          "description": "Natural daylight works best. Avoid harsh shadows and direct sunlight."
+        },
+        "focusClearly": {
+          "title": "Focus Clearly",
+          "description": "Tap on the item to focus. Wait for the image to sharpen before capturing."
+        },
+        "steadyHands": {
+          "title": "Steady Hands",
+          "description": "Hold your phone steady or rest it on a surface for sharper images."
+        },
+        "fillFrame": {
+          "title": "Fill the Frame",
+          "description": "Position the jewelry to fill most of the scanning frame."
+        },
+        "showDetails": {
+          "title": "Show Details",
+          "description": "Include maker's marks, signatures, or distinctive features."
+        }
+      }
+    },
+    "learn": {
+      "title": "Learn About Jewelry",
+      "introTitle": "Jewelry Identification Guide",
+      "introText": "Learn about different types of jewelry, gemstones, and how to identify them.",
+      "sectionTitle": "Jewelry Types",
+      "categories": {
+        "rings": {
+          "name": "Rings",
+          "description": "From engagement rings to statement pieces, learn about ring styles, settings, and gemstones."
+        },
+        "necklaces": {
+          "name": "Necklaces",
+          "description": "Discover the world of necklaces, from delicate chains to elaborate statement pieces."
+        },
+        "earrings": {
+          "name": "Earrings",
+          "description": "Explore earring styles from studs to chandeliers, and the gemstones that adorn them."
+        }
+      },
+      "tipsTitle": "Identification Tips",
+      "tips": {
+        "tip1": "Look at the metal: Is it gold, silver, or platinum?",
+        "tip2": "Check for hallmarks: They reveal metal purity and origin",
+        "tip3": "Examine the gemstones: Note color, cut, and clarity",
+        "tip4": "Observe the craftsmanship: Quality indicates age and value",
+        "tip5": "Consider the style: Different eras have distinctive designs"
+      },
+      "footerText": "Use the camera tab to identify jewelry pieces!"
+    },
+    "settings": {
+      "title": "Settings",
+      "sections": {
+        "support": "Support",
+        "preferences": "Preferences",
+        "about": "About"
+      },
+      "rateApp": "Rate the App",
+      "rateAppSubtitle": "Share your experience",
+      "contactSupport": "Contact Support",
+      "contactSupportSubtitle": "Get help with any issues",
+      "language": "Language",
+      "languageSubtitle": "Choose your preferred language",
+      "languageAuto": "Device Language",
+      "languageAutoSubtitle": "Automatically match device language",
+      "languageEnglish": "English",
+      "languageEnglishSubtitle": "English",
+      "languageFrench": "Français",
+      "languageFrenchSubtitle": "French",
+      "languageDutch": "Nederlands",
+      "languageDutchSubtitle": "Dutch",
+      "languageGerman": "Deutsch",
+      "languageGermanSubtitle": "German",
+      "appearance": "Appearance",
+      "appearanceSubtitle": "System default",
+      "theme": "Theme",
+      "themeSubtitle": "Choose your preferred color scheme",
+      "light": "Light",
+      "lightSubtitle": "Bright and clear interface",
+      "dark": "Dark",
+      "darkSubtitle": "Easy on the eyes",
+      "auto": "Auto",
+      "autoSubtitle": "Automatically match device theme",
+      "cameraSettings": "Camera Settings",
+      "cameraSettingsSubtitle": "Manage permissions",
+      "restartOnboarding": "Restart Onboarding",
+      "restartOnboardingSubtitle": "View intro screens again",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "restorePurchases": "Restore Purchases",
+      "moreApps": "More Apps",
+      "notifications": "Notifications",
+      "subscription": "Subscription",
+      "manageSubscription": "Manage Subscription",
+      "subscriptionStatus": "Subscription Status",
+      "about": "About",
+      "version": "Version",
+      "premiumUpgrade": {
+        "title": "Unlock Premium",
+        "subtitle": "Unlimited scans & all features",
+        "features": "• No daily limits • Priority AI processing • Premium support",
+        "restorePurchases": "Restore Purchases",
+        "restoringTitle": "Restoring Purchases",
+        "restoringMessage": "Checking for previous purchases...",
+        "restoreSuccessTitle": "Success!",
+        "restoreSuccessMessage": "Your premium subscription has been restored.",
+        "restoreSuccessButton": "Great!",
+        "restoreNotFoundTitle": "No Purchases Found",
+        "restoreNotFoundMessage": "No previous purchases found to restore.",
+        "restoreFailedTitle": "Restore Failed",
+        "restoreFailedMessage": "Unable to restore purchases. Please try again later.",
+        "emailNotAvailableTitle": "Email Not Available",
+        "emailNotAvailableMessage": "Please send your support request to: {{email}}",
+        "errorTitle": "Error",
+        "appStoreError": "Could not open the app store.",
+        "ctaTitle": "3-Day Free Trial",
+        "ctaSubtitle": "Claim your offer now",
+        "ctaButton": "Get Started"
+      },
+      "demoMode": {
+        "title": "Screenshot Mode",
+        "label": "Demo Mode",
+        "description": "Populate app with sample jewelry for screenshots",
+        "enableTitle": "Enable Demo Mode",
+        "enableMessage": "This will temporarily replace your collection with sample jewelry for screenshots. Your original data will be restored when you disable demo mode.",
+        "enableButton": "Enable",
+        "disableButton": "Disable",
+        "enabledTitle": "Demo Mode Enabled",
+        "enabledMessage": "Your app is now ready for screenshots!",
+        "disabledTitle": "Demo Mode Disabled",
+        "disabledMessage": "Your original jewelry collection has been restored.",
+        "activeMessage": "Demo mode active - Ready for screenshots!",
+        "errorMessage": "Failed to toggle demo mode. Please try again."
+      },
+      "testMode": {
+        "title": "Test Mode",
+        "label": "Testing Features",
+        "description": "Lower thresholds for rating (1 scan), 10 free scans",
+        "enabledTitle": "Test Mode Enabled",
+        "enabledMessage": "Test features activated:\n\n• Rating prompt after 1 identification\n• 10 free scans instead of 3",
+        "activeMessage": "Test mode active - Using test configurations"
+      },
+      "alerts": {
+        "restoringPurchases": "Restoring Purchases",
+        "restoringMessage": "Please wait while we restore your purchases...",
+        "purchasesRestored": "Purchases Restored",
+        "purchasesRestoredMessage": "Your premium access has been restored!",
+        "noPurchasesFound": "No Purchases Found",
+        "noPurchasesFoundMessage": "We couldn't find any previous purchases to restore.",
+        "restoreFailed": "Restore Failed",
+        "restoreFailedMessage": "Unable to restore purchases. Please try again later.",
+        "ok": "OK",
+        "great": "Great!",
+        "cancel": "Cancel",
+        "error": "Error"
+      }
+    },
+    "subscription": {
+      "upgrade": "Upgrade",
+      "benefits": {
+        "unlimitedScans": {
+          "title": "Unlimited Scans",
+          "description": "Identify as many items as you want",
+          "free": "3 per day",
+          "premium": "Unlimited"
+        },
+        "fasterProcessing": {
+          "title": "Faster Processing",
+          "description": "Priority API access for instant results",
+          "free": "Standard",
+          "premium": "Priority"
+        },
+        "detailedAnalysis": {
+          "title": "Detailed Analysis",
+          "description": "Get comprehensive analysis data",
+          "free": "Basic",
+          "premium": "Advanced"
+        },
+        "cloudBackup": {
+          "title": "Cloud Backup",
+          "description": "Never lose your collection",
+          "free": "Device only",
+          "premium": "Coming soon"
+        },
+        "accuracyBoost": {
+          "title": "Accuracy Boost",
+          "description": "Enhanced AI model for better identification",
+          "free": "Standard",
+          "premium": "Enhanced"
+        },
+        "prioritySupport": {
+          "title": "Priority Support",
+          "description": "Get help when you need it",
+          "free": "Community",
+          "premium": "Priority"
+        }
+      },
+      "upgradePrompt": "Upgrade to Premium",
+      "active": "Active",
+      "inactive": "Not Active",
+      "notAvailable": "Not Available",
+      "webNotSupported": "Subscriptions are not available on web. Please use the mobile app.",
+      "errorMessage": "Unable to show upgrade options. Please try again later."
+    },
+    "permissions": {
+      "camera": {
+        "title": "Camera Access Needed",
+        "description": "This app needs camera access to take photos for AI-powered identification. Your photos are processed securely and never shared.",
+        "button": "Continue",
+        "skipText": "You can also grant permission in settings",
+        "openSettings": "Open Settings"
+      },
+      "photos": {
+        "title": "Photo Library Access Required",
+        "description": "This app needs access to your photo library to select existing photos for identification.",
+        "button": "Continue"
+      }
+    },
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "networkError": "Network error. Please check your connection.",
+      "identificationFailed": "Failed to identify. Please try again.",
+      "imageQualityPoor": "Image quality insufficient. Please provide a clear, well-lit image.",
+      "cameraPermission": "Camera permission is required to use this feature.",
+      "galleryPermission": "Photo library permission is required to use this feature."
+    },
+    "alerts": {
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "ok": "OK",
+      "delete": "Delete",
+      "save": "Save",
+      "restartOnboardingTitle": "Restart Onboarding?",
+      "restartOnboardingMessage": "This will show you the welcome screens again.",
+      "demoModeTitle": "Demo Mode",
+      "demoModeEnableMessage": "Enable demo mode with sample jewelry data?",
+      "demoModeDisableMessage": "Disable demo mode and return to normal operation?",
+      "deleteItemTitle": "Delete Item?",
+      "deleteItemMessage": "Are you sure you want to remove this item from your collection?"
+    },
+    "main": {
+      "subtitle": "Discover and identify jewelry with AI-powered analysis",
+      "identifyButton": {
+        "title": "Identify Jewelry",
+        "subtitle": "Take a photo to analyze and identify"
+      },
+      "collectionButton": {
+        "title": "My Collection",
+        "subtitle": "View your saved jewelry discoveries"
+      },
+      "learnButton": {
+        "title": "Learn",
+        "subtitle": "Jewelry types and identification guide"
+      },
+      "remainingScans": "free identifications remaining"
+    }
+  },
+  "ios": {
+    "permissions": {
+      "camera": "Jewelry Identifier needs camera access to take photos of jewelry for instant AI-powered identification. For example, when you photograph a ring, the app analyzes its gemstones, metals, and craftsmanship to identify the piece and provide detailed information.",
+      "photos": "Jewelry Identifier needs photo library access to save identified jewelry images to your collection and to select existing photos of jewelry from your library for identification. For example, you can identify jewelry from photos of inherited pieces.",
+      "microphone": "Jewelry Identifier requires microphone access to record videos with audio when documenting jewelry pieces. This allows you to add voice notes to your jewelry discoveries."
+    }
+  },
+  "ai": {
+    "prompt": {
+      "language": "English",
+      "analyzeInstruction": "Analyze this jewelry image and identify it. Focus on identifying gemstones (diamonds, rubies, emeralds, sapphires, pearls), metal types (gold, silver, platinum), jewelry style/era (Victorian, Art Deco, Contemporary), craftsmanship quality, and any visible hallmarks or maker's marks.",
+      "jsonOnlyWarning": "IMPORTANT: You MUST respond with valid JSON format only, no other text.",
+      "unableToIdentify": {
+        "instruction": "If the image is unclear, too dark, or cannot be analyzed, respond with this JSON:",
+        "name": "Unable to Identify",
+        "formationMessage": "Image quality insufficient for analysis",
+        "funFactMessage": "Please provide a clear, well-lit image of the jewelry for accurate identification"
+      },
+      "analyzableInstruction": "For analyzable jewelry images, respond with:",
+      "fields": {
+        "name": "Jewelry type and style (e.g., Art Deco Diamond Ring, Victorian Pearl Brooch)",
+        "confidence": "0-100",
+        "composition": "material1, material2 (metals and secondary materials - max 6)",
+        "formation": "Craftsmanship details, setting type, manufacturing technique",
+        "locations": "likely origins or style influences",
+        "uses": "era, style, occasions (e.g., Art Deco Period, Engagement Ring - max 4)",
+        "funFact": "Interesting fact about this jewelry style, gemstone, or era",
+        "description": "Brief description of the jewelry piece (2-3 sentences covering style, craftsmanship, and notable features)",
+        "rarity": "common | uncommon | rare | very_rare | legendary (based on materials, age, uniqueness)",
+        "gemstone": "Primary gemstone name (e.g., Diamond, Ruby, Emerald) or None if no gemstones",
+        "caratWeight": "Estimated carat weight of main gemstone(s) (e.g., 1.5 carats, 2 carats total)",
+        "jewelryWeight": "Estimated total weight in grams (e.g., 8.2 grams, 15 grams)",
+        "estimatedValue": "Estimated market value range in USD (e.g., '$500 - $1,500', '$2,000 - $5,000')"
+      },
+      "responseLanguageInstruction": "ALL text in your response must be in English."
+    }
+  }
+}

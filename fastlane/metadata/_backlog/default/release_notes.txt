@@ -1,0 +1,19 @@
+This release contains bugfixes and stability improvements.
+
+---
+We've enhanced our time tracking features in this update:
+
+Improved clock in/out functionality for smoother time tracking
+Enhanced timesheet export to email for better reporting
+
+--
+We hebben onze tijdregistratiefuncties verbeterd in deze update.
+
+Verbeterde in- en uitklokfunctionaliteit voor soepelere tijdregistratie
+Verbeterde export van urenstaten naar e-mail voor betere rapportage
+
+--
+Nous avons amélioré nos fonctionnalités de suivi du temps dans cette mise à jour.
+
+Amélioration de la fonction de pointage pour un suivi du temps plus fluide
+Export optimisé des feuilles de temps par email pour de meilleurs rapports

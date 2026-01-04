@@ -1,0 +1,233 @@
+APP STORE SCREENSHOTS
+The screenshots are from an ios app called 'classic car identifier'.
+Give me for each screenshot a suitable title that I can use in app store connect to
+display the app on the app store to a target audience for maximum marketing conversation.
+Make sure the title is not too long and fits within the example length as shown on the screenshots.
+Make sure each title is aso max efficient.
+
+----------------------------------------------------
+APP STORE SCREENSHOTS
+https://www.reddit.com/r/AppStoreOptimization/comments/1pjvpb1/i_tried_generating_app_store_screenshots_with/
+---------------------
+You are designing a high-converting Apple App Store screenshot for an iPhone app.
+
+Use the uploaded screenshot as the main UI.
+
+Add:
+• A bold, clean headline at the top
+• A short supporting subheadline below it
+• Subtle gradient background behind the app window
+• Minimal Apple-style typography
+• Soft shadows and modern spacing
+• A small feature badge if relevant
+
+Do NOT change the UI content.
+Do NOT blur or distort the interface.
+Do NOT add fake buttons.
+
+Make this look like a premium Apple App Store marketing image.
+
+---------------------
+Follow up prompt
+---------------------
+
+Create a premium Apple App Store hero screenshot.
+
+Headline:
+"Turn Your Apple Health Data Into Clear AI Insights"
+
+Subheadline:
+"Analyze years of sleep, heart rate, and activity trends instantly."
+
+Add:
+• A soft blue-to-teal gradient background
+• A subtle MacBook frame around the app window
+• A small badge that says "100% On-Device Processing"
+• Clean Apple-style font hierarchy
+• Balanced spacing for readability
+
+Do NOT alter the data shown inside the UI.
+Do NOT invent new charts or
+---------------------------------------------------
+You are designing the main dashboard startup view for an iPhone app named 'Jewelry Identifier'
+
+Use the uploaded screenshot as the main UI.
+
+Adapt:
+Tabbar needs to be revamped, styled but simple and straightforward.
+
+Do NOT change the UI content.
+Do NOT blur or distort the interface.
+Do NOT add extra buttons.
+Do NOT change size or aspect ration of the image.
+
+Make this look like a premium Apple App App.
+---------------------------------------------------
+You are designing the main dashboard startup view for an iPhone app named 'Jewelry Identifier'
+
+Use the uploaded screenshot as the main UI.
+
+Adapt:
+Replace green color theme, use  blue velvet luxery color give it a hint of exclusive and luxery.
+The color needs to be solid and uniform, do not use images or patterns.
+
+Do NOT change the UI content.
+Do NOT blur or distort the interface.
+Do NOT add extra buttons.
+Do NOT change size or aspect ration of the image.
+
+Make this look like a premium Apple App App.
+---------------------------------------------------
+You are designing the main dashboard startup view for an iPhone app named 'Jewelry Identifier'
+
+Use the uploaded screenshot as the main UI.
+The UI contains a carousel with a camera brackets.
+
+Adapt:
+Re-design to make it a bit more unique while maintain the same components.
+
+
+Do NOT change the UI content.
+Do NOT blur or distort the interface.
+Do NOT add extra buttons.
+Do NOT change size or aspect ration of the image.
+
+Make this look like a premium Apple App App.
+---------------------------------------------------
+You are designing the main dashboard startup view for an iPhone app named 'Jewelry Identifier'
+
+Adapt:
+Adapt the main dashboard following the reference image as attached. 
+Follow design as faithfull as possible. Improve typography.
+
+Do NOT change functionality.
+Do NOT blur or distort the interface.
+Do NOT add extra buttons.
+Do NOT change size or aspect ration of the image.
+Remain zero functional regression at all time.
+
+Make this look like a premium Apple App.
+---------------------------------------------------
+APP ICON: https://x.com/sachin_motwani2/status/2001544755101171936
+Create a modern app icon featuring a soft white cloud with bright golden sun, clean 3D rounded forms with smooth matte surface and crisp edge definition, subtle sky-blue tint on underside for depth, centered with strong silhouette inside iOS rounded square frame, smooth gradient background from light cyan to deep azure, top-left lighting with soft shadows and gentle highlights, ios style
+----------
+Create a modern app icon featuring a frosted glass speech bubble with translucent blue surface, clean rounded rectangular shape with soft diffused lighting, elegant transparency effects revealing subtle depth layers, centered on smooth gradient background from deep purple to midnight blue, gentle rim lighting and controlled glow, ios style
+----------
+app icon  featuring a jewelry, clean forms with smooth matte surface and crisp edge definition, translucent rosted glass, smooth gradient background from green to deep velvet green, top-left lighting with soft shadows and gentle highlights. Use flat abastract style. Add camera brackets on the corners, golden luxery hue, 15% from border. Square size 1024x1024.
+---------------------------------------------------
+ONBOARDING:
+Understand and analyse the current code the proceed to the following requirement:
+Rebuild the onboarding from ground up, do not base it on the current onboarding, forget about the current onboarding completely. Rebuild from zero and make it slick, polished and must fit the overall theme and context of the app,
+introduce the user to the most important features of the app, use illustrations downloaded from the net or unsplash or cutouts to explain and promote the featurs, make it a beautifull but also an interesting experience.
+Look at the majority target users and focus on promoting the value that’s most relevant to them.
+Provide the best possible UI/UX specifically for those users — the ones who will get the most value out of the brand/app.
+You can do anything across all realms: use animations, libraries, or even generate SVG prompts that you think best suit this section.Or find images on https://unsplash.com/ that would fit the app. Go wild.
+Create a unique UX that still delivers the same core value but in a way that stands out and adds more perceived value because of its originality. Flat plain minimalism is preferred no kitchy design or overuse of icons or colors.
+It maintains flat minimalism, breathes professionalism, matches the overall app style, and delivers exceptional value to target user.
+Think beyond your usual limits. Are you pumped up for this?
+Requirements:
+- All pictures, screens and icons need to be downloaded and stored locally in the assets folders/onboarding
+- Evaluate the best approach on whether to use jina or your inbuild method to fetch online assets
+---------------------------------------------------
+launchscreen:
+1320x2868 px
+---------------------------------------------------
+You are designing the main dashboard startup view for an iPhone app named 'Jewelry Identifier'
+
+Adapt:
+The UI contains a carousel with a camera brackets.
+The UI has horizontal scroll of tiles with pictures of wiki articles which are related to the context of the app.
+Bakcground has a solid color, dark velvet green.
+Tabbar has 3 buttons: explore; scan; Collection
+UI design is apple like, flat style, simple and functional.
+
+Do NOT overuse gradients
+Do NOT blur or distort the interface.
+Size of the image MUST BE 1206x2622 px
+
+Make this look like a premium Apple App.
+---------------------------------------------------
+CTA BUTTON.
+Find CTA on the settings screen.
+
+Design the CTA card followign the reference image below. Adapt content to fit the current App's context.
+/Users/mo/Projects/Graphics/Ideation/Paywalls/Screenshot 2025-12-25 at 01.19.36.png
+
+For images, icons or other assets, use Jina, Exa or inbuild webscraping to search online sources (Unsplash, Pexels, Pixabay, etc.).
+Download every asset you use and store it locally with clear filenames.
+
+Solution should adhere to:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+----------------
+CHATGPT CREATE IMAGE
+Design for a Jewelry Identifier app a polished high converting CTA button. 
+The app is a premium Apple App. 
+Use the attached image as a reference and make it's content fit the context of the app as described.
+
+Use soft gradients.
+Borders of the image must not have embeveled.
+The content must be contained within the image borders.
+The image does not contain images of mobile devices.
+The image must feature elements or objects which fit the context of the app as described.
+The image must have flat styling.
+The image must have a clean look and high premium polished look.
+---------------------------------------------------
+You are designing a high-converting Apple App Store screenshot for an iPhone app.
+
+Use the uploaded screenshot as the main UI.
+
+Add:
+• Subtle gradient background behind the app window
+• Minimal Apple-style typography
+• Soft shadows and modern spacing
+• A small feature badge if relevant
+
+Do NOT add Titles OR texts
+Do NOT change the UI content.
+Do NOT blur or distort the interface.
+Do NOT add fake buttons.
+Do NOT add devices or frames
+
+Make this look like a premium Apple App Store marketing image.
+------
+This screenshot is from an Jewelry identifier app. 
+Adapt the image, replace the black background with a jewelry.
+
+Do NOT blur or distort the interface.
+Do NOT Change size or aspect ratio of the image
+The image can only contain one piece of jewelry.
+Make the it bright, no dark colors
+------
+I need a beautifull high converting CTA button card which will be used in the settings screen.
+The CTA is for a timetracker app which has is theme colors set to soft green and white, find the app icon attached for theme colors sampling.
+The background should have a soft simple gradient with light faded out outlined icons havind contextual link with the app's functionalities.
+Use the attached CTA button as a reference.
+
+Do not copy the app icon into the final design.
+------
+I need a beautiful clean high-quality CTA button card which will be used in the settings screen.
+The CTA is for a premium timetracker app which has is theme colors set to white and green (78b89a).
+The background featuring a gradient, should have a Overlay a subtle, grayish, low-opacity pattern of thin outlined icons having contextual link with the app's functionalities. 
+The right side of the image has a sharp shaped cutout with a clean and simpel cartoonish but not childish styled simple illustration, Illustration can not feature smaller icons.
+Any persons illustrated should be in outlined abstract style. no male characters.
+Final shape needs to be rectangular.
+
+Style: Professional UI/UX design, Dribbble aesthetic, high contrast, soft drop shadows, rounded corners, leaving empty negative space on the left side for text.
+
+Use attached image as reference.
+
+
+------
+Prompt: Create a high-quality UI design asset: a rectangular Call-to-Action (CTA) card for a mobile app settings screen. The theme is a Time Tracker App with a fresh Green and White color palette.
+
+Background: A soft, clean light gray gradient. Overlay a subtle, low-opacity pattern of thin outlined icons related to time tracking (stopwatches, calendars, hourglasses) that fade into the background.
+
+Layout: On the right side of the card, create a sharp, distinct cutout shape in the silhouette of a clock.
+
+Illustration: Inside the clock-shaped cutout, place a unique, playful 3D cartoon-style illustration of a stylized stopwatch or productivity character. The illustration must strictly adhere to the app’s Green and White color theme. Do not use generic stock photos; aim for a custom brand mascot feel.
+
+Style: Professional UI/UX design, Dribbble aesthetic, high contrast, soft drop shadows, rounded corners, leaving empty negative space on the left side for text.
+---------

@@ -1,0 +1,49 @@
+{
+  "cli": {
+    "version": ">= 16.6.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "autoIncrement": true,
+      "distribution": "internal",
+       "ios": {
+           "buildConfiguration": "Release"
+        },
+          "cache": {
+            "disabled": false,
+            "key": "prod-cache-v1",
+            "paths": ["./node_modules", "./ios/Pods"]
+     },
+      "env": {
+        "EXPO_PUBLIC_AIPROXY_PARTIAL_KEY": "v2|88857e25|vHz_VFoPdYDHbEQv",
+        "EXPO_PUBLIC_AIPROXY_SERVICE_URL": "https://api.aiproxy.com/dcf3b5ed/ad5dcc2e",
+        "EXPO_PUBLIC_AIPROXY_DEVICECHECK_BYPASS": "ba48bf84-451d-420c-b1a4-ad23620449de"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "distribution": "store",
+       "cache": {
+            "disabled": false,
+            "key": "prod-cache-v1",
+            "paths": ["./node_modules", "./ios/Pods"]
+     },
+      "env": {
+        "EXPO_PUBLIC_AIPROXY_PARTIAL_KEY": "v2|88857e25|vHz_VFoPdYDHbEQv",
+        "EXPO_PUBLIC_AIPROXY_SERVICE_URL": "https://api.aiproxy.com/dcf3b5ed/ad5dcc2e",
+        "EXPO_PUBLIC_AIPROXY_DEVICECHECK_BYPASS": "ba48bf84-451d-420c-b1a4-ad23620449de"
+      },
+      "ios": {
+        "buildConfiguration": "Release"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

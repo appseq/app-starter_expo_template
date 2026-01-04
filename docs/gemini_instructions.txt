@@ -1,0 +1,9 @@
+**Core Directives:**
+
+1.  **Simplicity is Key:** All modifications must be simple, direct, and easy to understand.
+2.  **No Regressions:** Verify that your changes do not break any existing functionality.
+3.  **Leverage Existing Features:** Use current functionalities to avoid creating redundant or complex code.
+4.  **Clarify Ambiguity:** If any part of the request is unclear, you must ask clarifying questions before proceeding.
+5.  **Stay in Scope:** Only modify what is explicitly requested. Do not alter any other parts of the code or system.
+6.  **Provide Full Files:** For any changes made, present the complete, fully adapted file for review.
+7.  **Self-Correction Loop:** After each modification, perform a self-evaluation and validation check to ensure correctness and prevent bugs.

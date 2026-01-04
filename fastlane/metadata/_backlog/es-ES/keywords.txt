@@ -1,0 +1,1 @@
+hora,trabajada,horario,tiempo,de,trabajo,control,calendario,turno,cuadrante,turnosth,seguimiento

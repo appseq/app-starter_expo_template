@@ -1,0 +1,184 @@
+ID,Location,English Text,Category,Priority,Context,Notes
+onboarding_slide_1_title,constants/appConfig.ts:163,Rock Identifier,onboarding,high,Onboarding slide 1 title,Main app name
+onboarding_slide_1_subtitle,constants/appConfig.ts:164,AI-Powered Geological Discovery,onboarding,high,Onboarding slide 1 subtitle,
+onboarding_slide_1_description,constants/appConfig.ts:165,"Unlock the secrets of Earth's geology with cutting-edge artificial intelligence that identifies rocks and minerals instantly.",onboarding,high,Onboarding slide 1 description,
+onboarding_slide_2_title,constants/appConfig.ts:173,Instant Analysis,onboarding,high,Onboarding slide 2 title,
+onboarding_slide_2_subtitle,constants/appConfig.ts:174,Point Capture Discover,onboarding,high,Onboarding slide 2 subtitle,
+onboarding_slide_2_description,constants/appConfig.ts:175,"Advanced computer vision analyzes mineral composition, crystal structure, and geological formation in seconds.",onboarding,high,Onboarding slide 2 description,
+onboarding_slide_3_title,constants/appConfig.ts:182,Digital Collection,onboarding,high,Onboarding slide 3 title,
+onboarding_slide_3_subtitle,constants/appConfig.ts:183,Curate Your Geological Journey,onboarding,high,Onboarding slide 3 subtitle,
+onboarding_slide_3_description,constants/appConfig.ts:185,"Build a comprehensive digital museum of your discoveries with detailed scientific data and formation history.",onboarding,high,Onboarding slide 3 description,
+onboarding_slide_4_title,constants/appConfig.ts:193,Scientific Knowledge,onboarding,high,Onboarding slide 4 title,
+onboarding_slide_4_subtitle,constants/appConfig.ts:194,Expand Your Understanding,onboarding,high,Onboarding slide 4 subtitle,
+onboarding_slide_4_description,constants/appConfig.ts:195,"Access comprehensive geological databases, formation processes, and fascinating insights about Earth's mineral kingdom.",onboarding,high,Onboarding slide 4 description,
+onboarding_button_final,constants/appConfig.ts:202,Begin Journey,buttons,high,Final onboarding button (last slide),
+onboarding_button_continue,constants/appConfig.ts:203,Continue,buttons,high,Continue button for onboarding slides,
+onboarding_button_skip,constants/appConfig.ts:204,Skip,buttons,medium,Skip button for onboarding,
+ui_tab_home,constants/appConfig.ts:212,Home,ui,high,Tab navigation - Home tab,
+ui_tab_collection,constants/appConfig.ts:213,Collection,ui,high,Tab navigation - Collection tab,
+ui_tab_learn,constants/appConfig.ts:214,Learn,ui,high,Tab navigation - Learn tab,
+ui_camera_title,constants/appConfig.ts:217,Capture Rock,ui,high,Camera screen title,
+ui_camera_instruction,constants/appConfig.ts:218,Point camera at a rock or mineral,ui,high,Camera instruction text,
+ui_camera_capture_button,constants/appConfig.ts:219,Identify,buttons,high,Capture button in camera screen,
+ui_camera_gallery_button,constants/appConfig.ts:220,Choose from Gallery,buttons,high,Gallery picker button text,
+ui_camera_retake_button,constants/appConfig.ts:221,Retake,buttons,medium,Retake photo button,
+ui_camera_analyze_button,constants/appConfig.ts:222,Analyze Rock,buttons,high,Analyze button on image review screen,
+ui_results_title,constants/appConfig.ts:225,Identification Results,ui,high,Results screen title,
+ui_results_confidence_label,constants/appConfig.ts:226,Confidence,ui,high,Confidence score label,
+ui_results_composition_label,constants/appConfig.ts:227,Composition,ui,high,Composition section label,
+ui_results_formation_label,constants/appConfig.ts:228,Formation,ui,high,Formation section label,
+ui_results_locations_label,constants/appConfig.ts:229,Found In,ui,high,Locations section label,
+ui_results_uses_label,constants/appConfig.ts:230,Uses,ui,high,Uses section label,
+ui_results_fun_fact_label,constants/appConfig.ts:231,Fun Fact,ui,high,Fun fact section label,
+ui_results_save_button,constants/appConfig.ts:232,Save to Collection,buttons,high,Save button in results screen,
+ui_results_share_button,constants/appConfig.ts:233,Share,buttons,medium,Share button in results screen,
+ui_collection_title,constants/appConfig.ts:236,My Rock Collection,ui,high,Collection screen title,
+ui_collection_empty_state,constants/appConfig.ts:237,No items in your collection yet,ui,high,Empty collection message,
+ui_collection_empty_action,constants/appConfig.ts:238,Start identifying rocks,ui,high,Action text when collection is empty,
+ui_collection_items_label,constants/appConfig.ts:239,specimens,ui,medium,Unit label for collection items,
+ui_learn_title,constants/appConfig.ts:242,Learn About Rocks,ui,high,Learn screen title,
+ui_learn_intro_title,constants/appConfig.ts:243,Rock Identification Guide,ui,high,Learn screen intro section title,
+ui_learn_intro_text,constants/appConfig.ts:244,"Learn about the different types of rocks, their formation, and how to identify them in the wild.",ui,high,Learn screen intro description,
+ui_learn_section_title,constants/appConfig.ts:245,Rock Types,ui,high,Rock Types section header,
+ui_learn_category_1_name,constants/appConfig.ts:248,Igneous Rocks,ui,high,Rock category name,
+ui_learn_category_1_description,constants/appConfig.ts:249,"Formed through the cooling and solidification of magma or lava. Examples include granite, basalt, and obsidian.",ui,high,Igneous rocks description,
+ui_learn_category_2_name,constants/appConfig.ts:252,Sedimentary Rocks,ui,high,Rock category name,
+ui_learn_category_2_description,constants/appConfig.ts:253,"Formed by the deposition and cementation of mineral or organic particles. Examples include sandstone, limestone, and shale.",ui,high,Sedimentary rocks description,
+ui_learn_category_3_name,constants/appConfig.ts:256,Metamorphic Rocks,ui,high,Rock category name,
+ui_learn_category_3_description,constants/appConfig.ts:257,"Formed when existing rocks are subjected to heat and pressure causing physical or chemical changes. Examples include marble, slate, and quartzite.",ui,high,Metamorphic rocks description,
+ui_learn_tips_title,constants/appConfig.ts:260,Identification Tips,ui,high,Tips section title,
+ui_learn_tip_1,constants/appConfig.ts:262,Look at the texture: Is it coarse or fine-grained?,ui,high,Identification tip 1,
+ui_learn_tip_2,constants/appConfig.ts:263,"Check the color: Different minerals create different colors",ui,high,Identification tip 2,
+ui_learn_tip_3,constants/appConfig.ts:264,"Test hardness: Can it scratch glass or be scratched by a knife?",ui,high,Identification tip 3,
+ui_learn_tip_4,constants/appConfig.ts:265,"Observe patterns: Look for layers, bands, or crystals",ui,high,Identification tip 4,
+ui_learn_tip_5,constants/appConfig.ts:266,"Consider weight: Some rocks are denser than others",ui,high,Identification tip 5,
+ui_learn_footer_text,constants/appConfig.ts:268,Use the camera tab to identify rocks in the wild!,ui,medium,Learn screen footer text,
+ui_main_subtitle,constants/appConfig.ts:271,Discover and identify rocks with AI-powered analysis,ui,high,Home screen subtitle,
+ui_main_identify_button_title,constants/appConfig.ts:273,Identify Rock,ui,high,Home screen identify button title,
+ui_main_identify_button_subtitle,constants/appConfig.ts:274,Take a photo to analyze and identify,ui,high,Home screen identify button subtitle,
+ui_main_collection_button_title,constants/appConfig.ts:277,My Collection,ui,high,Home screen collection button title,
+ui_main_collection_button_subtitle,constants/appConfig.ts:278,View your saved rock discoveries,ui,high,Home screen collection button subtitle,
+ui_main_learn_button_title,constants/appConfig.ts:281,Learn,ui,high,Home screen learn button title,
+ui_main_learn_button_subtitle,constants/appConfig.ts:282,Rock types and identification guide,ui,high,Home screen learn button subtitle,
+ui_main_remaining_scans,constants/appConfig.ts:284,free identifications remaining,ui,high,Free scans remaining text,
+ui_settings_title,constants/appConfig.ts:287,Settings,settings,high,Settings screen title,
+ui_settings_theme,constants/appConfig.ts:288,Theme,settings,high,Theme setting label,
+ui_settings_notifications,constants/appConfig.ts:289,Notifications,settings,medium,Notifications setting label,
+ui_settings_subscription,constants/appConfig.ts:290,Subscription,settings,high,Subscription setting label,
+ui_settings_about,constants/appConfig.ts:291,About,settings,high,About section label,
+ui_settings_version,constants/appConfig.ts:292,Version,settings,medium,App version label,
+ui_settings_privacy_policy,constants/appConfig.ts:293,Privacy Policy,settings,high,Privacy policy link label,
+ui_settings_terms_of_service,constants/appConfig.ts:294,Terms of Service,settings,high,Terms of service link label,
+ui_settings_contact_support,constants/appConfig.ts:295,Contact Support,settings,high,Contact support link label,
+ui_settings_rate_app,constants/appConfig.ts:296,Rate the app,settings,medium,Rate app link label,
+ui_settings_restart_onboarding,constants/appConfig.ts:297,Restart Onboarding,settings,medium,Restart onboarding button label,
+ui_subscription_benefit_1_title,constants/appConfig.ts:309,Unlimited Scans,ui,high,Subscription benefit title,
+ui_subscription_benefit_1_description,constants/appConfig.ts:310,Identify as many rocks as you want,ui,high,Subscription benefit description,
+ui_subscription_benefit_1_free,constants/appConfig.ts:311,3 per day,ui,high,Free plan limit,
+ui_subscription_benefit_1_premium,constants/appConfig.ts:312,Unlimited,ui,high,Premium plan benefit,
+ui_subscription_benefit_2_title,constants/appConfig.ts:316,Faster Processing,ui,high,Subscription benefit title,
+ui_subscription_benefit_2_description,constants/appConfig.ts:317,Priority API access for instant results,ui,high,Subscription benefit description,
+ui_subscription_benefit_2_free,constants/appConfig.ts:318,Standard,ui,high,Free plan value,
+ui_subscription_benefit_2_premium,constants/appConfig.ts:319,Priority,ui,high,Premium plan value,
+ui_subscription_benefit_3_title,constants/appConfig.ts:323,Detailed Analysis,ui,high,Subscription benefit title,
+ui_subscription_benefit_3_description,constants/appConfig.ts:324,Get comprehensive mineral composition data,ui,high,Subscription benefit description,
+ui_subscription_benefit_3_free,constants/appConfig.ts:325,Basic,ui,high,Free plan value,
+ui_subscription_benefit_3_premium,constants/appConfig.ts:326,Advanced,ui,high,Premium plan value,
+ui_subscription_benefit_4_title,constants/appConfig.ts:330,Cloud Backup,ui,medium,Subscription benefit title,
+ui_subscription_benefit_4_description,constants/appConfig.ts:331,Never lose your rock collection,ui,medium,Subscription benefit description,
+ui_subscription_benefit_4_free,constants/appConfig.ts:332,Device only,ui,medium,Free plan value,
+ui_subscription_benefit_4_premium,constants/appConfig.ts:333,Coming soon,ui,medium,Premium plan value,
+ui_subscription_benefit_5_title,constants/appConfig.ts:337,Accuracy Boost,ui,high,Subscription benefit title,
+ui_subscription_benefit_5_description,constants/appConfig.ts:338,Enhanced AI model for better identification,ui,high,Subscription benefit description,
+ui_subscription_benefit_5_free,constants/appConfig.ts:339,Standard,ui,high,Free plan value,
+ui_subscription_benefit_5_premium,constants/appConfig.ts:340,Enhanced,ui,high,Premium plan value,
+ui_subscription_benefit_6_title,constants/appConfig.ts:344,Priority Support,ui,high,Subscription benefit title,
+ui_subscription_benefit_6_description,constants/appConfig.ts:345,Get help when you need it,ui,high,Subscription benefit description,
+ui_subscription_benefit_6_free,constants/appConfig.ts:346,Community,ui,high,Free plan value,
+ui_subscription_benefit_6_premium,constants/appConfig.ts:347,Priority,ui,high,Premium plan value,
+error_generic,constants/appConfig.ts:352,Something went wrong. Please try again.,errors,high,Generic error message,
+error_network,constants/appConfig.ts:353,Network error. Please check your connection.,errors,high,Network error message,
+error_identification_failed,constants/appConfig.ts:354,Failed to identify. Please try again.,errors,high,Identification failure message,
+error_image_quality_poor,constants/appConfig.ts:355,Image quality insufficient. Please provide a clear well-lit image.,errors,high,Image quality error message,
+error_camera_permission,constants/appConfig.ts:356,Camera permission is required to use this feature.,errors,high,Camera permission required error,
+error_gallery_permission,constants/appConfig.ts:357,Photo library permission is required to use this feature.,errors,high,Photo library permission required error,
+permission_camera_title,components/PermissionRequest.tsx:97,Camera Access Needed,permissions,high,Camera permission request title,
+permission_camera_description,components/PermissionRequest.tsx:101,"[APP_NAME] needs camera access to analyze and identify [rocks/minerals]. Your photos are processed securely and never shared without your permission.",permissions,high,Camera permission request description,Uses dynamic substitution
+permission_button_allow,components/PermissionRequest.tsx:107,Allow Camera Access,buttons,high,Camera permission allow button,
+permission_skip_text,components/PermissionRequest.tsx:113,You can also grant permission later in settings,permissions,medium,Permission skip message,
+image_review_preview_title,app/image-review.tsx:140,Preview,ui,high,Image review screen title,
+image_review_analyzing_title,app/image-review.tsx:161,"Analyzing [rock/mineral]...",ui,high,Analyzing status text,Uses dynamic substitution
+image_review_analyzing_subtitle,app/image-review.tsx:163,Examining mineral composition and geological structure,ui,high,Analyzing subtitle text,
+image_review_ready_title,app/image-review.tsx:168,Ready to identify?,ui,high,Image review ready dialog title,
+image_review_ready_description,app/image-review.tsx:170,"Get detailed analysis of this [rock/mineral] including its type, mineral composition, formation process, and geological properties.",ui,high,Image review ready description,Uses dynamic substitution
+image_review_identify_button,app/image-review.tsx:189,Identify [Rock/Mineral],buttons,high,Identify button on image review,Capitalizes objectType dynamically
+image_review_retake_button,app/image-review.tsx:201,Retake Photo,buttons,high,Retake photo button on image review,
+item_details_analysis_failed_title,app/item-details.tsx:188,Analysis Incomplete,ui,high,Analysis failed screen title,
+item_details_try_again_button,app/item-details.tsx:193,Try Again,buttons,high,Try again button when analysis fails,
+item_details_save_to_collection,app/item-details.tsx:331,Save to Collection,buttons,high,Save to collection button,
+item_details_saved_indicator,app/item-details.tsx:342,Saved to your collection,ui,high,Indicator text when item is saved,
+item_details_composition_title,app/item-details.tsx:281,Composition,ui,high,Composition section title,
+item_details_formation_title,app/item-details.tsx:294,Formation,ui,high,Formation section title,
+item_details_locations_title,app/item-details.tsx:301,Common Locations,ui,high,Common locations section title,
+item_details_uses_title,app/item-details.tsx:310,Common Uses,ui,high,Common uses section title,
+item_details_fun_fact_title,app/item-details.tsx:324,FUN FACT,ui,high,Fun fact section label,
+collection_loading_text,app/collection.tsx:134,Loading collection...,ui,medium,Loading indicator text,
+collection_confidence_match,app/collection.tsx:105,[percentage]% match,ui,high,Confidence percentage display,Dynamic substitution
+settings_rate_app_subtitle,app/settings.tsx:486,Let us know what you think,settings,medium,Rate app button subtitle,
+settings_contact_support_subtitle,app/settings.tsx:494,Get support or give feedback,settings,medium,Contact support button subtitle,
+settings_camera_settings_title,app/settings.tsx:571,Camera Settings,settings,high,Camera settings button title,
+settings_camera_settings_subtitle,app/settings.tsx:572,Open device camera settings,settings,high,Camera settings button subtitle,
+settings_restart_onboarding_subtitle,app/settings.tsx:580,View the tutorial again,settings,medium,Restart onboarding button subtitle,
+settings_demo_mode_title,app/settings.tsx:404,Screenshot Mode,settings,low,Demo mode section title,Development only
+settings_demo_mode_label,app/settings.tsx:409,Demo Mode,settings,low,Demo mode toggle label,Development only
+settings_demo_mode_description,app/settings.tsx:410,Populate app with sample data for screenshots,settings,low,Demo mode description,Development only
+settings_demo_mode_active_alert,app/settings.tsx:429,📸 Demo mode active - Ready for screenshots!,ui,low,Demo mode active indicator text,Development only
+settings_upgrade_title,app/settings.tsx:467,Unlock Premium,ui,high,Upgrade card title,
+settings_upgrade_subtitle,app/settings.tsx:468,Unlimited [rock/mineral] identifications,ui,high,Upgrade card subtitle,Uses dynamic substitution
+settings_upgrade_features,app/settings.tsx:475,• No daily limits • Priority AI processing • Premium support,ui,high,Upgrade features list,
+settings_theme_light_option,app/settings.tsx:546,Light,settings,high,Light theme option,
+settings_theme_dark_option,app/settings.tsx:552,Dark,settings,high,Dark theme option,
+settings_theme_auto_option,app/settings.tsx:558,Auto,settings,high,Automatic/system theme option,
+alert_email_not_available_title,app/settings.tsx:206,Email Not Available,alerts,medium,Email unavailable alert title,
+alert_email_not_available_message,app/settings.tsx:207,Please send your support request to: [email],alerts,medium,Email unavailable alert message,Dynamic substitution
+alert_error_app_store,app/settings.tsx:228,Could not open the app store.,alerts,medium,App store open error message,
+alert_restoring_purchases_title,app/settings.tsx:253,Restoring Purchases,alerts,high,Purchase restoration alert title,
+alert_restoring_purchases_message,app/settings.tsx:254,Checking for previous purchases...,alerts,high,Purchase restoration alert message,
+alert_restore_success_title,app/settings.tsx:263,Success!,alerts,high,Purchase restoration success title,
+alert_restore_success_message,app/settings.tsx:264,Your premium subscription has been restored.,alerts,high,Purchase restoration success message,
+alert_restore_success_button,app/settings.tsx:265,Great!,buttons,medium,Success alert button,
+alert_no_purchases_title,app/settings.tsx:269,No Purchases Found,alerts,high,No previous purchases alert title,
+alert_no_purchases_message,app/settings.tsx:270,No previous purchases found to restore.,alerts,high,No previous purchases alert message,
+alert_restore_failed_title,app/settings.tsx:276,Restore Failed,alerts,high,Purchase restoration failed title,
+alert_restore_failed_message,app/settings.tsx:277,Unable to restore purchases. Please try again later.,alerts,high,Purchase restoration failed message,
+alert_demo_mode_enable_title,app/settings.tsx:289,📸 Enable Demo Mode,alerts,low,Demo mode enable confirmation title,Development only
+alert_demo_mode_enable_message,app/settings.tsx:290,"This will temporarily replace your collection with demo data for App Store screenshots. Your original data will be backed up and restored when you disable demo mode.",alerts,low,Demo mode enable confirmation message,Development only
+alert_demo_mode_enable_cancel,app/settings.tsx:293,Cancel,buttons,low,Demo mode enable cancel button,Development only
+alert_demo_mode_enable_button,app/settings.tsx:298,Enable,buttons,low,Demo mode enable confirm button,Development only
+alert_demo_mode_enabled_title,app/settings.tsx:305,✅ Demo Mode Enabled,alerts,low,Demo mode enabled confirmation title,Development only
+alert_demo_mode_enabled_message,app/settings.tsx:306,"Your app is now ready for screenshots! The collection has been populated with demo [rocks/minerals].",alerts,low,Demo mode enabled confirmation message,Development only - Uses dynamic substitution
+alert_demo_mode_disabled_title,app/settings.tsx:319,✅ Demo Mode Disabled,alerts,low,Demo mode disabled confirmation title,Development only
+alert_demo_mode_disabled_message,app/settings.tsx:320,Your original [rock/mineral] collection has been restored.,alerts,low,Demo mode disabled confirmation message,Development only - Uses dynamic substitution
+alert_demo_mode_error,app/settings.tsx:327,Failed to toggle demo mode. Please try again.,alerts,low,Demo mode toggle error message,Development only
+alert_delete_item_title,app/item-details.tsx:141,Delete [rock/mineral],alerts,high,Delete confirmation alert title,Uses dynamic substitution
+alert_delete_item_message,app/item-details.tsx:142,Are you sure you want to remove this [rock/mineral] from your collection?,alerts,high,Delete confirmation alert message,Uses dynamic substitution
+alert_delete_cancel,app/item-details.tsx:145,Cancel,buttons,high,Delete confirmation cancel button,
+alert_delete_confirm,app/item-details.tsx:149,Delete,buttons,high,Delete confirmation button,
+alert_analysis_failed_title,app/image-review.tsx:111,Analysis Failed,alerts,high,Analysis failed alert title,
+premium_feature_unlocked_title,components/PremiumFeatureButton.tsx:45,Feature Unlocked!,alerts,high,Feature unlocked alert title,
+premium_feature_unlocked_message,components/PremiumFeatureButton.tsx:46,You can now use [feature],alerts,high,Feature unlocked alert message,Dynamic substitution
+premium_feature_unlocked_button,components/PremiumFeatureButton.tsx:48,Great!,buttons,high,Feature unlocked alert button,
+premium_feature_badge,components/PremiumFeatureButton.tsx:68,PRO,ui,medium,Premium feature badge text,
+upgrade_prompt_not_available_title,components/UpgradePrompt.tsx:27,Not Available,alerts,medium,Upgrade not available alert title,Web platform only
+upgrade_prompt_not_available_message,components/UpgradePrompt.tsx:28,Subscriptions are not available on web. Please use the mobile app.,alerts,medium,Upgrade not available alert message,Web platform only
+upgrade_prompt_error_title,components/UpgradePrompt.tsx:52,Error,alerts,high,Paywall error alert title,
+upgrade_prompt_error_message,components/UpgradePrompt.tsx:53,Unable to show upgrade options. Please try again later.,alerts,high,Paywall error message,
+demo_sample_1_name,constants/appConfig.ts:394,Amethyst,ui,low,Demo data - rock name,Development only
+demo_sample_1_formation,constants/appConfig.ts:397,Forms in volcanic rocks when gas cavities become lined with crystals,ui,low,Demo data - formation description,Development only
+demo_sample_1_fun_fact,constants/appConfig.ts:400,"Ancient Greeks believed amethyst prevented intoxication and wore it as protection",ui,low,Demo data - fun fact,Development only
+demo_sample_2_name,constants/appConfig.ts:403,Rose Quartz,ui,low,Demo data - rock name,Development only
+demo_sample_2_formation,constants/appConfig.ts:406,Forms in pegmatite deposits through slow cooling of magma,ui,low,Demo data - formation description,Development only
+demo_sample_2_fun_fact,constants/appConfig.ts:409,"Known as the ""love stone"" and has been used in love rituals for over 6,000 years",ui,low,Demo data - fun fact,Development only
+demo_sample_3_name,constants/appConfig.ts:412,Pyrite,ui,low,Demo data - rock name,Development only
+demo_sample_3_formation,constants/appConfig.ts:415,Forms in sedimentary deposits under low oxygen conditions,ui,low,Demo data - formation description,Development only
+demo_sample_3_fun_fact,constants/appConfig.ts:418,"Known as ""Fool's Gold"" because of its metallic luster and gold color",ui,low,Demo data - fun fact,Development only

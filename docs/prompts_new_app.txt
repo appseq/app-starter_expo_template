@@ -1,0 +1,58 @@
+NEW APP:
+Rebuild the entire UI/UX of the app from the ground up. Ignore the existing UI completely;
+act as if it does not exist. Do not reuse or reference any part of the current interface.
+
+Use the attached images only as style, tone, and layout direction.
+They are the visual template reference for the new design.
+Create a fully new, modern, clean, mobile-first UI/UX based on these references.
+If images or icons are needed, use Jina to search online sources (Unsplash, Pexels, Pixabay, etc.).
+Download every asset you use and store it locally with clear filenames. For each asset, provide the Jina search query, source URL, and local filename.
+
+When producing UI components, layout structures, or implementation examples:
+-Follow clean code standards.
+-Prioritize reusability, modularity, and maintainability.
+-Apply defensive programming techniques to ensure stability and robustness.
+-Keep solutions simple—do not overengineer or introduce unnecessary abstractions.
+-Prefer clarity and readability over cleverness.
+
+Do not break functionality of the app.
+
+Find the reference images in this directory:
+/Users/mo/Projects/Graphics/Ideation/Zophi - Antique Identifier
+
+---------------------------------------------
+App store screenshots:
+Transform the attached images into polished, stylish Apple App Store screenshots. The screenshots must look professionally designed and marketing-ready. Use the following link as the visual design and layout inspiration:
+https://www.appshot.gallery/app/blinq-digital-business-card
+https://www.appshot.gallery/app/fantastical-calendar
+
+---------------------------------------------
+Rebuild the entire UI/UX of the app from the ground up. Ignore the existing UI completely;
+act as if it does not exist. Do not reuse or reference any part of the current interface.
+Use the reference app source code 'rork-app-anitque-id' to rebuild the app UI and UX.
+Additionally find the reference images in this directory: '/Users/mo/Projects/Graphics/Ideation/Zophi - Antique Identifier'
+Focus on the UI and UX, keep the technical source structure intact like the scrips, services, utils, use of aiproxy and config setup.
+-Follow clean code standards.
+-Prioritize reusability, modularity, and maintainability.
+-Apply defensive programming techniques to ensure stability and robustness.
+
+---------------------------------------------
+Investigate on how to make the codebase for this app bare-bones so it can be served as a template to build new apps.
+All app specific views need to be removed, replaced with a sinle startup view with minimal UI.
+
+Requirements:
+- maintain infrastructure skeleton of the project
+- maintain configuration config.json
+- maintain tooling like localization lib, AIProxy, RevenueCat, SuperWall, Jina, Exa and all api-keys and related services
+- maintain fastlane tooling
+- mantain all .claude scripts and shortcuts
+
+Make sure bare-bone project builds and runs, no syntax or build errors are introduced.
+
+ultrathink
+
+
+---------------------------------------------
+generate relevant pre-commit hooks for your project.
+
+
