@@ -1,2 +1,2 @@
-# app-jewelidentifier
+# app-expo-template
 
