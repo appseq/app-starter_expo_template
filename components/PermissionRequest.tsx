@@ -108,7 +108,7 @@ export const PermissionRequest: React.FC<PermissionRequestProps> = ({
           {/* Icon animation */}
           <Animated.View style={[styles.iconContainer, animatedStyle]}>
             <LinearGradient
-              colors={[Colors.primary.teal, Colors.primary.tealDark]}
+              colors={[Colors.primary.main, Colors.primary.dark]}
               style={styles.iconBackground}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}
@@ -135,14 +135,12 @@ export const PermissionRequest: React.FC<PermissionRequestProps> = ({
             <AnimatedButton
               title={t('ui.permissions.camera.button')}
               onPress={onRequestPermission}
-              style={[
-                styles.button,
-                {
-                  borderWidth: 2,
-                  borderColor: colors.text.primary,
-                  backgroundColor: 'transparent',
-                }
-              ]}
+              style={{
+                ...styles.button,
+                borderWidth: 2,
+                borderColor: colors.text.primary,
+                backgroundColor: 'transparent',
+              }}
               gradientColors={['transparent', 'transparent']}
               textStyle={{
                 color: colors.text.primary,
@@ -217,7 +215,7 @@ const styles = StyleSheet.create({
     borderRadius: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    shadowColor: Colors.primary.teal,
+    shadowColor: Colors.primary.main,
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.5,
     shadowRadius: 16,

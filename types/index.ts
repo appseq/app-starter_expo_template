@@ -1,12 +1,15 @@
-// Rarity classification for jewelry pieces
-export type JewelryRarity = 'common' | 'uncommon' | 'rare' | 'very_rare' | 'legendary';
+// Rarity classification (generic, customize for your domain)
+export type Rarity = 'common' | 'uncommon' | 'rare' | 'very_rare' | 'legendary' | string;
+
+// Legacy alias for backward compatibility
+export type JewelryRarity = Rarity;
 
 // Generic identification interface that can be used for any object type
-// (rocks, plants, birds, art, etc.)
+// (rocks, plants, birds, art, jewelry, etc.)
 export interface ObjectIdentification {
   name: string;
   confidence: number;
-  category?: string;      // Category/type (e.g., Ring, Necklace, Bracelet for jewelry)
+  category?: string;      // Category/type (e.g., Ring, Necklace for jewelry; Oak, Maple for trees)
   composition: string[];  // Could be materials, species, ingredients, etc.
   formation: string;      // Could be origin, habitat, creation process, etc.
   locations: string[];    // Where it's found, native to, created in, etc.
@@ -14,15 +17,15 @@ export interface ObjectIdentification {
   funFact: string;        // Interesting information
   imageUri: string;
   description?: string;   // Brief description of the item
-  // Optional jewelry-specific fields
-  estimatedValue?: string;  // AI-provided value estimate (e.g., "$500 - $2,000")
-  timePeriod?: string;      // Era or date range (e.g., "Art Deco Period, 1920-1935")
+  // Optional extended fields (customize for your domain)
+  estimatedValue?: string;  // AI-provided value estimate
+  timePeriod?: string;      // Era or date range
   history?: string;         // Historical context (max ~100 words)
-  // Additional jewelry-specific fields
-  rarity?: JewelryRarity;   // Rarity classification (common to legendary)
-  gemstone?: string;        // Primary gemstone (e.g., "Diamond", "Ruby")
-  caratWeight?: string;     // Gemstone weight (e.g., "1.5 carats")
-  jewelryWeight?: string;   // Total piece weight (e.g., "8.2 grams")
+  rarity?: Rarity;          // Rarity classification
+  // Domain-specific fields (examples for jewelry apps)
+  gemstone?: string;        // Primary gemstone
+  caratWeight?: string;     // Gemstone weight
+  jewelryWeight?: string;   // Total piece weight
 }
 
 // Visual match from web search

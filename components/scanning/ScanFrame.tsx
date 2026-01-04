@@ -15,7 +15,7 @@ export default function ScanFrame({
   size = 200,
   cornerLength = 40,
   borderWidth = 4,
-  color = Colors.accent.gold,
+  color = Colors.accent.primary,
   style,
   testID,
 }: ScanFrameProps) {
@@ -105,8 +105,8 @@ export default function ScanFrame({
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
-    // Gold glow effect
-    shadowColor: Colors.accent.gold,
+    // Accent glow effect
+    shadowColor: Colors.accent.primary,
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.6,
     shadowRadius: 20,

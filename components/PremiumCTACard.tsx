@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 14,
     fontWeight: '700',
-    color: Colors.primary.teal,
+    color: Colors.primary.main,
   },
 });
 

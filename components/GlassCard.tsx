@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ViewProps } from 'react-native';
 import { BlurView } from 'expo-blur';
 import { Platform } from 'react-native';
-import { getColors } from "@/constants/internal/colors";
+import Colors, { getColors } from "@/constants/internal/colors";
 import { useTheme } from '@/hooks/useTheme';
 
 interface GlassCardProps extends ViewProps {
@@ -27,7 +27,7 @@ export const GlassCard: React.FC<GlassCardProps> = ({
     borderColor: colors.surface.glassEdge,
     overflow: 'hidden',
     padding: 16,
-    shadowColor: '#000',
+    shadowColor: Colors.neutral.black,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.3,
     shadowRadius: 20,

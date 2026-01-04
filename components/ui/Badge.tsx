@@ -53,29 +53,14 @@ export default function Badge({
 function getVariantColor(variant: BadgeVariant): string {
   switch (variant) {
     case 'category':
-      return Colors.accent.gold;
+      return Colors.accent.primary;
     case 'rarity':
       return Colors.rarity.rare;
     case 'value':
-      return Colors.accent.coral;
+      return Colors.accent.highlight;
     default:
-      return Colors.neutral.granite;
+      return Colors.neutral.gray500;
   }
-}
-
-// Helper function to get category color
-export function getCategoryColor(category: string): string {
-  const categoryLower = category.toLowerCase();
-  const categoryColors: Record<string, string> = {
-    ring: Colors.categories.ring,
-    necklace: Colors.categories.necklace,
-    earring: Colors.categories.earring,
-    bracelet: Colors.categories.bracelet,
-    brooch: Colors.categories.brooch,
-    watch: Colors.categories.watch,
-    gemstone: Colors.categories.gemstone,
-  };
-  return categoryColors[categoryLower] || Colors.neutral.granite;
 }
 
 // Helper function to get rarity color
@@ -89,26 +74,6 @@ export function getRarityColor(rarity: string): string {
     legendary: Colors.rarity.legendary,
   };
   return rarityColors[rarityLower] || Colors.rarity.common;
-}
-
-// Helper function to get jewelry material color
-export function getMaterialColor(material: string): string {
-  const materialLower = material.toLowerCase().replace(' ', '');
-  const materialColors: Record<string, string> = {
-    gold: Colors.jewelry.gold,
-    rosegold: Colors.jewelry.roseGold,
-    silver: Colors.jewelry.silver,
-    platinum: Colors.jewelry.platinum,
-    diamond: Colors.jewelry.diamond,
-    ruby: Colors.jewelry.ruby,
-    emerald: Colors.jewelry.emerald,
-    sapphire: Colors.jewelry.sapphire,
-    pearl: Colors.jewelry.pearl,
-    amethyst: Colors.jewelry.amethyst,
-    topaz: Colors.jewelry.topaz,
-    opal: Colors.jewelry.opal,
-  };
-  return materialColors[materialLower] || Colors.neutral.granite;
 }
 
 const styles = StyleSheet.create({

@@ -47,7 +47,7 @@ export default function CameraOverlay({
       {/* Center scan frame */}
       <View style={styles.centerContainer}>
         <ScanFrame size={frameSize} cornerLength={50} borderWidth={4} />
-        <Text style={styles.hintText}>Position jewelry within frame</Text>
+        <Text style={styles.hintText}>Position subject within frame</Text>
       </View>
 
       {/* Bottom controls */}
@@ -59,7 +59,7 @@ export default function CameraOverlay({
           activeOpacity={0.7}
         >
           {flashEnabled ? (
-            <Zap size={24} color={Colors.accent.gold} fill={Colors.accent.gold} />
+            <Zap size={24} color={Colors.accent.primary} fill={Colors.accent.primary} />
           ) : (
             <ZapOff size={24} color={Colors.neutral.white} />
           )}

@@ -404,7 +404,9 @@ clean + build + deploy to physical device / debug or standalone
 clean + check if enought discpace + clean up diskspace if needed +  build + deploy release file to app store connect or google play store
  
 Suggest other commands that could benefit the workflow for the project. 
-
   
-  -----
-
+-----
+This project is a template bare bones for RN Expo, this will be used for hight turn-around to build and release RN expo mobile apps.\
+Adapt:\
+Make the theming more neutral.\
+-----

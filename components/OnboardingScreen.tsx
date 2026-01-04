@@ -96,7 +96,7 @@ export default function OnboardingScreen() {
 
       {/* Solid Background */}
       <LinearGradient
-        colors={[Colors.primary.teal, Colors.primary.tealDark]}
+        colors={[Colors.primary.main, Colors.primary.dark]}
         style={StyleSheet.absoluteFill}
         start={{ x: 0.5, y: 0 }}
         end={{ x: 0.5, y: 1 }}
@@ -196,7 +196,7 @@ function ContinueButton({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.primary.tealDark,
+    backgroundColor: Colors.primary.dark,
   },
   contentContainer: {
     flex: 1,
@@ -219,14 +219,14 @@ const styles = StyleSheet.create({
   accentLine: {
     height: 3,
     width: 60,
-    backgroundColor: Colors.accent.gold,
+    backgroundColor: Colors.accent.primary,
     borderRadius: 2,
     marginBottom: 16,
   },
   subtitle: {
     fontSize: 15,
     fontWeight: '600',
-    color: Colors.accent.gold,
+    color: Colors.accent.primary,
     marginBottom: 16,
     lineHeight: 22,
     letterSpacing: 2,
@@ -270,10 +270,10 @@ const styles = StyleSheet.create({
     zIndex: 100,
   },
   continueButtonContainer: {
-    backgroundColor: Colors.accent.gold,
+    backgroundColor: Colors.accent.primary,
     borderRadius: 28,
     overflow: 'hidden',
-    shadowColor: Colors.accent.gold,
+    shadowColor: Colors.accent.primary,
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.35,
     shadowRadius: 16,

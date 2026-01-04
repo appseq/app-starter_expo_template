@@ -14,8 +14,8 @@ interface PageIndicatorProps {
 export default function PageIndicator({
   total,
   current,
-  activeColor = Colors.neutral.charcoal,
-  inactiveColor = Colors.neutral.granite,
+  activeColor = Colors.neutral.gray900,
+  inactiveColor = Colors.neutral.gray500,
   style,
   testID,
 }: PageIndicatorProps) {

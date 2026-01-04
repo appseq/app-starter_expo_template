@@ -28,7 +28,7 @@ export default function ScanningFrame({
   const actualTheme = themeContext?.actualTheme || 'dark';
   const colors = getColors(actualTheme);
 
-  const frameColor = colors.zophi?.bronze || '#C4956A';
+  const frameColor = colors.app?.accent || colors.accent.electric;
 
   // Animation for pulsing effect
   const pulseOpacity = useSharedValue(1);

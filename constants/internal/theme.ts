@@ -7,7 +7,7 @@ export const theme = {
     borderRadius: 20,
     borderWidth: 1,
     borderColor: colors.surface.glassEdge,
-    shadowColor: '#000',
+    shadowColor: colors.neutral.black,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.3,
     shadowRadius: 20,

@@ -55,4 +55,19 @@ ultrathink
 ---------------------------------------------
 generate relevant pre-commit hooks for your project.
 
+---------------
+RORK
+
+NEW APP
+
+Reference example:
+https://apps.apple.com/us/app/convert-to-pdf-photo-scanner/id6749334400
+
+Tech stack:
+RN Expo
+zustand
+NPM
+
+Description and functionality:
+Copy App Store description of app
 

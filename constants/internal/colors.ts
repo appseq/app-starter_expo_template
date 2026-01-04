@@ -1,61 +1,65 @@
-// Jewelry Identifier Theme - Teal/Gold Luxury Palette
-// Inspired by premium jewelry aesthetics
+// Neutral Template Theme - Gray/Teal Palette
+// Versatile neutral theme suitable for any app type
 
 // Flat color object for reference app compatibility
 const Colors = {
-  // Primary teal colors (main backgrounds)
+  // Primary gray colors (main backgrounds)
   primary: {
-    teal: '#2D6B5C',        // Deep forest teal (main background)
-    tealDark: '#1A4D3E',    // Darker teal variant
-    tealLight: '#3D8B7A',   // Lighter teal variant
-    slate: '#2D3436',       // Secondary dark (tab bar)
-    slateDark: '#1E2526',   // Darker slate
-    slateLight: '#404647',  // Lighter slate
+    main: '#1F2937',         // Gray-800 (main background)
+    dark: '#111827',         // Gray-900
+    light: '#374151',        // Gray-700
+    slate: '#2D3436',        // Secondary dark (tab bar)
+    slateDark: '#1E2526',    // Darker slate
+    slateLight: '#404647',   // Lighter slate
   },
-  // Gold accent colors (buttons, highlights)
+  // Teal/Cyan accent colors (buttons, highlights)
   accent: {
-    gold: '#C9A055',        // Warm gold (primary accent)
-    goldLight: '#DDB86A',   // Lighter gold
-    goldDark: '#A88A45',    // Darker gold
-    amber: '#E07C24',       // Vibrant amber (alternative accent)
-    amberLight: '#F09D4A',  // Lighter amber
-    amberDark: '#C46A1A',   // Darker amber
-    coral: '#E85A5A',       // Value/price highlights
-    crystal: '#5BB3C9',     // Teal accent for badges
-    crystalLight: '#7ECCE0',// Lighter crystal
+    primary: '#0D9488',      // Teal-600 (main accent)
+    light: '#14B8A6',        // Teal-500
+    dark: '#0F766E',         // Teal-700
+    secondary: '#06B6D4',    // Cyan-500
+    secondaryLight: '#22D3EE', // Cyan-400
+    secondaryDark: '#0891B2',  // Cyan-600
+    highlight: '#F59E0B',    // Amber for highlights
+    danger: '#EF4444',       // Red for destructive actions
+    // Backward compatibility aliases
+    blue: '#06B6D4',         // Alias for secondary (cyan)
+    emerald: '#10B981',      // Green accent
+    purple: '#8B5CF6',       // Purple accent
+    coral: '#EF4444',        // Alias for danger
+    gold: '#F59E0B',         // Alias for highlight
   },
-  // Neutral colors
+  // Neutral gray scale
   neutral: {
-    cream: '#F5F1E8',       // Light backgrounds
-    creamLight: '#FAF8F3',  // Lighter cream
-    creamDark: '#E8E2D5',   // Darker cream
-    stone: '#F0EDE5',       // Stone background (cards)
-    stoneLight: '#F7F5F0',  // Lighter stone
-    stoneDark: '#DDD8CC',   // Darker stone
-    charcoal: '#1A1A1A',    // Dark text
-    obsidian: '#1A1A1A',    // Black variant
-    obsidianLight: '#2D2D2D',
-    granite: '#6B7280',     // Muted text
-    graniteLight: '#9CA3AF',// Lighter granite
     white: '#FFFFFF',
+    gray50: '#F9FAFB',
+    gray100: '#F3F4F6',
+    gray200: '#E5E7EB',
+    gray300: '#D1D5DB',
+    gray400: '#9CA3AF',
+    gray500: '#6B7280',
+    gray600: '#4B5563',
+    gray700: '#374151',
+    gray800: '#1F2937',
+    gray900: '#111827',
     black: '#000000',
   },
   // Background colors
   background: {
-    dark: '#2D6B5C',        // Primary dark bg (teal)
-    light: '#F5F1E8',       // Light bg (cream)
-    card: '#FFFDF8',        // Card background
+    dark: '#111827',         // Gray-900
+    light: '#F9FAFB',        // Gray-50
+    card: '#FFFFFF',         // White card background
     overlay: 'rgba(0, 0, 0, 0.5)',
     glass: 'rgba(30, 30, 30, 0.92)',  // Glass morphism
     glassBorder: 'rgba(255, 255, 255, 0.08)',
   },
   // Text colors
   text: {
-    primary: '#1A1A1A',     // Dark text on light bg
-    secondary: '#4B5563',   // Secondary text
-    light: '#FFFFFF',       // Light text on dark bg
-    muted: '#6B7280',       // Muted/disabled text
-    accent: '#C9A055',      // Gold accent text
+    primary: '#111827',      // Gray-900
+    secondary: '#4B5563',    // Gray-600
+    light: '#FFFFFF',        // Light text on dark bg
+    muted: '#6B7280',        // Gray-500
+    accent: '#0D9488',       // Teal-600
   },
   // Status colors
   status: {
@@ -64,125 +68,100 @@ const Colors = {
     warning: '#F59E0B',
     info: '#3B82F6',
   },
-  // Jewelry-specific colors (for badges and categories)
-  jewelry: {
-    gold: '#FFD700',        // Pure gold
-    roseGold: '#B76E79',    // Rose gold
-    silver: '#C0C0C0',      // Silver
-    platinum: '#E5E4E2',    // Platinum
-    diamond: '#B9F2FF',     // Diamond blue
-    ruby: '#E0115F',        // Ruby red
-    emerald: '#50C878',     // Emerald green
-    sapphire: '#0F52BA',    // Sapphire blue
-    pearl: '#F0EAD6',       // Pearl cream
-    amethyst: '#9966CC',    // Amethyst purple
-    topaz: '#FFC87C',       // Topaz yellow
-    opal: '#A8C3BC',        // Opal iridescent
-  },
-  // Category colors (for type badges) - unified slate color for clean look
-  categories: {
-    ring: '#2D3436',        // Slate (unified)
-    necklace: '#2D3436',    // Slate (unified)
-    earring: '#2D3436',     // Slate (unified)
-    bracelet: '#2D3436',    // Slate (unified)
-    brooch: '#2D3436',      // Slate (unified)
-    watch: '#2D3436',       // Slate
-    gemstone: '#2D3436',    // Slate (unified)
-  },
-  // Rarity colors
+  // Rarity colors (generic, useful for gamification)
   rarity: {
-    common: '#6B7280',      // Gray
-    uncommon: '#10B981',    // Green
-    rare: '#3B82F6',        // Blue
-    veryRare: '#8B5CF6',    // Purple
-    legendary: '#F59E0B',   // Gold
+    common: '#6B7280',       // Gray
+    uncommon: '#10B981',     // Green
+    rare: '#3B82F6',         // Blue
+    veryRare: '#8B5CF6',     // Purple
+    legendary: '#F59E0B',    // Gold
   },
   // Surface colors (glass morphism, overlays)
   surface: {
     glass: 'rgba(255, 255, 255, 0.05)',
     glassStrong: 'rgba(255, 255, 255, 0.12)',
-    glassEdge: 'rgba(201, 160, 85, 0.2)',  // Gold tinted edge
+    glassEdge: 'rgba(255, 255, 255, 0.1)',  // Neutral edge
     dark: 'rgba(0, 0, 0, 0.4)',
-    card: '#FFFDF8',
-    cardDark: '#2D3B35',
+    card: '#FFFFFF',
+    cardDark: '#1F2937',
   },
 };
 
 // Theme-specific color sets for backward compatibility
 export const darkColors = {
   primary: {
-    dark: Colors.primary.tealDark,
-    medium: Colors.primary.teal,
-    light: Colors.primary.tealLight,
-    vibrant: Colors.primary.tealLight,
+    dark: Colors.primary.dark,
+    medium: Colors.primary.main,
+    light: Colors.primary.light,
+    vibrant: Colors.accent.primary,
   },
   accent: {
-    electric: Colors.accent.gold,
-    neon: Colors.accent.goldLight,
-    lime: Colors.accent.goldDark,
-    gold: Colors.accent.gold,
-    purple: Colors.jewelry.amethyst,
-    coral: Colors.accent.coral,
-    blue: Colors.accent.crystal,
-    emerald: Colors.jewelry.emerald,
-    amber: Colors.accent.amber,
-    red: Colors.accent.coral,
+    electric: Colors.accent.primary,
+    neon: Colors.accent.light,
+    lime: Colors.accent.dark,
+    gold: Colors.accent.highlight,
+    purple: '#8B5CF6',
+    coral: Colors.accent.danger,
+    blue: Colors.accent.secondary,
+    emerald: '#10B981',
+    amber: Colors.accent.highlight,
+    red: Colors.accent.danger,
   },
   surface: {
     glass: Colors.surface.glass,
     glassStrong: Colors.surface.glassStrong,
     glassEdge: Colors.surface.glassEdge,
     dark: Colors.surface.dark,
-    card: Colors.neutral.cream,
+    card: Colors.neutral.gray100,
     cardDark: Colors.surface.cardDark,
   },
   text: {
-    primary: '#FAF8F3',           // Cream - bright on dark backgrounds
-    secondary: '#E8DFD0',         // Warm cream - secondary text
-    muted: '#B8A88A',             // Muted gold-tinted
-    accent: Colors.accent.gold,   // Gold accent
-    light: '#FFFFFF',             // Pure white option
+    primary: '#F9FAFB',           // Gray-50 - bright on dark backgrounds
+    secondary: '#E5E7EB',         // Gray-200 - secondary text
+    muted: '#9CA3AF',             // Gray-400 - muted text
+    accent: Colors.accent.primary,
+    light: '#FFFFFF',
   },
   background: {
-    primary: Colors.primary.teal,
-    secondary: Colors.primary.tealDark,
-    tertiary: Colors.primary.tealLight,
-    dark: Colors.primary.tealDark,
-    darker: '#0D201B',
-    gradient: [Colors.primary.tealLight, Colors.primary.teal, Colors.primary.tealDark] as const,
-    mesh: [Colors.primary.teal, Colors.primary.tealLight, Colors.primary.tealDark, '#0D201B'] as const,
+    primary: Colors.primary.main,
+    secondary: Colors.primary.dark,
+    tertiary: Colors.primary.light,
+    dark: Colors.primary.dark,
+    darker: '#030712',
+    gradient: [Colors.primary.light, Colors.primary.main, Colors.primary.dark] as const,
+    mesh: [Colors.primary.main, Colors.primary.light, Colors.primary.dark, '#030712'] as const,
   },
-  zophi: {
-    forestGreen: Colors.primary.teal,
-    darkGreen: Colors.primary.tealDark,
-    bronze: Colors.accent.gold,
-    gold: Colors.accent.gold,
-    cream: Colors.neutral.cream,
-    beige: Colors.neutral.creamDark,
-    warmBrown: Colors.accent.goldDark,
-    scanFrame: Colors.accent.gold,
-    tabBarDark: Colors.neutral.charcoal,
+  app: {
+    primary: Colors.primary.main,
+    primaryDark: Colors.primary.dark,
+    accent: Colors.accent.primary,
+    accentLight: Colors.accent.light,
+    light: Colors.neutral.gray50,
+    lightAlt: Colors.neutral.gray100,
+    dark: Colors.neutral.gray700,
+    scanFrame: Colors.accent.primary,
+    tabBarDark: Colors.neutral.gray900,
   },
 };
 
 export const lightColors = {
   primary: {
-    dark: Colors.primary.teal,
-    medium: Colors.primary.tealLight,
-    light: '#4A9D8A',
-    vibrant: Colors.primary.teal,
+    dark: Colors.primary.main,
+    medium: Colors.primary.light,
+    light: Colors.neutral.gray400,
+    vibrant: Colors.accent.primary,
   },
   accent: {
-    electric: Colors.accent.gold,
-    neon: Colors.accent.goldLight,
-    lime: Colors.accent.goldDark,
-    gold: Colors.accent.gold,
-    purple: Colors.jewelry.amethyst,
-    coral: Colors.accent.coral,
-    blue: Colors.accent.crystal,
-    emerald: Colors.jewelry.emerald,
-    amber: Colors.accent.amber,
-    red: Colors.accent.coral,
+    electric: Colors.accent.primary,
+    neon: Colors.accent.light,
+    lime: Colors.accent.dark,
+    gold: Colors.accent.highlight,
+    purple: '#8B5CF6',
+    coral: Colors.accent.danger,
+    blue: Colors.accent.secondary,
+    emerald: '#10B981',
+    amber: Colors.accent.highlight,
+    red: Colors.accent.danger,
   },
   surface: {
     glass: 'rgba(255, 255, 255, 0.9)',
@@ -190,33 +169,34 @@ export const lightColors = {
     glassEdge: Colors.surface.glassEdge,
     dark: 'rgba(0, 0, 0, 0.05)',
     card: Colors.neutral.white,
-    cardDark: Colors.neutral.cream,
+    cardDark: Colors.neutral.gray100,
   },
   text: {
     primary: Colors.text.primary,
     secondary: Colors.text.secondary,
     muted: Colors.text.muted,
-    accent: Colors.primary.teal,
+    accent: Colors.accent.primary,
+    light: '#FFFFFF',
   },
   background: {
-    primary: Colors.neutral.cream,
-    secondary: Colors.neutral.creamDark,
-    tertiary: Colors.neutral.stoneDark,
-    dark: Colors.neutral.creamLight,
-    darker: Colors.neutral.stone,
-    gradient: [Colors.neutral.cream, Colors.neutral.creamDark, Colors.neutral.stoneDark] as const,
-    mesh: [Colors.neutral.cream, Colors.neutral.creamLight, Colors.neutral.creamDark, Colors.neutral.stoneDark] as const,
+    primary: Colors.neutral.gray50,
+    secondary: Colors.neutral.gray100,
+    tertiary: Colors.neutral.gray200,
+    dark: Colors.neutral.gray100,
+    darker: Colors.neutral.gray200,
+    gradient: [Colors.neutral.gray50, Colors.neutral.gray100, Colors.neutral.gray200] as const,
+    mesh: [Colors.neutral.gray50, Colors.neutral.white, Colors.neutral.gray100, Colors.neutral.gray200] as const,
   },
-  zophi: {
-    forestGreen: Colors.primary.teal,
-    darkGreen: Colors.primary.tealDark,
-    bronze: Colors.accent.gold,
-    gold: Colors.accent.gold,
-    cream: Colors.neutral.cream,
-    beige: Colors.neutral.creamDark,
-    warmBrown: Colors.accent.goldDark,
-    scanFrame: Colors.accent.gold,
-    tabBarDark: Colors.neutral.charcoal,
+  app: {
+    primary: Colors.neutral.gray50,
+    primaryDark: Colors.neutral.gray100,
+    accent: Colors.accent.primary,
+    accentLight: Colors.accent.light,
+    light: Colors.neutral.gray50,
+    lightAlt: Colors.neutral.gray100,
+    dark: Colors.neutral.gray700,
+    scanFrame: Colors.accent.primary,
+    tabBarDark: Colors.neutral.gray900,
   },
 };
 

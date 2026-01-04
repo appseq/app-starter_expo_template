@@ -159,9 +159,9 @@ Provide accurate, educational information about the identified object.`,
   // To customize: Edit onboarding.slides.slide1 in translation files
   onboarding: {
     // Background colors for the onboarding screen
-    backgroundColor: Colors.primary.teal,
-    backgroundGradient: [Colors.primary.teal, Colors.primary.tealDark],
-    accentColor: Colors.accent.gold,
+    backgroundColor: Colors.primary.main,
+    backgroundGradient: [Colors.primary.main, Colors.primary.dark],
+    accentColor: Colors.accent.primary,
   },
 
   // ============================================

@@ -65,7 +65,7 @@ export default function Button({
     >
       {loading ? (
         <ActivityIndicator
-          color={variant === 'primary' ? Colors.neutral.white : Colors.accent.gold}
+          color={variant === 'primary' ? Colors.neutral.white : Colors.accent.primary}
           size="small"
         />
       ) : (
@@ -83,15 +83,15 @@ const styles = StyleSheet.create({
   },
   // Variant styles
   primaryButton: {
-    backgroundColor: Colors.accent.gold,
+    backgroundColor: Colors.accent.primary,
   },
   secondaryButton: {
-    backgroundColor: Colors.primary.teal,
+    backgroundColor: Colors.primary.main,
   },
   outlineButton: {
     backgroundColor: 'transparent',
     borderWidth: 2,
-    borderColor: Colors.accent.gold,
+    borderColor: Colors.accent.primary,
   },
   ghostButton: {
     backgroundColor: 'transparent',
@@ -125,10 +125,10 @@ const styles = StyleSheet.create({
     color: Colors.neutral.white,
   },
   outlineText: {
-    color: Colors.accent.gold,
+    color: Colors.accent.primary,
   },
   ghostText: {
-    color: Colors.accent.gold,
+    color: Colors.accent.primary,
   },
   smallText: {
     fontSize: 14,

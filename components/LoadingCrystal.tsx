@@ -9,7 +9,7 @@ import Animated, {
   Easing,
 } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
-import colors from "@/constants/internal/colors";
+import Colors from "@/constants/internal/colors";
 
 interface LoadingCrystalProps {
   size?: number;
@@ -87,7 +87,7 @@ export const LoadingCrystal: React.FC<LoadingCrystalProps> = ({
       {/* Outer glow */}
       <Animated.View style={[styles.glowContainer, glowStyle]}>
         <LinearGradient
-          colors={[colors.accent.blue + '40', 'transparent']}
+          colors={[Colors.accent.secondary + '40', 'transparent']}
           style={[styles.outerGlow, { width: size * 2, height: size * 2 }]}
           start={{ x: 0.5, y: 0.5 }}
           end={{ x: 1, y: 1 }}
@@ -99,7 +99,7 @@ export const LoadingCrystal: React.FC<LoadingCrystalProps> = ({
         {/* Outer crystal ring */}
         <View style={[styles.crystalRing, { width: size, height: size }]}>
           <LinearGradient
-            colors={[colors.accent.blue, colors.accent.purple]}
+            colors={[Colors.accent.secondary, Colors.accent.primary]}
             style={styles.ringGradient}
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 1 }}
@@ -110,7 +110,7 @@ export const LoadingCrystal: React.FC<LoadingCrystalProps> = ({
         <Animated.View style={[styles.innerContainer, innerAnimatedStyle]}>
           <View style={[styles.innerCrystal, { width: size * 0.6, height: size * 0.6 }]}>
             <LinearGradient
-              colors={[colors.accent.emerald, colors.accent.blue]}
+              colors={[Colors.status.success, Colors.accent.secondary]}
               style={styles.innerGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}
@@ -120,7 +120,7 @@ export const LoadingCrystal: React.FC<LoadingCrystalProps> = ({
           {/* Center core */}
           <View style={[styles.core, { width: size * 0.25, height: size * 0.25 }]}>
             <LinearGradient
-              colors={[colors.text.primary, colors.accent.blue]}
+              colors={[Colors.neutral.gray100, Colors.accent.secondary]}
               style={styles.coreGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 1 }}
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
   crystalRing: {
     borderRadius: 1000,
     borderWidth: 3,
-    borderColor: 'rgba(255, 255, 255, 0.2)',
+    borderColor: Colors.surface.glassEdge,
     overflow: 'hidden',
   },
   ringGradient: {
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   innerCrystal: {
     borderRadius: 1000,
     borderWidth: 2,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
+    borderColor: Colors.surface.glassStrong,
     overflow: 'hidden',
   },
   innerGradient: {
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     borderRadius: 1000,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.5)',
+    borderColor: Colors.neutral.gray400,
   },
   coreGradient: {
     position: 'absolute',

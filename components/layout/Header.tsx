@@ -42,7 +42,7 @@ export default function Header({
   // variant prop can override the theme for specific visual needs
   const isDark = variant === 'dark';
   const iconColor = colors.text.primary;
-  const titleColor = colors.accent.gold;
+  const titleColor = colors.accent.electric;
   const subtitleColor = colors.text.muted;
 
   // Pill button for settings (matches Pro pill design)
@@ -124,13 +124,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: Colors.primary.tealDark,
+    backgroundColor: Colors.primary.dark,
     paddingHorizontal: 14,
     paddingVertical: 8,
     borderRadius: 20,
     borderWidth: 1.5,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
-    shadowColor: '#000',
+    borderColor: Colors.surface.glassEdge,
+    shadowColor: Colors.neutral.black,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,

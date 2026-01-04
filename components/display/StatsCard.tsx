@@ -34,10 +34,10 @@ export default function StatsCard({
       ]}
       testID={testID}
     >
-      <Text style={[isLarge ? styles.labelLarge : styles.labelSmall, { color: 'rgba(255,255,255,0.7)' }]}>
+      <Text style={[isLarge ? styles.labelLarge : styles.labelSmall, { color: colors.text.muted }]}>
         {label}
       </Text>
-      <Text style={[isLarge ? styles.valueLarge : styles.valueSmall, { color: '#FFFFFF' }]}>
+      <Text style={[isLarge ? styles.valueLarge : styles.valueSmall, { color: colors.text.light }]}>
         {value}
       </Text>
     </View>

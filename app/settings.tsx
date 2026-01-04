@@ -18,7 +18,7 @@ import {
   Mail,
   Star,
   Palette,
-  Sparkles,
+  FlaskConical,
   TestTube,
   FileText,
   RefreshCw,
@@ -87,7 +87,7 @@ function SettingsItem({
           <View style={[
             styles.iconContainer,
             compact && styles.compactIconContainer,
-            { backgroundColor: isDark ? 'rgba(255, 255, 255, 0.1)' : Colors.neutral.stoneDark },
+            { backgroundColor: isDark ? 'rgba(255, 255, 255, 0.1)' : Colors.neutral.gray200 },
           ]}>
             {icon}
           </View>
@@ -333,7 +333,7 @@ export default function SettingsScreen() {
                 <View style={styles.devCardContent}>
                   <View style={styles.devHeader}>
                     <View style={styles.devIconContainer}>
-                      <TestTube size={20} color={Colors.accent.gold} />
+                      <TestTube size={20} color={Colors.accent.primary} />
                     </View>
                     <Text style={[styles.devTitle, { color: colors.text.primary }]}>{t('ui.settings.demoMode.title')}</Text>
                   </View>
@@ -350,8 +350,8 @@ export default function SettingsScreen() {
                       onValueChange={handleToggleDemoMode}
                       disabled={isLoadingDemo}
                       trackColor={{
-                        false: isDark ? 'rgba(255, 255, 255, 0.2)' : Colors.neutral.stoneDark,
-                        true: Colors.accent.gold,
+                        false: isDark ? 'rgba(255, 255, 255, 0.2)' : Colors.neutral.gray200,
+                        true: Colors.accent.primary,
                       }}
                       thumbColor={Colors.neutral.white}
                     />
@@ -370,12 +370,12 @@ export default function SettingsScreen() {
             {__DEV__ && (
               <View style={[
                 styles.devCard,
-                { borderColor: Colors.primary.teal, backgroundColor: isDark ? colors.surface.glass : colors.surface.card },
+                { borderColor: Colors.accent.primary, backgroundColor: isDark ? colors.surface.glass : colors.surface.card },
               ]}>
                 <View style={styles.devCardContent}>
                   <View style={styles.devHeader}>
-                    <View style={[styles.devIconContainer, { backgroundColor: 'rgba(45, 107, 92, 0.15)' }]}>
-                      <Sparkles size={20} color={Colors.primary.teal} />
+                    <View style={[styles.devIconContainer, { backgroundColor: 'rgba(13, 148, 136, 0.15)' }]}>
+                      <FlaskConical size={20} color={Colors.accent.primary} />
                     </View>
                     <Text style={[styles.devTitle, { color: colors.text.primary }]}>{t('ui.settings.testMode.title')}</Text>
                   </View>
@@ -403,16 +403,16 @@ export default function SettingsScreen() {
                         }
                       }}
                       trackColor={{
-                        false: isDark ? 'rgba(255, 255, 255, 0.2)' : Colors.neutral.stoneDark,
-                        true: Colors.primary.teal,
+                        false: isDark ? 'rgba(255, 255, 255, 0.2)' : Colors.neutral.gray200,
+                        true: Colors.accent.primary,
                       }}
                       thumbColor={Colors.neutral.white}
                     />
                   </View>
 
                   {isTestMode && (
-                    <View style={[styles.devAlert, { backgroundColor: 'rgba(45, 107, 92, 0.1)' }]}>
-                      <Text style={[styles.devAlertText, { color: Colors.primary.teal }]}>
+                    <View style={[styles.devAlert, { backgroundColor: 'rgba(13, 148, 136, 0.1)' }]}>
+                      <Text style={[styles.devAlertText, { color: Colors.accent.primary }]}>
                         {t('ui.settings.testMode.activeMessage')}
                       </Text>
                     </View>
@@ -435,7 +435,7 @@ export default function SettingsScreen() {
             <SettingsItem
               title={t('ui.settings.rateApp')}
               subtitle={t('ui.settings.rateAppSubtitle')}
-              icon={<Star size={20} color={Colors.accent.gold} />}
+              icon={<Star size={20} color={Colors.accent.primary} />}
               onPress={handleRateApp}
               testID="rate-button"
               colors={colors}
@@ -445,7 +445,7 @@ export default function SettingsScreen() {
             <SettingsItem
               title={t('ui.settings.contactSupport')}
               subtitle={t('ui.settings.contactSupportSubtitle')}
-              icon={<Mail size={20} color={Colors.accent.gold} />}
+              icon={<Mail size={20} color={Colors.accent.primary} />}
               onPress={handleSupport}
               testID="support-button"
               colors={colors}
@@ -692,7 +692,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     borderRadius: 16,
     borderWidth: 2,
-    borderColor: Colors.accent.gold,
+    borderColor: Colors.accent.primary,
     overflow: 'hidden',
   },
   devCardContent: {
@@ -710,7 +710,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 12,
-    backgroundColor: 'rgba(201, 160, 85, 0.15)',
+    backgroundColor: 'rgba(13, 148, 136, 0.15)',
   },
   devTitle: {
     fontSize: 16,
@@ -738,12 +738,12 @@ const styles = StyleSheet.create({
     marginTop: 12,
     padding: 12,
     borderRadius: 10,
-    backgroundColor: 'rgba(201, 160, 85, 0.1)',
+    backgroundColor: 'rgba(13, 148, 136, 0.1)',
   },
   devAlertText: {
     fontSize: 13,
     textAlign: 'center',
     fontWeight: '500',
-    color: Colors.accent.gold,
+    color: Colors.accent.primary,
   },
 });

@@ -15,7 +15,7 @@ export default function TabLayout() {
   const isDark = actualTheme !== 'light';
 
   // Theme-aware colors
-  const activeTint = Colors.accent.gold;
+  const activeTint = Colors.accent.primary;
   const inactiveTint = isDark ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0.4)';
   const backgroundColor = isDark ? 'rgba(18, 18, 20, 0.95)' : 'rgba(255, 255, 255, 0.95)';
   const borderColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';

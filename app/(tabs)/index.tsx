@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Settings, Sparkles } from 'lucide-react-native';
+import { Settings, Crown, Box } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTranslation } from 'react-i18next';
 import { getColors } from '@/constants/internal/colors';
@@ -64,7 +64,7 @@ export default function HomeScreen() {
               style={[styles.upgradeButton, { backgroundColor: colors.accent.gold }]}
               onPress={handleUpgradePress}
             >
-              <Sparkles size={16} color="#000" />
+              <Crown size={16} color="#000" />
               <Text style={styles.upgradeText}>{t('ui.subscription.upgrade')}</Text>
             </TouchableOpacity>
           )}
@@ -74,7 +74,7 @@ export default function HomeScreen() {
         <View style={styles.content}>
           <View style={styles.logoContainer}>
             <View style={[styles.logoCircle, { backgroundColor: colors.accent.gold }]}>
-              <Sparkles size={48} color="#000" />
+              <Box size={48} color="#000" />
             </View>
           </View>
 
