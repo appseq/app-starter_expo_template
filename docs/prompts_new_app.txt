@@ -51,14 +51,16 @@ Make sure bare-bone project builds and runs, no syntax or build errors are intro
 
 ultrathink
 
-
 ---------------------------------------------
 generate relevant pre-commit hooks for your project.
 
----------------
+---------------------------------------------
 RORK
 
 NEW APP
+
+Create a new app following the specs below.
+Make the UI clean, professional and polished.
 
 Reference example:
 https://apps.apple.com/us/app/convert-to-pdf-photo-scanner/id6749334400
@@ -71,3 +73,30 @@ NPM
 Description and functionality:
 Copy App Store description of app
 
+---------------------------------------------
+1) Clone the RORK app locally.
+2) Open the RN Expo start template in Claude
+3) Add the RORK app folder path to claude
+4) Prompt:
+Goal:
+Analyze the current app’s full codebase and project structure (including the referenced directory).
+Transform the template into a production-ready, fully working app by:
+Adopting the UI/UX from the referenced app
+Integrating all functionality and business logic with the UI as the system foundation
+
+Implementing logic and code based on the embedded configurations in the template app
+(use config files, constants, and services such as config.json/config.json, constants, constants, and services as the source of truth for implementation)
+
+Mapping existing functionality → UI behavior without breaking core logic 
+work in steps, evaluate each step.
+
+Standards:
+Clean, modular, reusable, maintainable architecture
+Clear separation of concerns, loosely coupled, composable UI components
+Defensive programming with safe states, validation, guards, and error handling
+
+Output:
+Deliver a complete, stable, maintainable, working app that:
+Matches the referenced app’s UI/UX
+Implements accurate logic as implied by the interface
+Uses a scalable, modular project structure rooted in the template’s configurations
