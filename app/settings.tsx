@@ -11,7 +11,6 @@ import {
   Platform,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import {
   ArrowLeft,
   Shield,
@@ -322,8 +321,12 @@ export default function SettingsScreen() {
           colors={colors.background.gradient}
           style={StyleSheet.absoluteFill}
         />
-        <SafeAreaView style={styles.safeArea} edges={['bottom']}>
-          <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
+        <View style={styles.safeArea}>
+          <ScrollView
+            style={styles.scrollView}
+            contentContainerStyle={styles.scrollContent}
+            contentInsetAdjustmentBehavior="automatic"
+          >
             {/* Demo Mode Section (Development Only) */}
             {__DEV__ && (
               <View style={[
@@ -550,7 +553,7 @@ export default function SettingsScreen() {
               </View>
             </View>
           </ScrollView>
-        </SafeAreaView>
+        </View>
       </View>
 
       {/* Upgrade Prompt Modal */}
@@ -578,7 +581,6 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     padding: 16,
-    paddingBottom: 20,
   },
   sectionTitle: {
     fontSize: 18,
@@ -647,7 +649,6 @@ const styles = StyleSheet.create({
   },
   footerContainer: {
     marginTop: 32,
-    marginBottom: 24,
     alignItems: 'center',
   },
   footerSeparator: {
