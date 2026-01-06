@@ -27,6 +27,11 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 # Change to project directory
 cd "$PROJECT_DIR" || exit 1
 
+# Pre-flight security check (skip for help/disk commands)
+if [[ "$1" != "help" && "$1" != "-h" && "$1" != "--help" && "$1" != "" && "$1" != "disk" ]]; then
+    node scripts/check-gitignore.js || exit 1
+fi
+
 # Display help
 show_help() {
     echo -e "${BOLD}${BLUE}Expo Build (eb) - Command Reference${NC}"
