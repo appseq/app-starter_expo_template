@@ -125,10 +125,6 @@ function validateEnvironmentVariables() {
       validator: (val) => val && val.length > 20 && !val.includes('your_'),
       message: 'Must be a valid UUID',
     },
-    EXPO_PUBLIC_REVENUECAT_IOS_KEY: {
-      validator: (val) => val && val.startsWith('appl_') && !val.includes('your_'),
-      message: 'Must start with "appl_" and not be a placeholder',
-    },
   };
 
   // Optional but recommended
