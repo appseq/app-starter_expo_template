@@ -100,3 +100,6 @@ Deliver a complete, stable, maintainable, working app that:
 Matches the referenced app’s UI/UX
 Implements accurate logic as implied by the interface
 Uses a scalable, modular project structure rooted in the template’s configurations
+
+ultrathink
+-------------------

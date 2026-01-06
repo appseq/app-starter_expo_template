@@ -342,7 +342,7 @@ Requirements:
 - Directly apply improvements in code
 
 Report: Do not change anything yet.
--------
+----------------
 Explore and understand the codebase, structure and functional content then proceed to the following request.
 Lets review the scanning result on the ItemDetailsScreen, focussing on the appraisal value.
 INVESTIGATE and REPORT, Do not change anything yet.
@@ -353,7 +353,7 @@ Requirements
 -Use defensive programming.
 -Keep it simpel and do no overcomplexify.
 -Maintain zero regression at all time.
--------
+----------------
 Explore and understand the codebase, structure and functional content then proceed to the following request.
 Investigate cause why the app upon startup it double loads the main view, it stutters and re-renders after first startup.
 Investigate async processes at startup, trace the startup flow from start to final load of the app and find out what process is caussing the main screen to double-load.
@@ -366,7 +366,7 @@ Solution should adhere to:
 -Maintain zero regression at all time.
 
 INVESTIGATE and REPORT, Do not change anything yet.
--------
+----------------
 Explore and understand the codebase, structure and functional content then proceed to the following request.
 Investigate the localization throughout the codebase, making sure all texts, labels, prompts are localized in the chosen language in the settings scren.
 Solution should adhere to:
@@ -374,7 +374,7 @@ Solution should adhere to:
 -Use defensive programming.
 -Keep it simpel and do no overcomplexify.
 -Maintain zero regression at all time.
--------
+----------------
 Explore and understand the codebase, structure and functional content then proceed to the following request.
 Adapt the launscreen. Instead of showing the launchscreen.png image, instead a loading skeleton should be used.
 Investigate on how approach this implementation.
@@ -392,7 +392,7 @@ Solution should adhere to:
 -Keep it simpel and do no overcomplexify.
 -Maintain zero regression at all time.
 
-------
+----------------
 Analyse the following commands which are used manually from the command line to build and deploy to device, simulator or release.
 I need the following:
  - I want to curate the list, I need a minimal effecient list of commands without losing functionalities.
@@ -405,8 +405,20 @@ clean + check if enought discpace + clean up diskspace if needed +  build + depl
  
 Suggest other commands that could benefit the workflow for the project. 
   
------
+----------------
 This project is a template bare bones for RN Expo, this will be used for hight turn-around to build and release RN expo mobile apps.\
 Adapt:\
 Make the theming more neutral.\
------
+
+----------------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+ADAPT:
+- fix the my pfds list-view. The list of all scanned pds show a weird title with {{count}}
+- in list view modus, tapping the three dots, the popup menu appears behind the next row instead on top.
+- the pdf details view should show a carousel of the pdf pages instead of only the first one.
+- fix the 'add procection' in the pdf details view, tapping the row should give the user ability to set a password on the current document instead of listing all documents.
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Maintain zero regression at all time.
+----------------

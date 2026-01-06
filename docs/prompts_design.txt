@@ -230,4 +230,19 @@ Layout: On the right side of the card, create a sharp, distinct cutout shape in 
 Illustration: Inside the clock-shaped cutout, place a unique, playful 3D cartoon-style illustration of a stylized stopwatch or productivity character. The illustration must strictly adhere to the app’s Green and White color theme. Do not use generic stock photos; aim for a custom brand mascot feel.
 
 Style: Professional UI/UX design, Dribbble aesthetic, high contrast, soft drop shadows, rounded corners, leaving empty negative space on the left side for text.
----------
+---------------------------------------------------
+APP ICON
+Create a simple, professional app icon for a PDF converter mobile app. 
+The icon must prominently feature the text "PDF" in bold, modern typography.
+Use a red color scheme as the primary theme color (bright red #FF3B30 or similar).
+Keep the design minimal and clean with a flat or subtle gradient style.
+The icon should convey document conversion/file management.
+Do NOT use any Adobe PDF trademarked icons or logos.
+Do NOT add rounded corners - keep edges square (will be rounded in post-processing).
+Size: 1024x1024px
+Style: Modern, minimal, professional
+Background: Solid red or red gradient
+Text: "PDF" in white or light color for contrast
+Optional: Simple geometric shapes suggesting documents or conversion (arrows, document stack silhouette)
+The design should work well at small sizes (app icon on phone screen).
+---------------------------------------------------
