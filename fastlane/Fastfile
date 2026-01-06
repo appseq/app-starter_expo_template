@@ -21,7 +21,7 @@
 # ===== APP CONFIGURATION =====
 # These values should match your constants/appConfig.ts configuration
 # Update these when adapting the template for a new app
-APP_IDENTIFIER = "net.centriqo.jewelryidentifier"  # Should match APP_CONFIG.critical.bundleId.ios
+APP_IDENTIFIER = "net.centriqo.pdfmaker"  # Should match APP_CONFIG.critical.bundleId.ios
 
 # Autodetect native iOS project names to avoid mismatches with app.json/expo
 IOS_DIR       = ENV['IOS_DIR'] || '../ios'
@@ -139,17 +139,38 @@ lane :upload_metadata do
     UI.success "   This includes release notes for version #{version}"
 
   rescue => e
-    UI.error "Metadata upload failed: #{e.message}"
-    UI.message ""
-    UI.message "Common causes:"
-    UI.message "  1. Version #{resolve_app_version rescue 'unknown'} doesn't exist in App Store Connect yet"
-    UI.message "     → Create the version in App Store Connect first: https://appstoreconnect.apple.com"
-    UI.message "  2. App is in a state that prevents metadata updates (e.g., In Review)"
-    UI.message "     → Wait for review to complete or reject the build"
-    UI.message "  3. API key doesn't have sufficient permissions"
-    UI.message "     → Check that your API key has 'App Manager' or 'Admin' role"
-    UI.message ""
-    raise e
+    version = resolve_app_version rescue 'unknown'
+
+    # Check for missing App Review Information error
+    if e.message.include?("No data") && e.backtrace.any? { |line| line.include?("fetch_app_store_review_detail") }
+      UI.error ""
+      UI.error "❌ MISSING APP REVIEW INFORMATION"
+      UI.error ""
+      UI.error "   App Store Connect requires App Review Information to be set before"
+      UI.error "   uploading metadata for the first time."
+      UI.error ""
+      UI.error "   To fix this:"
+      UI.error "   1. Go to: https://appstoreconnect.apple.com"
+      UI.error "   2. Select your app → App Store → Version #{version}"
+      UI.error "   3. Scroll to 'App Review Information' section"
+      UI.error "   4. Fill in contact details (name, email, phone)"
+      UI.error "   5. Save and run fastlane again"
+      UI.error ""
+      UI.user_error!("Missing App Review Information in App Store Connect")
+    else
+      # Original error handling for other cases
+      UI.error "Metadata upload failed: #{e.message}"
+      UI.message ""
+      UI.message "Common causes:"
+      UI.message "  1. Version #{version} doesn't exist in App Store Connect yet"
+      UI.message "     → Create the version in App Store Connect first: https://appstoreconnect.apple.com"
+      UI.message "  2. App is in a state that prevents metadata updates (e.g., In Review)"
+      UI.message "     → Wait for review to complete or reject the build"
+      UI.message "  3. API key doesn't have sufficient permissions"
+      UI.message "     → Check that your API key has 'App Manager' or 'Admin' role"
+      UI.message ""
+      raise e
+    end
   end
 end
 
