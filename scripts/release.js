@@ -242,6 +242,30 @@ function checkCredentials() {
 }
 
 /**
+ * Check EAS CLI credentials
+ */
+function checkEASCredentials() {
+  console.log(`${colors.bright}EAS Credentials Check${colors.reset}`);
+  log.divider();
+
+  // Check if logged in to EAS
+  try {
+    const whoami = execSync('eas whoami 2>&1', { encoding: 'utf-8', stdio: 'pipe' }).trim();
+    log.success(`Logged in as: ${whoami}`);
+    console.log('');
+    return true;
+  } catch (err) {
+    log.error('Not logged in to EAS CLI');
+    console.log('');
+    console.log('  To fix, run these commands:');
+    console.log(`    ${colors.cyan}eas login${colors.reset}`);
+    console.log(`    ${colors.cyan}eas credentials${colors.reset}  (to set up iOS distribution certificate)`);
+    console.log('');
+    return false;
+  }
+}
+
+/**
  * Check disk space and offer cleanup
  */
 async function checkDiskSpace() {
@@ -407,8 +431,21 @@ async function buildProduction() {
     console.log('');
     return 'manual';
   } catch (err) {
-    console.log(err.stdout || err.message);
-    log.error('Build failed');
+    const output = err.stdout || err.message;
+    console.log(output);
+
+    // Check for credential-specific errors
+    if (output.includes('Credentials are not set up') || output.includes('non-interactive builds')) {
+      log.error('iOS credentials not configured for non-interactive builds');
+      console.log('');
+      console.log('  To fix, run these commands once:');
+      console.log(`    ${colors.cyan}eas login${colors.reset}`);
+      console.log(`    ${colors.cyan}eas credentials${colors.reset}`);
+      console.log('');
+    } else {
+      log.error('Build failed');
+    }
+
     if (isAuto) process.exit(1);
     return null;
   }
@@ -487,6 +524,16 @@ async function main() {
   // Step 1: Check credentials
   if (!checkCredentials()) {
     const answer = await prompt('Continue without valid credentials? (y/n)');
+    if (answer !== 'y') process.exit(1);
+  }
+
+  // Step 1b: Check EAS credentials
+  if (!checkEASCredentials()) {
+    if (isAuto) {
+      log.error('EAS credentials not configured. Aborting in auto mode.');
+      process.exit(1);
+    }
+    const answer = await prompt('Continue without EAS login? (build will likely fail) (y/n)');
     if (answer !== 'y') process.exit(1);
   }
 
