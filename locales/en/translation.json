@@ -9,11 +9,25 @@
         "title": "Onboarding",
         "subtitle": "Welcome",
         "description": "Customize this onboarding screen for your app."
+      },
+      "scan": {
+        "title": "Point & Scan",
+        "subtitle": "Capture any item instantly"
+      },
+      "identify": {
+        "title": "AI Identification",
+        "subtitle": "Get detailed results in seconds"
+      },
+      "discover": {
+        "title": "Build Your Collection",
+        "subtitle": "Save and organize discoveries"
       }
     },
     "finalButtonText": "Get Started",
     "continueButtonText": "Continue",
-    "skipButtonText": "Skip"
+    "skipButtonText": "Skip",
+    "continue": "Continue",
+    "skip": "Skip"
   },
   "ui": {
     "tabs": {

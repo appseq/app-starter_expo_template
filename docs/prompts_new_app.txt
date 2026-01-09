@@ -102,4 +102,11 @@ Implements accurate logic as implied by the interface
 Uses a scalable, modular project structure rooted in the template’s configurations
 
 ultrathink
+
+-------------------
+The template codebase used as a start template to build new apps.
+The template codebase has generic functionalities that can be used in all new apps. 
+Compare current template codebase with the PDFScanner codebase. 
+Find and list all differences and suggest which improvements in the PDFScanner can be implemented in the template codebase.
+
 -------------------

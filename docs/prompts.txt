@@ -421,4 +421,18 @@ ADAPT:
 -Use defensive programming.
 -Keep it simpel and do no overcomplexify.
 -Maintain zero regression at all time.
-----------------
+
+------------------
+Explore and understand the codebase, structure and functional content then proceed to the following request.
+ISSUE:
+Find the PDF detail view, the vertical Page Control next to the preview does not work or move with when sliding though PDF preview.
+
+Implementation solution should follow these guidelines:
+-Adhere to clean code, re-use and maintainability best practises.
+-Use defensive programming.
+-Keep it simpel and do no overcomplexify.
+-Be aware of race conditions
+-Maintain zero regression at all time.
+
+Report do no change any code yet.
+------------------

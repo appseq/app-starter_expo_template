@@ -19,6 +19,8 @@ import { AppRatingProvider } from "@/hooks/useAppRating";
 import { TestModeProvider } from "@/hooks/useTestMode";
 import { SubscriptionProvider } from "@/contexts/SubscriptionContext";
 import { PaywallProvider } from "@/components/PaywallProvider";
+import { ToastProvider } from "@/contexts/ToastContext";
+import { useStartupPaywall } from "@/hooks/useStartupPaywall";
 import OnboardingScreen from "@/components/OnboardingScreen";
 import { getColors } from "@/constants/internal/colors";
 import { I18nextProvider } from 'react-i18next';
@@ -103,7 +105,21 @@ function RootLayoutNav() {
 
   return (
     <Animated.View style={fadeInStyle}>
-      <Stack
+      <MainAppContent colors={colors} />
+    </Animated.View>
+  );
+}
+
+/**
+ * Main app content after onboarding
+ * Separated to use startup paywall hook safely
+ */
+function MainAppContent({ colors }: { colors: ReturnType<typeof getColors> }) {
+  // Present paywall at startup for non-subscribed users
+  useStartupPaywall();
+
+  return (
+    <Stack
       screenOptions={{
         headerShown: false,
         contentStyle: { backgroundColor: colors.background.dark },
@@ -114,7 +130,6 @@ function RootLayoutNav() {
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="settings" options={{ headerShown: false }} />
     </Stack>
-    </Animated.View>
   );
 }
 
@@ -134,8 +149,10 @@ export default function RootLayout() {
                   <OnboardingProvider>
                     <AppRatingProvider>
                       <GestureHandlerRootView style={{ flex: 1 }}>
-                        <StatusBar style="auto" />
-                        <RootLayoutNav />
+                        <ToastProvider>
+                          <StatusBar style="auto" />
+                          <RootLayoutNav />
+                        </ToastProvider>
                       </GestureHandlerRootView>
                     </AppRatingProvider>
                   </OnboardingProvider>
