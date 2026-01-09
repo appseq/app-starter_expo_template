@@ -46,6 +46,8 @@ show_help() {
     echo -e "${BOLD}iOS Device${NC}"
     echo "  eb device           Clean + build + device (debug)"
     echo "  eb device-r         Clean + build + device (release)"
+    echo "  eb go, g            Dev deploy + logging (debug, no clean, auto device)"
+    echo "  eb quick, q         Quick deploy (release, no clean, auto device)"
     echo ""
     echo -e "${BOLD}Android${NC}"
     echo "  eb sim-a            Clean + build + emulator (debug)"
@@ -119,7 +121,53 @@ case "$1" in
         ;;
     device-r)
         echo -e "${CYAN}Building for iOS Device (Release)...${NC}"
-        npx expo prebuild --clean && npx expo run:ios --device --configuration Release --non-interactive
+        # Auto-detect first connected device
+        DEVICE_UDID=$(xcrun xctrace list devices 2>&1 | grep -E "^\w.*\([0-9]+\.[0-9]+\)" | grep -v "Simulator" | head -1 | sed 's/.*(\([^)]*\))$/\1/')
+        if [ -z "$DEVICE_UDID" ]; then
+            echo -e "${RED}No connected iOS device found${NC}"
+            exit 1
+        fi
+        DEVICE_NAME=$(xcrun xctrace list devices 2>&1 | grep -E "^\w.*\([0-9]+\.[0-9]+\)" | grep -v "Simulator" | head -1 | cut -d'(' -f1 | xargs)
+        echo -e "${GREEN}Found device: $DEVICE_NAME ($DEVICE_UDID)${NC}"
+        npx expo prebuild --clean && npx expo run:ios --device "$DEVICE_UDID" --configuration Release
+        ;;
+    quick|q)
+        echo -e "${CYAN}Quick deploy to iOS Device (Release)...${NC}"
+        # Auto-detect first connected device
+        DEVICE_UDID=$(xcrun xctrace list devices 2>&1 | grep -E "^\w.*\([0-9]+\.[0-9]+\)" | grep -v "Simulator" | head -1 | sed 's/.*(\([^)]*\))$/\1/')
+        if [ -z "$DEVICE_UDID" ]; then
+            echo -e "${RED}No connected iOS device found${NC}"
+            exit 1
+        fi
+        DEVICE_NAME=$(xcrun xctrace list devices 2>&1 | grep -E "^\w.*\([0-9]+\.[0-9]+\)" | grep -v "Simulator" | head -1 | cut -d'(' -f1 | xargs)
+        echo -e "${GREEN}Found device: $DEVICE_NAME ($DEVICE_UDID)${NC}"
+        if [ ! -d "ios" ]; then
+            echo -e "${YELLOW}Warning: ios/ folder not found. Running prebuild first...${NC}"
+            npx expo prebuild
+        fi
+        npx expo run:ios --device "$DEVICE_UDID" --configuration Release
+        ;;
+    go|g)
+        echo -e "${CYAN}Dev deploy to iOS Device (Debug + Logging)...${NC}"
+        # Auto-detect first connected device
+        DEVICE_UDID=$(xcrun xctrace list devices 2>&1 | grep -E "^\w.*\([0-9]+\.[0-9]+\)" | grep -v "Simulator" | head -1 | sed 's/.*(\([^)]*\))$/\1/')
+        if [ -z "$DEVICE_UDID" ]; then
+            echo -e "${RED}No connected iOS device found${NC}"
+            exit 1
+        fi
+        DEVICE_NAME=$(xcrun xctrace list devices 2>&1 | grep -E "^\w.*\([0-9]+\.[0-9]+\)" | grep -v "Simulator" | head -1 | cut -d'(' -f1 | xargs)
+        echo -e "${GREEN}Found device: $DEVICE_NAME ($DEVICE_UDID)${NC}"
+        if [ ! -d "ios" ]; then
+            echo -e "${YELLOW}Warning: ios/ folder not found. Running prebuild first...${NC}"
+            npx expo prebuild
+        fi
+        # Build and install app first
+        echo -e "${CYAN}Building and installing app...${NC}"
+        npx expo run:ios --device "$DEVICE_UDID" --no-bundler
+        # Then start Metro - app will connect when launched
+        echo -e "${GREEN}App installed. Starting Metro bundler (Ctrl+C to stop)...${NC}"
+        echo -e "${YELLOW}Tap 'Fetch development servers' on device to connect${NC}"
+        npx expo start --dev-client
         ;;
 
     # Android Emulator
